@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { MessageCircle } from 'lucide-react';
 
 const navItems = [
@@ -19,14 +20,15 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 lg:py-3.5">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-all duration-300 active:scale-95">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-navy-800 to-navy-900 flex items-center justify-center text-white text-lg shadow-md shadow-navy-900/20">
-              💇
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-gray-900 text-sm tracking-tight">David Hair</span>
-              <span className="text-[11px] text-gray-400 leading-tight hidden sm:block tracking-wide">טופרים · פאות · סלון</span>
-            </div>
+          <Link href="/" className="flex items-center hover:opacity-80 transition-all duration-300 active:scale-95">
+            <Image
+              src="/logo-black.png"
+              alt="David Hair Solutions"
+              width={140}
+              height={48}
+              className="h-10 sm:h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

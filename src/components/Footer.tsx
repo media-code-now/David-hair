@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Facebook, Instagram, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
@@ -13,13 +14,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-flex items-center gap-3 hover:opacity-80 transition">
-              <div className="w-10 h-10 rounded-[14px] bg-gradient-to-br from-navy-700 to-navy-800 flex items-center justify-center text-white text-lg">
-                💇
-              </div>
-              <span className="text-xl font-bold text-white tracking-tight">David Hair</span>
+            <Link href="/" className="inline-block hover:opacity-80 transition">
+              <Image
+                src="/logo-white.png"
+                alt="David Hair Solutions"
+                width={160}
+                height={54}
+                className="h-12 w-auto"
+              />
             </Link>
-            <p className="text-[13px] text-gray-500 mt-3 mb-5 leading-relaxed" dir="rtl">
+            <p className="text-[13px] text-gray-500 mt-4 mb-5 leading-relaxed" dir="rtl">
               טופרים ופאות במראה טבעי, עם התאמה אישית בסלון נשים.
             </p>
             <div className="flex gap-3">
