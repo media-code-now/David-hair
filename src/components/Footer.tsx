@@ -20,7 +20,7 @@ export default function Footer() {
                 alt="David Hair Solutions"
                 width={160}
                 height={54}
-                className="h-12 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
             <p className="text-[13px] text-gray-500 mt-4 mb-5 leading-relaxed" dir="rtl">

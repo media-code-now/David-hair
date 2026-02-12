@@ -26,7 +26,7 @@ export default function Header() {
               alt="David Hair Solutions"
               width={140}
               height={48}
-              className="h-10 sm:h-12 w-auto"
+              className="h-20 w-auto"
               priority
             />
           </Link>

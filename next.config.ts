@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  turbopack: {
+    root: "/Users/noamsadi/Desktop/Projects/david-hair-solutions",
+  },
 };
 
 export default nextConfig;
