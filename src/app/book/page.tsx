@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BreadcrumbHero from '@/components/BreadcrumbHero';
 import BookingForm from '@/components/BookingForm';
 
 export const metadata: Metadata = {
@@ -18,6 +19,10 @@ export default function BookingPage() {
   return (
     <>
       <Header />
+      <BreadcrumbHero 
+        title="קביעת ייעוץ"
+        subtitle="התאמה אישית חינם ודיסקרטית לחלוטין"
+      />
       <main>
       <BookingForm />
       </main>

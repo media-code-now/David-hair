@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import SolutionCards from '@/components/SolutionCards';
+import PersonalCustomization from '@/components/PersonalCustomization';
 import HowItWorks from '@/components/HowItWorks';
 import BeforeAfterGallery from '@/components/BeforeAfterGallery';
 import WhyChooseUs from '@/components/WhyChooseUs';
-import FeaturedProducts from '@/components/FeaturedProducts';
 import Reviews from '@/components/Reviews';
 import FAQ from '@/components/FAQ';
 import CTABlock from '@/components/CTABlock';
@@ -28,11 +28,11 @@ export default function Home() {
       <main>
         <Hero />
         <SolutionCards />
-        <HowItWorks />
+        <PersonalCustomization />
         <BeforeAfterGallery />
-        <WhyChooseUs />
-        <FeaturedProducts />
         <Reviews />
+        <HowItWorks />
+        <WhyChooseUs />
         <FAQ />
         <CTABlock />
       </main>

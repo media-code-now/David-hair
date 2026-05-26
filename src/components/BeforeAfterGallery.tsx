@@ -1,15 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const gallery = [
-  { id: 1, category: 'טופרים' },
-  { id: 2, category: 'רפואי' },
-  { id: 3, category: 'פאות' },
-  { id: 4, category: 'טופרים' },
-  { id: 5, category: 'רפואי' },
-  { id: 6, category: 'פאות' },
+  { id: 1, category: 'טופרים', before: '/2.jpg', after: '/3.jpg' },
+  { id: 2, category: 'רפואי', before: '/4.jpg', after: '/5.jpg' },
+  { id: 3, category: 'פאות', before: '/6.jpg', after: '/7.jpg' },
 ];
 
 export default function BeforeAfterGallery() {
@@ -24,8 +22,9 @@ export default function BeforeAfterGallery() {
   const getPosition = (id: number) => sliderPosition[id] ?? 50;
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-white/60 relative overflow-hidden">
-      <div className="absolute -top-40 right-0 w-96 h-96 bg-navy-100/10 rounded-full blur-3xl" />
+    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-navy-50/40 via-white to-gold-50/30 relative overflow-hidden">
+      <div className="absolute -top-40 right-0 w-96 h-96 bg-navy-100/15 rounded-full blur-3xl" />
+      <div className="absolute -bottom-40 left-0 w-80 h-80 bg-gold-200/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -47,17 +46,39 @@ export default function BeforeAfterGallery() {
               onMouseMove={(e) => handleMouseMove(e, item.id)}
             >
               <div className="relative w-full aspect-square rounded-[22px] overflow-hidden bg-gray-100 shadow-lg shadow-navy-900/5 hover:shadow-xl transition-all duration-300">
-                {/* After */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-200/80 to-gray-300/60 flex items-center justify-center text-gray-400 text-[14px] font-medium">
-                  אחרי
-                </div>
+                {/* After (Full Image) */}
+                <Image
+                  src={item.after}
+                  alt={`תוצאה אחרי - ${item.category}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  unoptimized
+                />
 
-                {/* Before */}
+                {/* Before (Sliding Image) */}
                 <div
-                  className="absolute inset-0 bg-gradient-to-br from-gray-300/80 to-gray-400/60 flex items-center justify-center text-gray-400 text-[14px] font-medium overflow-hidden"
+                  className="absolute inset-0 overflow-hidden"
                   style={{ width: `${getPosition(item.id)}%`, transition: 'width 0.1s linear' }}
                 >
-                  לפני
+                  <Image
+                    src={item.before}
+                    alt={`תוצאה לפני - ${item.category}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <span className="text-white text-[13px] font-bold">לפני</span>
+                  </div>
+                </div>
+
+                {/* After Label */}
+                <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+                  <div className="absolute right-3 bottom-3 bg-white/90 text-navy-900 text-[11px] font-bold px-2.5 py-1 rounded-lg">
+                    אחרי
+                  </div>
                 </div>
 
                 {/* Slider Handle */}

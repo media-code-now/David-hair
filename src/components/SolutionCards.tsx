@@ -7,7 +7,7 @@ const solutions = [
   {
     icon: Crown,
     title: 'טופר שיער לשיער דליל',
-    description: 'כיסוי טבעי לקודקוד/שביל, קל ונוח ליום יום.',
+    description: 'מילוי מיידי לקודקוד או שביל. קל, בלתי נראה, ותוצאה מיידית.',
     cta: 'לצפייה בטופרים',
     gradient: 'from-pink-100/60 to-rose-50/40',
     iconBg: 'from-pink-200/80 to-pink-100/60',
@@ -17,7 +17,7 @@ const solutions = [
   {
     icon: ShoppingBag,
     title: 'פאות בהתאמה אישית',
-    description: 'קו שיער טבעי, התאמה למבנה פנים וסגנון.',
+    description: 'נראית כמו השיער שלך. מותאמת למבנה הפנים וגוון העור שלך.',
     cta: 'התאמה לפאה',
     gradient: 'from-blue-100/60 to-cyan-50/40',
     iconBg: 'from-blue-200/80 to-blue-100/60',
@@ -27,7 +27,7 @@ const solutions = [
   {
     icon: Heart,
     title: 'פאה רפואית',
-    description: 'פתרונות נוחים ועדינים עם התאמה דיסקרטית.',
+    description: 'נוחה, עדינה ומכבדת. מלווה אותך בתקופה הכי קשה בכבוד.',
     cta: 'מידע לפאה רפואית',
     gradient: 'from-green-100/60 to-emerald-50/40',
     iconBg: 'from-green-200/80 to-green-100/60',
@@ -37,7 +37,7 @@ const solutions = [
   {
     icon: Scissors,
     title: 'סלון ושילוב',
-    description: 'גזירה, צבע ושילוב טופר או פאה כך שזה ייראה "שלך".',
+    description: 'גזירה, צבע ועיצוב עד שאף אחד לא יזהה שזה לא השיער שלך.',
     cta: 'שירותי סלון',
     gradient: 'from-purple-100/60 to-violet-50/40',
     iconBg: 'from-purple-200/80 to-purple-100/60',
@@ -48,7 +48,7 @@ const solutions = [
 
 export default function SolutionCards() {
   return (
-    <section id="solutions" className="py-16 sm:py-20 lg:py-24 bg-white/60">
+    <section id="solutions" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-white via-gold-50/20 to-navy-50/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
           {solutions.map((solution, index) => {

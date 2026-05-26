@@ -27,11 +27,11 @@ export default function ServiceCTA({
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Link href="/book" className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-navy-900 text-white hover:bg-navy-800 transition font-semibold text-lg shadow-lg shadow-navy-900/20">
             {ctaText}
-            <ArrowLeft size={20} />
+            <ArrowLeft size={20} className="rtl:rotate-180" />
           </Link>
           <a
             href="https://wa.me/1234567890"
-            className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-green-600 text-white hover:bg-green-700 transition font-semibold text-lg"
+            className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#25D366] text-white hover:bg-[#20BA5A] transition font-semibold text-lg"
           >
             <MessageCircle size={20} />
             שלחי הודעה בוואטסאפ

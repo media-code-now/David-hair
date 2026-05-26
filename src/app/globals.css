@@ -55,8 +55,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overscroll-behavior-y: none;
-  /* iOS 26-style subtle warm background tint */
-  background-color: #fafbfd;
+  /* Luxury warm gradient background */
+  background: linear-gradient(135deg, #fafbfd 0%, #f5f8fb 25%, #fef9f3 50%, #faf8f5 100%);
+  background-attachment: fixed;
 }
 
 /* Smooth scroll */

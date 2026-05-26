@@ -4,25 +4,25 @@ import { Star, Play } from 'lucide-react';
 
 const reviews = [
   {
-    id: 1, name: 'שרה מ.', rating: 5, title: 'שינוי מוחלט',
-    content: 'סוף סוף מצאתי פתרון שנראה לגמרי טבעי. הייעוץ היה מדהים והצוות גרם לי להרגיש בנוח מהרגע הראשון.',
+    id: 1, name: 'שרה מ., 34, תל אביב', rating: 5, title: 'אחרי 10 שנים עם שיער דליל',
+    content: 'השיער שלי התחיל להיות דליל אחרי הלידה השנייה. ניסיתי כל מיני פתרונות והרגשתי שכולם רואים. כשהגעתי לסלון, הייעוצנית בילתה איתי שעה שלמה, בדקה כל פרט, והתאימה לי טופר שבאמת נראה כמו השיער שלי. זה שינה את החיים שלי.',
     hasVideo: true,
   },
   {
-    id: 2, name: "ג'ניפר ל.", rating: 5, title: 'שירות מעולה',
-    content: 'איכות השיער מדהימה. ההתאמה מושלמת והטופר משתלב בצורה חלקה עם השיער הטבעי שלי. ממליצה בחום!',
+    id: 2, name: 'ג׳ניפר ל., 42, חיפה', rating: 5, title: 'לאחרי טיפולי כימותרפיה',
+    content: 'אחרי הטיפולים השיער שלי נשר. הייתי מנושלת ופחדתי שאף פאה לא תראה טבעית. הצוות כאן הייתה מדהימה – ישבנו, דיברנו, והן עזרו לי להרגיש בטוחה שוב. הפאה שקיבלתי נראית ומרגישה אמיתית. אני ממליצה לכל אישה שעוברת את זה.',
     hasVideo: false,
   },
   {
-    id: 3, name: 'מישל פ.', rating: 4.5, title: 'מקצועיות ודיסקרטיות',
-    content: 'חדר ההתאמה הפרטי והגישה המקצועית עשו את ההבדל. המעצבות באמת יודעות מה הן עושות. שווה כל שקל.',
+    id: 3, name: 'מישל פ., 29, ירושלים', rating: 5, title: 'הפתרון לשיער דליל בקודקוד',
+    content: 'השיער שלי תמיד היה דק, אבל בשנים האחרונות השביל בקודקוד התרחב וזה הראה לי מבוגרת מדי. הטופר שקיבלתי פה בדיוק מתאים לאיזור, קל לשימוש, והכי חשוב – נראה טבעי לגמרי. אני משתמשת בו כבר שנה והוא נשאר מושלם.',
     hasVideo: true,
   },
 ];
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-16 sm:py-20 lg:py-24 bg-white/60 relative overflow-hidden">
+    <section id="reviews" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-gold-50/40 via-white to-navy-50/30 relative overflow-hidden">
       {/* Ambient blob */}
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-gold-100/20 rounded-full blur-3xl" />
 
@@ -30,10 +30,10 @@ export default function Reviews() {
         {/* Section Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-gray-900 mb-4 tracking-tight" dir="rtl">
-            נשים מספרות
+            לא רק שיער. החזרת ביטחון עצמי.
           </h2>
           <p className="text-[17px] text-gray-500 max-w-2xl mx-auto italic" dir="rtl">
-            &ldquo;היה לי חשוב שזה ייראה טבעי. כבר במדידה הראשונה הרגשתי ביטחון.&rdquo;
+            &ldquo;פתאום זכרתי איך זה להרגיש יפה. לא רק להראות – להרגיש.&rdquo;
           </p>
         </div>
 
@@ -71,8 +71,8 @@ export default function Reviews() {
                   <p className="font-semibold text-gray-900 text-[14px]">{review.name}</p>
                   {review.hasVideo && (
                     <div className="flex items-center gap-1.5 text-navy-800 text-[12px] font-semibold cursor-pointer hover:text-navy-600 transition">
-                      <Play size={11} className="fill-navy-800" />
                       סרטון ביקורת
+                      <Play size={11} className="fill-navy-800" />
                     </div>
                   )}
                 </div>
@@ -86,10 +86,10 @@ export default function Reviews() {
           <div className="grid sm:grid-cols-2 gap-8">
             <div dir="rtl">
               <h3 className="text-2xl font-bold text-gray-900 mb-3 tracking-tight">
-                500+ לקוחות מרוצות
+                למעלה מ-500 נשים סמכו עלינו
               </h3>
               <p className="text-gray-500 leading-relaxed text-[15px]">
-                המחויבות שלנו לאיכות, פרטיות ותוצאות טבעיות הביאה לדירוגים גבוהים ולקוחות חוזרות לאורך שנים.
+                כי יש דברים שלא מתפשרים עליהם. איכות, פרטיות, ותוצאה שנראית כמו השיער שלך – זה מה שעושה את ההבדל.
               </p>
             </div>
             <div className="flex items-center justify-center sm:justify-end">

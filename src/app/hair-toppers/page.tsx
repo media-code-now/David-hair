@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BreadcrumbHero from '@/components/BreadcrumbHero';
 import ServiceHero from '@/components/ServiceHero';
 import ServiceDetailSection from '@/components/ServiceDetailSection';
 import ServiceCTA from '@/components/ServiceCTA';
@@ -49,6 +50,10 @@ export default function HairToppersPage() {
   return (
     <>
       <Header />
+      <BreadcrumbHero 
+        title="טופרי שיער"
+        subtitle="כיסוי וניפח טבעי עם התאמה אישית"
+      />
       <main>
 
       <ServiceHero

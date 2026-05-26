@@ -30,7 +30,7 @@ export default function Footer() {
               {[
                 { icon: Facebook, label: 'Facebook', href: '#' },
                 { icon: Instagram, label: 'Instagram', href: '#' },
-                { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/1234567890' },
+                { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/972525550415' },
               ].map(({ icon: Icon, label, href }) => (
                 <a key={label} href={href} className="w-9 h-9 rounded-[10px] bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all duration-200 active:scale-90" aria-label={label}>
                   <Icon size={17} strokeWidth={2} />
@@ -56,6 +56,7 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4 text-[14px] tracking-tight" dir="rtl">ניווט</h4>
             <ul className="space-y-2.5 text-[13px]" dir="rtl">
               <li><Link href="/" className="hover:text-white transition-colors duration-200">דף הבית</Link></li>
+              <li><Link href="/quiz" className="hover:text-white transition-colors duration-200">חידון שיער</Link></li>
               <li><Link href="/#reviews" className="hover:text-white transition-colors duration-200">נשים מספרות</Link></li>
               <li><Link href="/#faq" className="hover:text-white transition-colors duration-200">שאלות נפוצות</Link></li>
               <li><Link href="/book" className="hover:text-white transition-colors duration-200">קביעת ייעוץ</Link></li>
@@ -66,9 +67,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4 text-[14px] tracking-tight" dir="rtl">צור קשר</h4>
             <ul className="space-y-2.5 text-[13px]" dir="rtl">
-              <li><a href="tel:+1234567890" className="hover:text-white transition-colors duration-200">+1 (234) 567-8900</a></li>
-              <li><a href="https://wa.me/1234567890" className="hover:text-white transition-colors duration-200">וואטסאפ עכשיו</a></li>
-              <li><a href="mailto:info@davidhair.com" className="hover:text-white transition-colors duration-200">info@davidhair.com</a></li>
+              <li><a href="tel:+972864410111" className="hover:text-white transition-colors duration-200">08-6410111</a></li>
+              <li><a href="https://wa.me/972525550415" className="hover:text-white transition-colors duration-200">וואטסאפ: 052-5550415</a></li>
+              <li className="text-gray-500" dir="rtl">שביט 8, נס ציונה</li>
             </ul>
           </div>
         </div>

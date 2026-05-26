@@ -51,14 +51,14 @@ export default function ServiceDetailSection({
             <div className="space-y-4">
               {benefits.map((benefit, i) => (
                 <div key={i} className="glass-card flex gap-4 p-4 rounded-[14px] stagger-item">
+                  <div>
+                    <h3 className="font-semibold text-gray-900">{benefit.title}</h3>
+                    <p className="text-gray-500 text-sm mt-0.5">{benefit.description}</p>
+                  </div>
                   <div className="flex-shrink-0 mt-0.5">
                     <div className="w-7 h-7 rounded-[8px] bg-gradient-to-br from-green-400 to-green-500 flex items-center justify-center">
                       <Check size={14} className="text-white" />
                     </div>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">{benefit.title}</h3>
-                    <p className="text-gray-500 text-sm mt-0.5">{benefit.description}</p>
                   </div>
                 </div>
               ))}

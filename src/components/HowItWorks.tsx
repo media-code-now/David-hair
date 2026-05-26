@@ -3,9 +3,9 @@
 import Link from 'next/link';
 
 const steps = [
-  { number: 1, title: 'אבחון והתאמה', description: 'התאמת צבע, צפיפות, אורך ובסיס שמתאים לקרקפת.' },
-  { number: 2, title: 'מדידה וקיבוע', description: 'בדיקת תחושה ונוחות, התאמת קליפסים/קיבוע לפי הצורך.' },
-  { number: 3, title: 'שילוב בסלון', description: 'גזירה ושכבות, התאמת צבע ושביל לקבלת מראה טבעי.' },
+  { number: 1, title: 'מאזינות ומבינות', description: 'מה חשוב לך? מה הציפיות? אנחנו מתחילות ממקום של הקשבה אמיתית.' },
+  { number: 2, title: 'בוחרות את המושלם', description: 'בדיקת צבע, מרקם, אורך ובסיס. עד שנמצא את הנכון בדיוק בשבילך.' },
+  { number: 3, title: 'מתאימות בדיוק', description: 'גזירה, שילוב ועיצוב עד שזה נראה ומרגיש בדיוק כמו השיער שלך.' },
 ];
 
 export default function HowItWorks() {

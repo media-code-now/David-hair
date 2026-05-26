@@ -44,7 +44,7 @@ export default function RelatedServices({
                 <h3 className="font-bold text-gray-900 mb-1" dir="rtl">{service.title}</h3>
                 <p className="text-sm text-gray-600 mb-4" dir="rtl">{service.description}</p>
                 <span className="text-navy-900 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all" dir="rtl">
-                  למידע נוסף <ArrowLeft size={14} />
+                  <ArrowLeft size={14} /> למידע נוסף
                 </span>
               </Link>
             );

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Sparkles, DoorClosed, ShieldCheck, Heart } from 'lucide-react';
 import { useState } from 'react';
 
@@ -39,8 +40,8 @@ export default function Hero() {
                   key={item.label}
                   className="glass-card rounded-full px-4 py-2.5 inline-flex items-center gap-2 stagger-item"
                 >
-                  <item.icon size={15} className="text-navy-800 flex-shrink-0" strokeWidth={2.2} />
                   <span className="text-[13px] font-semibold text-gray-700 tracking-tight">{item.label}</span>
+                  <item.icon size={15} className="text-navy-800 flex-shrink-0" strokeWidth={2.2} />
                 </div>
               ))}
             </div>
@@ -48,41 +49,43 @@ export default function Hero() {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-gray-900 leading-[1.2] tracking-tight" dir="rtl">
-                טופרים ופאות במראה טבעי{' '}
-                <span className="bg-gradient-to-l from-navy-800 to-navy-600 bg-clip-text text-transparent">+ התאמה אישית בסלון נשים</span>
+                השיער שלך מגדיר איך את מרגישה.{' '}
+                <span className="bg-gradient-to-l from-navy-800 to-navy-600 bg-clip-text text-transparent">אנחנו כאן כדי להחזיר לך את הביטחון.</span>
               </h1>
               <p className="text-[17px] sm:text-lg text-gray-500 leading-relaxed" dir="rtl">
-                התאמה דיסקרטית, גזירה ושילוב מקצועי, ותוצאה שנראית כמו השיער שלך.
+                פתרונות שיער פרימיום עם התאמה מושלמת – כך שאף אחד לא יבחין, ורק את תרגישי את ההבדל.
               </p>
             </div>
 
             {/* CTAs — iOS 26 pill buttons */}
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/book" className="px-8 py-4 rounded-2xl bg-gradient-to-b from-navy-800 to-navy-900 text-white hover:from-navy-700 hover:to-navy-800 transition-all duration-300 font-bold text-[17px] text-center shadow-xl shadow-navy-900/25 active:scale-[0.97] border border-navy-700/20">
-                קביעת ייעוץ
+                ייעוץ חינם ללא התחייבות
               </Link>
-              <a href="https://wa.me/1234567890" className="px-8 py-4 rounded-2xl bg-green-50/80 border border-green-200/60 text-green-700 hover:bg-green-100/80 transition-all duration-300 font-semibold text-[17px] text-center active:scale-[0.97]">
+              <a href="https://wa.me/1234567890" className="px-8 py-4 rounded-2xl bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 font-semibold text-[17px] text-center active:scale-[0.97]">
                 שלחי הודעה בוואטסאפ
               </a>
             </div>
 
             {/* Micro copy */}
             <p className="text-[13px] text-gray-400 tracking-wide" dir="rtl">
-              ייעוץ ראשוני קצר, ללא לחץ וללא התחייבות.
+              פגישה ראשונה ללא עלות • אין מחויבות • סביבה פרטית ומכבדת
             </p>
           </div>
 
           {/* Right Content - Before/After visual */}
           <div className="relative h-96 sm:h-full max-h-96 sm:max-h-none">
             <div className="relative w-full h-full rounded-[28px] overflow-hidden bg-gray-100 shadow-2xl shadow-navy-900/10">
-              {/* Placeholder */}
-              <div className="w-full h-full bg-gradient-to-br from-gray-200/80 to-gray-300/60 flex items-center justify-center">
-                <div className="text-center glass-card rounded-3xl p-8">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-gray-600 font-semibold text-[15px]">סרטון לפני/אחרי</p>
-                  <p className="text-[13px] text-gray-400 mt-1.5">(יוחלף בתוכן אמיתי)</p>
-                </div>
-              </div>
+              {/* Image */}
+              <Image
+                src="/before-after-1.jpg"
+                alt="תוצאות לפני ואחרי"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 50vw"
+                priority
+                unoptimized
+              />
 
               {/* Glass navigation arrows */}
               <button onClick={prevSlide} className="absolute left-3 top-1/2 -translate-y-1/2 z-10 glass w-10 h-10 rounded-2xl flex items-center justify-center active:scale-90 transition-all duration-200" aria-label="שקופית קודמת">

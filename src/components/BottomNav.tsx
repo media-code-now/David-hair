@@ -55,8 +55,8 @@ export default function BottomNav() {
                   rel="noopener noreferrer"
                   className="flex flex-col items-center justify-center gap-1 py-2 min-w-[60px] active:scale-90 transition-all duration-200"
                 >
-                  <div className="w-9 h-9 rounded-xl bg-green-50/80 flex items-center justify-center border border-green-200/40">
-                    <Icon size={19} className="text-green-600" strokeWidth={2.2} />
+                  <div className="w-9 h-9 rounded-xl bg-[#25D366] flex items-center justify-center border border-[#25D366]/20">
+                    <Icon size={19} className="text-white" strokeWidth={2.2} />
                   </div>
                   <span className="text-[10px] font-semibold text-green-600">{tab.label}</span>
                 </a>

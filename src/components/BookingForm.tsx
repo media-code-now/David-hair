@@ -191,7 +191,7 @@ export default function BookingForm() {
             </a>
             <a
               href="https://wa.me/1234567890"
-              className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-gradient-to-b from-green-500 to-green-600 text-white hover:from-green-400 hover:to-green-500 transition-all font-medium shadow-lg shadow-green-600/25 active:scale-[0.97]"
+              className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium shadow-lg shadow-[#25D366]/25 active:scale-[0.97]"
             >
               <MessageCircle size={18} />
               שלחי הודעה עכשיו
@@ -590,7 +590,7 @@ export default function BookingForm() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="https://wa.me/1234567890"
-              className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-gradient-to-b from-green-500 to-green-600 text-white hover:from-green-400 hover:to-green-500 transition-all font-medium shadow-lg shadow-green-600/25 active:scale-[0.97]"
+              className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium shadow-lg shadow-[#25D366]/25 active:scale-[0.97]"
             >
               <MessageCircle size={18} />
               וואטסאפ
