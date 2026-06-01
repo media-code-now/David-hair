@@ -62,12 +62,12 @@ export default function PPCLandingHero() {
             </div>
 
             {/* Social Proof - Credibility */}
-            <div className="grid grid-cols-3 gap-4 mb-10 bg-white/5 rounded-2xl p-6 border border-white/10">
+            <div className="grid grid-cols-3 gap-4 mb-10 rounded-2xl p-6 border border-gold-400/30">
               <div className="text-center">
                 <div className="text-2xl font-black text-gold-300">500+</div>
                 <p className="text-[13px] text-navy-200 mt-1">ביקורות חיוביות</p>
               </div>
-              <div className="text-center border-l border-r border-white/10">
+              <div className="text-center border-l border-r border-gold-400/30">
                 <div className="text-2xl font-black text-gold-300">4.9⭐</div>
                 <p className="text-[13px] text-navy-200 mt-1">דירוג ממוצע</p>
               </div>
@@ -121,7 +121,7 @@ export default function PPCLandingHero() {
 
           {/* Right Content - Contact Form (Sticky/Floating) */}
           <div id="contact-form" className="lg:sticky lg:top-20">
-            <div className="glass-card rounded-3xl p-8 sm:p-10 backdrop-blur-xl bg-gradient-to-br from-white/15 to-white/5 border border-white/20 shadow-2xl">
+            <div className="glass-card rounded-3xl p-8 sm:p-10 backdrop-blur-xl border border-gold-400/30 shadow-2xl shadow-gold-400/20">
               {!submitted ? (
                 <>
                   <h2 className="text-3xl font-black text-white mb-2 tracking-tight" dir="rtl">
@@ -141,7 +141,7 @@ export default function PPCLandingHero() {
                         onChange={handleChange}
                         placeholder="שם פרטי"
                         required
-                        className="w-full px-5 py-4 rounded-xl bg-white/95 text-gray-900 placeholder-gray-500 border-2 border-white/30 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-gold-400 focus:bg-white transition-all text-[16px] font-medium"
+                        className="w-full px-5 py-4 rounded-xl bg-navy-800/40 text-white placeholder-white/50 border-2 border-gold-400/30 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-gold-400 focus:bg-navy-800/60 transition-all text-[16px] font-medium"
                         dir="rtl"
                       />
                     </div>
@@ -155,7 +155,7 @@ export default function PPCLandingHero() {
                         onChange={handleChange}
                         placeholder="05X-XXXXXXX"
                         required
-                        className="w-full px-5 py-4 rounded-xl bg-white/95 text-gray-900 placeholder-gray-500 border-2 border-white/30 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-gold-400 focus:bg-white transition-all text-[16px] font-medium"
+                        className="w-full px-5 py-4 rounded-xl bg-navy-800/40 text-white placeholder-white/50 border-2 border-gold-400/30 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-gold-400 focus:bg-navy-800/60 transition-all text-[16px] font-medium"
                         dir="rtl"
                       />
                     </div>
@@ -202,7 +202,7 @@ export default function PPCLandingHero() {
               )}
 
               {/* Urgency Timer */}
-              <div className="mt-8 pt-6 border-t border-white/10 flex items-center justify-center gap-2 text-gold-300 font-bold text-[13px]">
+              <div className="mt-8 pt-6 border-t border-gold-400/30 flex items-center justify-center gap-2 text-gold-300 font-bold text-[13px]">
                 <Clock size={16} />
                 <span>⏰ רק עוד 3 עמדות זמינות היום!</span>
               </div>
@@ -210,7 +210,7 @@ export default function PPCLandingHero() {
 
             {/* WhatsApp Alternative */}
             {!submitted && (
-              <div className="mt-6 p-4 bg-white/10 rounded-xl border border-white/20 text-center">
+              <div className="mt-6 p-4 rounded-xl border border-gold-400/30 text-center">
                 <p className="text-navy-200 text-[13px] mb-3" dir="rtl">
                   מעדיפה ליצור קשר ישירות?
                 </p>
