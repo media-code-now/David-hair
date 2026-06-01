@@ -31,7 +31,10 @@ export const metadata: Metadata = {
   keywords:
     "טופר שיער, פאות בהתאמה אישית, פאה רפואית, שיער דליל, סלון שילוב פאה, תיקון פאה",
   icons: {
-    icon: "/logo-black.png",
+    icon: [
+      { url: "/favicon.png", sizes: "any" },
+      { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
+    ],
     apple: "/logo-black.png",
   },
   appleWebApp: {
