@@ -48,7 +48,7 @@ export default function Header() {
           {/* Desktop Action Buttons */}
           <div className="hidden lg:flex items-center gap-2.5">
             <button
-              onClick={() => window.open('https://wa.me/972525550415', '_blank')}
+              onClick={() => window.open('https://wa.me/972504001187', '_blank')}
               aria-label="Contact us on WhatsApp"
               className="flex items-center gap-2 px-4 py-2.5 rounded-2xl text-white bg-[#25D366] hover:bg-[#20BA5A] transition-all duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]"
             >
@@ -66,7 +66,7 @@ export default function Header() {
           {/* Mobile: Mini CTA */}
           <div className="flex lg:hidden items-center gap-2">
             <button
-              onClick={() => window.open('https://wa.me/972525550415', '_blank')}
+              onClick={() => window.open('https://wa.me/972504001187', '_blank')}
               aria-label="Contact us on WhatsApp"
               className="w-10 h-10 flex items-center justify-center rounded-2xl bg-[#25D366] text-white active:scale-90 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]"
             >

@@ -182,7 +182,7 @@ export default function AdLandingHero() {
             {/* Contact info below form */}
             <div className="mt-8 space-y-3">
               <a
-                href="tel:+1234567890"
+                href="tel:+972504001187"
                 className="flex items-center gap-3 text-navy-100 hover:text-gold-300 transition group"
                 dir="rtl"
               >

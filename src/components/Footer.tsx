@@ -30,7 +30,7 @@ export default function Footer() {
               {[
                 { icon: Facebook, label: 'Facebook', href: '#' },
                 { icon: Instagram, label: 'Instagram', href: '#' },
-                { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/972525550415' },
+                { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/972504001187' },
               ].map(({ icon: Icon, label, href }) => (
                 <a key={label} href={href} className="w-9 h-9 rounded-[10px] bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all duration-200 active:scale-90" aria-label={label}>
                   <Icon size={17} strokeWidth={2} />
@@ -67,8 +67,8 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4 text-[14px] tracking-tight" dir="rtl">צור קשר</h4>
             <ul className="space-y-2.5 text-[13px]" dir="rtl">
-              <li><a href="tel:+972864410111" className="hover:text-white transition-colors duration-200">08-6410111</a></li>
-              <li><a href="https://wa.me/972525550415" className="hover:text-white transition-colors duration-200">וואטסאפ: 052-5550415</a></li>
+              <li><a href="tel:+972504001187" className="hover:text-white transition-colors duration-200">050-4001187</a></li>
+              <li><a href="https://wa.me/972504001187" className="hover:text-white transition-colors duration-200">וואטסאפ: 050-4001187</a></li>
               <li className="text-gray-500" dir="rtl">שביט 8, נס ציונה</li>
             </ul>
           </div>

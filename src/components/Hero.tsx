@@ -62,7 +62,7 @@ export default function Hero() {
               <Link href="/book" className="px-8 py-4 rounded-2xl bg-gradient-to-b from-navy-800 to-navy-900 text-white hover:from-navy-700 hover:to-navy-800 transition-all duration-300 font-bold text-[17px] text-center shadow-xl shadow-navy-900/25 active:scale-[0.97] border border-navy-700/20">
                 ייעוץ חינם ללא התחייבות
               </Link>
-              <a href="https://wa.me/1234567890" className="px-8 py-4 rounded-2xl bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 font-semibold text-[17px] text-center active:scale-[0.97]">
+              <a href="https://wa.me/972504001187" className="px-8 py-4 rounded-2xl bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 font-semibold text-[17px] text-center active:scale-[0.97]">
                 שלחי הודעה בוואטסאפ
               </a>
             </div>

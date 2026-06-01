@@ -190,7 +190,7 @@ export default function BookingForm() {
               חזרה לדף הבית
             </a>
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/972504001187"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium shadow-lg shadow-[#25D366]/25 active:scale-[0.97]"
             >
               <MessageCircle size={18} />
@@ -589,18 +589,18 @@ export default function BookingForm() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/972504001187"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium shadow-lg shadow-[#25D366]/25 active:scale-[0.97]"
             >
               <MessageCircle size={18} />
               וואטסאפ
             </a>
             <a
-              href="tel:+1234567890"
+              href="tel:+972504001187"
               className="glass flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] text-gray-700 hover:bg-white/80 transition-all font-medium active:scale-[0.97]"
             >
               <Phone size={18} />
-              +972-XX-XXX-XXXX
+              050-4001187
             </a>
           </div>
         </div>

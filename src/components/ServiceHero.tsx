@@ -81,7 +81,7 @@ export default function ServiceHero({
               {ctaText}
             </Link>
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/972504001187"
               className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium text-lg active:scale-[0.97]"
             >
               <MessageCircle size={20} />

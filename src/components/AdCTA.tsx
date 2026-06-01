@@ -38,7 +38,7 @@ export default function AdCTA() {
               </Link>
 
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/972504001187"
                 className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-10 py-5 rounded-2xl bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 font-semibold text-[17px] active:scale-[0.97] shadow-lg shadow-[#25D366]/30"
               >
                 <MessageCircle size={20} strokeWidth={2.2} />

@@ -10,7 +10,7 @@ const tabs = [
   { href: '/', label: 'ראשי', icon: Home },
   { href: '/#solutions', label: 'שירותים', icon: Scissors },
   { href: '/book', label: 'קביעת תור', icon: CalendarCheck, highlight: true },
-  { href: 'https://wa.me/1234567890', label: 'וואטסאפ', icon: MessageCircle, external: true },
+  { href: 'https://wa.me/972504001187', label: 'וואטסאפ', icon: MessageCircle, external: true },
 ];
 
 export default function BottomNav() {

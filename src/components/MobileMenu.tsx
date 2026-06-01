@@ -163,7 +163,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <h3 id="quick-actions" className="sr-only">Quick actions</h3>
             <button
               onClick={() => {
-                window.open('https://wa.me/1234567890', '_blank');
+                window.open('https://wa.me/972504001187', '_blank');
                 onClose();
               }}
               aria-label="Contact us on WhatsApp"
