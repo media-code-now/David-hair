@@ -24,7 +24,7 @@ export default function Header() {
           <Link 
             href="/" 
             className="flex items-center hover:opacity-80 transition-all duration-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-navy-500 rounded-lg"
-            aria-label="David Hair Solutions - Home"
+            aria-label="David Hair Solutions - דף הבית"
           >
             <Image
               src="/logo-black.png"
@@ -41,7 +41,7 @@ export default function Header() {
             <AccessibleMenu 
               items={navItems}
               orientation="horizontal"
-              ariaLabel="Navigation menu"
+              ariaLabel="תפריט ניווט"
             />
           </div>
 
@@ -49,7 +49,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-2.5">
             <button
               onClick={() => window.open('https://wa.me/972504001187', '_blank')}
-              aria-label="Contact us on WhatsApp"
+              aria-label="יצירת קשר בוואטסאפ"
               className="flex items-center gap-2 px-4 py-2.5 rounded-2xl text-white bg-[#25D366] hover:bg-[#20BA5A] transition-all duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]"
             >
               <MessageCircle size={17} aria-hidden="true" />
@@ -67,7 +67,7 @@ export default function Header() {
           <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={() => window.open('https://wa.me/972504001187', '_blank')}
-              aria-label="Contact us on WhatsApp"
+              aria-label="יצירת קשר בוואטסאפ"
               className="w-10 h-10 flex items-center justify-center rounded-2xl bg-[#25D366] text-white active:scale-90 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]"
             >
               <MessageCircle size={18} aria-hidden="true" />

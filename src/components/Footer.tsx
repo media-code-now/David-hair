@@ -24,7 +24,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-[13px] text-gray-500 mt-4 mb-5 leading-relaxed" dir="rtl">
-              טופרים ופאות במראה טבעי, עם התאמה אישית בסלון נשים.
+              טופרים ופאות במראה טבעי, בהתאמה אישית בסלון לנשים.
             </p>
             <div className="flex gap-3">
               {[
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-bold text-white mb-4 text-[14px] tracking-tight" dir="rtl">צור קשר</h4>
+            <h4 className="font-bold text-white mb-4 text-[14px] tracking-tight" dir="rtl">יצירת קשר</h4>
             <ul className="space-y-2.5 text-[13px]" dir="rtl">
               <li><a href="tel:+972504001187" className="hover:text-white transition-colors duration-200">050-4001187</a></li>
               <li><a href="https://wa.me/972504001187" className="hover:text-white transition-colors duration-200">וואטסאפ: 050-4001187</a></li>
@@ -79,7 +79,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row justify-between items-center text-[12px] text-gray-500">
-          <p>&copy; {currentYear} David Hair Solutions. All rights reserved.</p>
+          <p dir="rtl">&copy; {currentYear} David Hair Solutions. כל הזכויות שמורות.</p>
           <div className="flex gap-6 mt-4 sm:mt-0">
             <Link href="#" className="hover:text-white transition-colors duration-200">מדיניות פרטיות</Link>
             <Link href="#" className="hover:text-white transition-colors duration-200">תנאי שימוש</Link>

@@ -3,15 +3,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  /* iOS 26 Liquid Glass variables - Dark navy glass */
-  --glass-bg: rgba(15, 23, 42, 0.4);
-  --glass-bg-heavy: rgba(15, 23, 42, 0.5);
-  --glass-border: rgba(200, 162, 42, 0.3);
-  --glass-shadow: 0 8px 32px rgba(15, 23, 42, 0.08), 0 2px 8px rgba(15, 23, 42, 0.04);
-  --glass-shadow-lg: 0 16px 48px rgba(15, 23, 42, 0.12), 0 4px 16px rgba(15, 23, 42, 0.06);
-  --glass-shadow-elevated: 0 24px 64px rgba(15, 23, 42, 0.16), 0 8px 24px rgba(15, 23, 42, 0.08);
+  /* iOS 26 Liquid Glass variables – frosted white for light backgrounds */
+  --glass-bg: rgba(255, 255, 255, 0.62);
+  --glass-bg-heavy: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-shadow: 0 8px 32px rgba(15, 23, 42, 0.07), 0 2px 8px rgba(15, 23, 42, 0.04);
+  --glass-shadow-lg: 0 16px 48px rgba(15, 23, 42, 0.10), 0 4px 16px rgba(15, 23, 42, 0.05);
+  --glass-shadow-elevated: 0 24px 64px rgba(15, 23, 42, 0.12), 0 8px 24px rgba(15, 23, 42, 0.06);
   --glass-blur: 24px;
   --glass-blur-heavy: 40px;
+  /* Dark glass – for sections with dark/navy backgrounds (PPC, dark heroes) */
+  --glass-dark-bg: rgba(15, 23, 42, 0.45);
+  --glass-dark-bg-heavy: rgba(15, 23, 42, 0.6);
+  --glass-dark-border: rgba(200, 162, 42, 0.25);
   --squircle-sm: 16px;
   --squircle-md: 22px;
   --squircle-lg: 28px;
@@ -95,12 +99,13 @@ button, a, [role="button"] {
   box-shadow: var(--glass-shadow);
 }
 
-/* Elevated glass — for modals, floating panels */
+/* Elevated glass — for modals, floating panels, bottom nav */
 .glass-elevated {
   background: var(--glass-bg-heavy);
   backdrop-filter: blur(var(--glass-blur-heavy)) saturate(1.8);
   -webkit-backdrop-filter: blur(var(--glass-blur-heavy)) saturate(1.8);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  border-bottom: none;
   box-shadow: var(--glass-shadow-elevated);
 }
 
@@ -109,9 +114,28 @@ button, a, [role="button"] {
   background: var(--glass-bg);
   backdrop-filter: blur(20px) saturate(1.5);
   -webkit-backdrop-filter: blur(20px) saturate(1.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.55);
   box-shadow: var(--glass-shadow),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* Dark glass — for use on dark/navy backgrounds (PPC hero, dark sections) */
+.glass-dark {
+  background: var(--glass-dark-bg);
+  backdrop-filter: blur(var(--glass-blur)) saturate(1.8);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.8);
+  border: 1px solid var(--glass-dark-border);
+  box-shadow: var(--glass-shadow);
+}
+
+/* Dark glass card */
+.glass-dark-card {
+  background: var(--glass-dark-bg);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border: 1px solid var(--glass-dark-border);
+  box-shadow: var(--glass-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 /* Bottom nav spacing — mobile only */

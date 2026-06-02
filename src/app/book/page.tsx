@@ -6,11 +6,11 @@ import BookingForm from '@/components/BookingForm';
 
 export const metadata: Metadata = {
   title: 'קביעת ייעוץ – התאמה אישית לטופר או פאה | David Hair',
-  description: 'Book your free, private hair consultation. Choose your service, pick a time, and we\'ll take care of the rest. No obligation, 100% confidential.',
+  description: 'קבעי ייעוץ שיער חינם, פרטי ודיסקרטי. בחרי את השירות שמתאים לך, השאירי פרטים ואנחנו נדאג לכל השאר. ללא התחייבות.',
   keywords: 'קביעת ייעוץ שיער, תור לטופר, תור לפאה, ייעוץ חינם, התאמת פאה',
   openGraph: {
     title: 'קביעת ייעוץ – התאמה אישית לטופר או פאה | David Hair',
-    description: 'קביעת ייעוץ להתאמת טופר או פאה. ללא התחייבות, דיסקרטי לחלוטין.',
+    description: 'קביעת ייעוץ חינם להתאמת טופר או פאה. ללא התחייבות ובדיסקרטיות מלאה.',
     type: 'website',
   },
 };

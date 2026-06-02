@@ -11,7 +11,7 @@ interface ServiceCTAProps {
 
 export default function ServiceCTA({
   title = 'מוכנה להתחיל?',
-  subtitle = 'קבעי ייעוץ חינם ללא התחייבות. נעזור לך למצוא את הפתרון המושלם בסביבה פרטית ונוחה.',
+  subtitle = 'קבעי ייעוץ חינם ללא התחייבות. נעזור לך למצוא את הפתרון המתאים ביותר עבורך, בסביבה פרטית ונעימה.',
   ctaText = 'קביעת ייעוץ חינם',
 }: ServiceCTAProps) {
   return (
@@ -50,7 +50,7 @@ export default function ServiceCTA({
           <span>✓ ייעוץ חינם</span>
           <span>✓ חדר התאמה פרטי</span>
           <span>✓ ללא התחייבות</span>
-          <span>✓ זמינות ביום הפנייה</span>
+          <span>✓ מענה מהיר ביום הפנייה</span>
         </div>
       </div>
     </section>

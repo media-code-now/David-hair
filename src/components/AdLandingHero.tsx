@@ -31,7 +31,7 @@ export default function AdLandingHero() {
           {/* Left Content */}
           <div>
             {/* Top badge */}
-            <div className="mb-8 inline-flex items-center gap-2 glass-card rounded-full px-4 py-2.5">
+            <div className="mb-8 inline-flex items-center gap-2 glass-dark-card rounded-full px-4 py-2.5">
               <span className="text-[13px] font-semibold text-green-300">זמין עכשיו - פגישות בתאריכים הקרובים</span>
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             </div>
@@ -39,14 +39,14 @@ export default function AdLandingHero() {
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-white mb-6 leading-[1.1] tracking-tight" dir="rtl">
               האם השיער שלך גורם לך להרגיש{' '}
-              <span className="bg-gradient-to-l from-gold-300 via-gold-200 to-gold-400 bg-clip-text text-transparent">בטחונה מופחתת?</span>
+              <span className="bg-gradient-to-l from-gold-300 via-gold-200 to-gold-400 bg-clip-text text-transparent">פחות בטוחה בעצמך?</span>
             </h1>
 
             {/* Subheadline - emotional benefit */}
             <p className="text-lg sm:text-xl text-navy-100 mb-8 leading-relaxed" dir="rtl">
-              אתה לא לבד. אלפי נשים סובלות מדלילות שיער וביקשו פתרון שעובד.
+              את לא לבד. אלפי נשים מתמודדות עם דלילות שיער ומחפשות פתרון שבאמת עובד.
               <br />
-              <strong className="text-gold-200">David Hair מחזירה את הביטחון העצמי.</strong>
+              <strong className="text-gold-200">David Hair מחזירה לך את הביטחון העצמי.</strong>
             </p>
 
             {/* Key benefits bullets */}
@@ -84,19 +84,19 @@ export default function AdLandingHero() {
             {/* Bottom micro-copy */}
             <div className="mt-8 pt-6 border-t border-navy-700/40">
               <p className="text-[13px] text-navy-300 tracking-wide" dir="rtl">
-                ✓ אין קרדיט קار דדרוש להתחיל  • ✓ סביבה מכבדת וחנונה  • ✓ פגישה ראשונה ללא עלות
+                ✓ ללא התחייבות  •  ✓ סביבה מכבדת ודיסקרטית  •  ✓ פגישה ראשונה ללא עלות
               </p>
             </div>
           </div>
 
           {/* Right Content - Contact Form */}
           <div className="lg:pl-8">
-            <div className="glass-card rounded-[28px] p-8 sm:p-10 backdrop-blur-xl bg-white/10 border border-white/20">
+            <div className="glass-dark-card rounded-[28px] p-8 sm:p-10 backdrop-blur-xl bg-white/10 border border-white/20">
               <h2 className="text-2xl font-bold text-white mb-2 tracking-tight" dir="rtl">
                 בואי נתחיל עכשיו
               </h2>
               <p className="text-navy-100 text-[15px] mb-8" dir="rtl">
-                הזמני ייעוץ חינם וקבלי ייעוץ אישי מיד
+                הזמיני ייעוץ חינם וקבלי התאמה אישית כבר עכשיו
               </p>
 
               {!submitted ? (
@@ -173,7 +173,7 @@ export default function AdLandingHero() {
                     תודה על הפנייה!
                   </p>
                   <p className="text-navy-100 text-[15px]" dir="rtl">
-                    נצור איתך קשר בקרוב עם פרטי הייעוץ
+                    ניצור איתך קשר בקרוב עם פרטי הייעוץ
                   </p>
                 </div>
               )}

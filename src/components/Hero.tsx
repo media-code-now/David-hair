@@ -8,7 +8,7 @@ import { useState } from 'react';
 const proofItems = [
   { icon: Sparkles, label: 'התאמה אישית' },
   { icon: DoorClosed, label: 'חדר פרטי ודיסקרטי' },
-  { icon: ShieldCheck, label: 'אחריות ושירות לאחר קנייה' },
+  { icon: ShieldCheck, label: 'אחריות ושירות לאחר הרכישה' },
   { icon: Heart, label: 'נשים בלבד' },
 ];
 
@@ -69,7 +69,7 @@ export default function Hero() {
 
             {/* Micro copy */}
             <p className="text-[13px] text-gray-400 tracking-wide" dir="rtl">
-              פגישה ראשונה ללא עלות • אין מחויבות • סביבה פרטית ומכבדת
+              פגישה ראשונה ללא עלות • ללא התחייבות • סביבה פרטית ומכבדת
             </p>
           </div>
 

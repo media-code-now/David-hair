@@ -19,12 +19,12 @@ export default function AdCTA() {
           <div className="relative z-10">
             {/* Headline */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight" dir="rtl">
-              בואי נתחיל את הטרנספורמציה שלך.
+              בואי נתחיל את השינוי שלך.
             </h2>
 
             {/* Subheadline */}
             <p className="text-xl text-navy-100 leading-relaxed mb-12 max-w-2xl mx-auto" dir="rtl">
-              פגישה ראשונה בחינם, ללא התחייבות, וללא שום לחץ. רק שיחה אמיתית על מה שטוב בשבילך.
+              פגישת היכרות חינם, ללא התחייבות וללא לחץ. רק שיחה אמיתית על מה שנכון עבורך.
             </p>
 
             {/* Primary CTA */}
@@ -55,7 +55,7 @@ export default function AdCTA() {
               <div className="hidden sm:block w-px h-8 bg-white/20" />
               <div className="text-center">
                 <div className="text-2xl font-bold text-gold-300">95%</div>
-                <p className="text-[13px] text-navy-200">חוזרות ללקוחות</p>
+                <p className="text-[13px] text-navy-200">שביעות רצון גבוהה</p>
               </div>
               <div className="hidden sm:block w-px h-8 bg-white/20" />
               <div className="text-center">
@@ -69,7 +69,7 @@ export default function AdCTA() {
         {/* Bottom micro-copy */}
         <div className="mt-10 text-center">
           <p className="text-[13px] text-gray-600 tracking-wide" dir="rtl">
-            ✓ אין קרדיט קארד נדרש  •  ✓ פגישה בחינם וללא התחייבות  •  ✓ סביבה פרטית ומכבדת
+            ✓ אין צורך בכרטיס אשראי  •  ✓ פגישה חינם וללא התחייבות  •  ✓ סביבה פרטית ומכבדת
           </p>
         </div>
       </div>

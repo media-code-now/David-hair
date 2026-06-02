@@ -160,13 +160,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
           {/* Quick Actions */}
           <div className="mt-7 space-y-2.5 pb-5" role="group" aria-labelledby="quick-actions">
-            <h3 id="quick-actions" className="sr-only">Quick actions</h3>
+            <h3 id="quick-actions" className="sr-only">פעולות מהירות</h3>
             <button
               onClick={() => {
                 window.open('https://wa.me/972504001187', '_blank');
                 onClose();
               }}
-              aria-label="Contact us on WhatsApp"
+              aria-label="יצירת קשר בוואטסאפ"
               className="flex items-center justify-center gap-2.5 w-full py-3.5 rounded-2xl bg-[#25D366] text-white font-bold text-[15px] active:scale-[0.97] transition-all duration-200 hover:bg-[#20BA5A] shadow-lg shadow-[#25D366]/25 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]"
             >
               <MessageCircle size={19} strokeWidth={2.2} aria-hidden="true" />

@@ -218,7 +218,7 @@ export default function BookingForm() {
             קביעת ייעוץ חינם
           </h1>
           <p className="text-lg text-gray-500 max-w-xl mx-auto">
-            שני שלבים קצרים — פחות מ-60 שניות
+            שני שלבים קצרים — פחות מדקה
           </p>
         </div>
 
@@ -273,10 +273,10 @@ export default function BookingForm() {
           {step === 1 && (
             <div className="p-6 sm:p-10">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
-                מה את צריכה?
+                איזה שירות מעניין אותך?
               </h2>
               <p className="text-gray-400 mb-8">
-                בחרי את השירות שמעניין אותך
+                בחרי את השירות שהכי מתאים לך
               </p>
 
               <div className="grid sm:grid-cols-2 gap-4">
@@ -352,7 +352,7 @@ export default function BookingForm() {
                 ספרי לנו קצת על עצמך
               </h2>
               <p className="text-gray-400 mb-8">
-                נשתמש בפרטים האלה כדי להתכונן לייעוץ שלך
+                הפרטים האלה יעזרו לנו להתכונן לייעוץ שלך
               </p>
 
               <div className="space-y-5">
@@ -395,7 +395,7 @@ export default function BookingForm() {
                         setFormData({ ...formData, phone: e.target.value })
                       }
                       className="w-full px-4 py-3 rounded-[12px] glass border-0 focus:ring-2 focus:ring-navy-900/30 outline-none transition text-gray-900 placeholder:text-gray-300"
-                      placeholder="05X-XXX-XXXX"
+                      placeholder="05X-XXXXXXX"
                     />
                   </div>
                   <div>
@@ -416,7 +416,7 @@ export default function BookingForm() {
                         setFormData({ ...formData, whatsapp: e.target.value })
                       }
                       className="w-full px-4 py-3 rounded-[12px] glass border-0 focus:ring-2 focus:ring-navy-900/30 outline-none transition text-gray-900 placeholder:text-gray-300"
-                      placeholder="זהה לטלפון אם ריק"
+                      placeholder="השאירי ריק אם זה אותו מספר"
                     />
                   </div>
                 </div>
@@ -439,7 +439,7 @@ export default function BookingForm() {
                         setFormData({ ...formData, city: e.target.value })
                       }
                       className="w-full px-4 py-3 rounded-[12px] glass border-0 focus:ring-2 focus:ring-navy-900/30 outline-none transition text-gray-900 placeholder:text-gray-300"
-                      placeholder="לדוגמה: תל אביב, חיפה..."
+                      placeholder="לדוגמה: תל אביב, חיפה, ראשון לציון"
                     />
                   </div>
                   <div>
@@ -476,9 +476,9 @@ export default function BookingForm() {
                 {/* Photo upload */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-900 mb-1.5">
-                    תמונת צבע שיער{' '}
+                    תמונה של השיער{' '}
                     <span className="text-gray-300 font-normal text-xs">
-                      (אופציונלי — עוזר לנו להתכונן)
+                      (אופציונלי — מסייע לנו להתכונן)
                     </span>
                   </label>
 
@@ -508,7 +508,7 @@ export default function BookingForm() {
                         <Upload size={16} className="text-navy-700" />
                       </div>
                       <span className="text-sm font-medium">
-                        העלאת תמונה של השיער שלך
+                        העלי תמונה של השיער שלך
                       </span>
                     </button>
                   )}
@@ -540,7 +540,7 @@ export default function BookingForm() {
                       setFormData({ ...formData, notes: e.target.value })
                     }
                     className="w-full px-4 py-3 rounded-[14px] glass border-0 focus:ring-2 focus:ring-navy-900/30 outline-none transition text-gray-900 resize-none placeholder:text-gray-300"
-                    placeholder="שאלות, חששות, או פרטים שיעזרו לנו להתכונן..."
+                    placeholder="שאלות, חששות או פרטים שיעזרו לנו להתכונן..."
                   />
                 </div>
               </div>
@@ -570,9 +570,9 @@ export default function BookingForm() {
         {/* Trust badges */}
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {[
-            { icon: Shield, text: '100% דיסקרטי', color: 'text-green-500' },
+            { icon: Shield, text: 'דיסקרטיות מלאה', color: 'text-green-500' },
             { icon: Lock, text: 'ללא התחייבות', color: 'text-green-500' },
-            { icon: Clock, text: 'תגובה תוך שעות', color: 'text-green-500' },
+            { icon: Clock, text: 'מענה תוך כמה שעות', color: 'text-green-500' },
             { icon: Star, text: 'דירוג ממוצע 4.9', color: 'text-gold-500' },
           ].map((badge, i) => (
             <div key={i} className="glass flex items-center gap-1.5 px-4 py-2 rounded-full text-sm text-gray-500">
@@ -593,7 +593,7 @@ export default function BookingForm() {
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium shadow-lg shadow-[#25D366]/25 active:scale-[0.97]"
             >
               <MessageCircle size={18} />
-              וואטסאפ
+              שלחי הודעה בוואטסאפ
             </a>
             <a
               href="tel:+972504001187"

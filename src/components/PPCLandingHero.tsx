@@ -34,7 +34,7 @@ export default function PPCLandingHero() {
           {/* Left Content - Highly Persuasive Copy */}
           <div>
             {/* Urgency Badge */}
-            <div className="mb-6 inline-flex items-center gap-2 glass-card rounded-full px-4 py-2">
+            <div className="mb-6 inline-flex items-center gap-2 glass-dark-card rounded-full px-4 py-2">
               <span className="text-[12px] font-bold text-green-300 uppercase tracking-wide">🔥 הצעה מוגבלת</span>
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             </div>
@@ -48,16 +48,16 @@ export default function PPCLandingHero() {
 
             {/* Power Statement */}
             <p className="text-xl sm:text-2xl text-gold-200 font-bold mb-6" dir="rtl">
-              ייעוץ חינם לגמרי בתוך 24 שעות
+              ייעוץ אישי חינם וחזרה בתוך 24 שעות
             </p>
 
             {/* Problem + Solution */}
             <div className="space-y-4 mb-10">
               <p className="text-lg text-navy-100 leading-relaxed" dir="rtl">
-                <span className="font-bold text-white">4 מתוך 5 נשים</span> עם דלילות שיער מרגישות הפחתת ביטחון עצמי.
+                <span className="font-bold text-white">4 מתוך 5 נשים</span> המתמודדות עם דלילות שיער חוות ירידה בביטחון העצמי.
               </p>
               <p className="text-lg text-gold-200 font-semibold" dir="rtl">
-                אנחנו פתרנו את זה לאלפים. הגיע הזמן שלך.
+                כבר סייענו לאלפי נשים. עכשיו תורך.
               </p>
             </div>
 
@@ -80,10 +80,10 @@ export default function PPCLandingHero() {
             {/* Key Benefits - Specific */}
             <div className="space-y-3 mb-10">
               {[
-                'בחדר פרטי 100% - בנות בלבד',
-                'פאה בהתאמה מושלמת לאישה',
-                'בלי סוף: שילוב, תיקון, שדרוג',
-                'שירות לפני וואטסאפ בתשובה תוך שעה',
+                'בחדר פרטי ודיסקרטי – לנשים בלבד',
+                'טופרים ופאות בהתאמה אישית למראה טבעי',
+                'שילוב, תיקון ושדרוג בהתאמה לצורך שלך',
+                'מענה מהיר בוואטסאפ ושירות אישי לאורך הדרך',
               ].map((benefit) => (
                 <div key={benefit} className="flex items-center gap-3 text-white">
                   <CheckCircle2 size={22} className="flex-shrink-0 text-gold-300" strokeWidth={2.5} />
@@ -105,30 +105,30 @@ export default function PPCLandingHero() {
               href="https://wa.me/972504001187"
               className="block w-full px-8 py-4 rounded-2xl border-2 border-gold-400 text-gold-400 hover:bg-gold-400/10 transition-all duration-300 font-bold text-[17px] text-center"
             >
-              או צאטו עכשיו בוואטסאפ
+              או שלחי הודעה עכשיו בוואטסאפ
             </a>
 
             {/* Trust Elements */}
             <div className="mt-8 pt-6 border-t border-navy-700/40 space-y-2">
               <p className="text-[13px] text-navy-300 font-semibold" dir="rtl">
-                ✓ אין קרדיט קארד  •  ✓ לא ממכרת עצמך לשום דבר  •  ✓ ייעוץ ללא תשלום
+                ✓ ללא התחייבות  •  ✓ דיסקרטיות מלאה  •  ✓ ייעוץ ללא עלות
               </p>
               <p className="text-[12px] text-navy-400" dir="rtl">
-                בטוח 100% - הפרטיות שלך חשובה לנו
+                הפרטיות שלך חשובה לנו ואנחנו שומרות עליה בקפדנות
               </p>
             </div>
           </div>
 
           {/* Right Content - Contact Form (Sticky/Floating) */}
           <div id="contact-form" className="lg:sticky lg:top-20">
-            <div className="glass-card rounded-3xl p-8 sm:p-10 backdrop-blur-xl border border-gold-400/30 shadow-2xl shadow-gold-400/20">
+            <div className="glass-dark-card rounded-3xl p-8 sm:p-10 backdrop-blur-xl border border-gold-400/30 shadow-2xl shadow-gold-400/20">
               {!submitted ? (
                 <>
                   <h2 className="text-3xl font-black text-white mb-2 tracking-tight" dir="rtl">
-                    קביעה חינם
+                    קבעי ייעוץ חינם
                   </h2>
                   <p className="text-gold-200 text-[15px] font-semibold mb-8" dir="rtl">
-                    בדיוק 2 שדות לניוזלטר לייעוץ אישי:
+                    השאירי פרטים ונחזור אלייך לייעוץ אישי מותאם:
                   </p>
 
                   <form onSubmit={handleSubmit} className="space-y-4">
@@ -172,9 +172,9 @@ export default function PPCLandingHero() {
 
                     {/* Friction Reducer */}
                     <p className="text-[12px] text-navy-200 text-center leading-relaxed mt-4" dir="rtl">
-                      אתם תקבלו תגובה בתוך 24 שעות.
+                      נחזור אלייך בתוך 24 שעות.
                       <br />
-                      לא יהיו שיחות בלי הסכמה.
+                      לא ניצור קשר ללא הסכמתך.
                     </p>
                   </form>
                 </>
@@ -187,16 +187,16 @@ export default function PPCLandingHero() {
                     מושלם! ✓
                   </p>
                   <p className="text-gold-200 font-bold text-lg mb-6" dir="rtl">
-                    בקרוב נצור איתך קשר
+                    בקרוב ניצור איתך קשר
                   </p>
                   <p className="text-navy-100 text-[15px] leading-relaxed mb-6" dir="rtl">
-                    בעוד כמה שעות תקבלי הודעה בוואטסאפ עם דברים שתצטרכי לדעת קודם לפגישה
+                    בקרוב תקבלי הודעה בוואטסאפ עם כל הפרטים שחשוב לדעת לפני הפגישה
                   </p>
                   <a
                     href="https://wa.me/972504001187"
                     className="inline-block px-6 py-3 rounded-xl bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 font-bold text-[15px]"
                   >
-                    צאטו אתנו בוואטסאפ
+                    דברי איתנו בוואטסאפ
                   </a>
                 </div>
               )}
@@ -218,7 +218,7 @@ export default function PPCLandingHero() {
                   href="https://wa.me/972504001187"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-bold text-[14px]"
                 >
-                  💬 צאטו בוואטסאפ
+                  💬 דברי איתנו בוואטסאפ
                 </a>
               </div>
             )}
@@ -230,11 +230,11 @@ export default function PPCLandingHero() {
       <div className="mt-16 pt-8 border-t border-navy-700/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-navy-300 text-[13px] mb-6" dir="rtl">
-            מעל 1,000 נשים סימנו ייעוץ החודש הזה
+            מעל 1,000 נשים השאירו פרטים לייעוץ החודש
           </p>
           <div className="flex justify-center items-center gap-4 flex-wrap">
             {['Google', 'ביקורות בתל אביב', 'Facebook', '⭐⭐⭐⭐⭐'].map((badge) => (
-              <div key={badge} className="px-4 py-2 rounded-full glass-card text-[12px] text-navy-200 font-semibold">
+              <div key={badge} className="px-4 py-2 rounded-full glass-dark-card text-[12px] text-navy-200 font-semibold">
                 {badge}
               </div>
             ))}
