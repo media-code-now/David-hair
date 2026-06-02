@@ -24,6 +24,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  verification: {
+    google: "WjVHKo40P4C4W7VMcqMKR8ldQWFyi-xIe24mpxwJqQ4",
+  },
   title: "David Hair Solutions – טופרים ופאות במראה טבעי",
   description:
     "טופרים, פאות בהתאמה אישית ופאות רפואיות עם התאמה דיסקרטית בחדר פרטי. שילוב וגזירה מקצועיים בסלון נשים פרטי. קביעת ייעוץ ללא התחייבות.",
