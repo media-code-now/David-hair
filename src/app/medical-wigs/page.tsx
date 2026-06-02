@@ -9,13 +9,18 @@ import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
-  title: 'פאה רפואית – פתרונות שיער רגישים ומותאמים | David Hair',
-  description: 'פאות רפואיות לכימותרפיה, אלופציה ונשירת שיער רפואית. התאמה נוחה ודיסקרטית בחדר פרטי, עם ליווי לקבלת החזר או מימון מביטוח.',
-  keywords: 'פאה רפואית, פאה לכימותרפיה, פאה לאלופציה, נשירת שיער רפואית, פאה נוחה, medical wig',
+  title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | David Hair',
+  description: 'פאות רפואיות בנס ציונה לכימותרפיה, אלופציה ונשירת שיער רפואית. התאמה נוחה ודיסקרטית בחדר פרטי, עם ליווי לביטוח. משרתות גם ראשון לציון, רחובות ואשדוד.',
+  keywords: 'פאה רפואית נס ציונה, פאה לכימותרפיה ראשון לציון, פאה לאלופציה מרכז, נשירת שיער רפואית, פאה רפואית מרכז, medical wig israel',
+  alternates: {
+    canonical: 'https://davidhair.co.il/medical-wigs',
+    languages: { 'he-IL': 'https://davidhair.co.il/medical-wigs' },
+  },
   openGraph: {
-    title: 'פאה רפואית – פתרונות שיער רגישים ומותאמים',
-    description: 'פאות רפואיות לכימותרפיה ואלופציה, עם התאמה נוחה ודיסקרטית בחדר פרטי.',
+    title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | David Hair',
+    description: 'פאות רפואיות בנס ציונה לכימותרפיה ואלופציה, עם התאמה נוחה ודיסקרטית בחדר פרטי.',
     type: 'website',
+    locale: 'he_IL',
   },
 };
 

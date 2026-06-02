@@ -5,13 +5,18 @@ import BreadcrumbHero from '@/components/BreadcrumbHero';
 import BookingForm from '@/components/BookingForm';
 
 export const metadata: Metadata = {
-  title: 'קביעת ייעוץ – התאמה אישית לטופר או פאה | David Hair',
-  description: 'קבעי ייעוץ שיער חינם, פרטי ודיסקרטי. בחרי את השירות שמתאים לך, השאירי פרטים ואנחנו נדאג לכל השאר. ללא התחייבות.',
-  keywords: 'קביעת ייעוץ שיער, תור לטופר, תור לפאה, ייעוץ חינם, התאמת פאה',
+  title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | David Hair',
+  description: 'קבעי ייעוץ שיער חינם בנס ציונה. פגישה פרטית ודיסקרטית להתאמת טופר או פאה. משרתות גם ראשון לציון, רחובות ואזור המרכז. ללא התחייבות.',
+  keywords: 'קביעת ייעוץ שיער נס ציונה, תור לטופר ראשון לציון, תור לפאה מרכז, ייעוץ חינם שיער, התאמת פאה נס ציונה',
+  alternates: {
+    canonical: 'https://davidhair.co.il/book',
+    languages: { 'he-IL': 'https://davidhair.co.il/book' },
+  },
   openGraph: {
-    title: 'קביעת ייעוץ – התאמה אישית לטופר או פאה | David Hair',
-    description: 'קביעת ייעוץ חינם להתאמת טופר או פאה. ללא התחייבות ובדיסקרטיות מלאה.',
+    title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | David Hair',
+    description: 'קביעת ייעוץ חינם להתאמת טופר או פאה בנס ציונה. ללא התחייבות ובדיסקרטיות מלאה.',
     type: 'website',
+    locale: 'he_IL',
   },
 };
 

@@ -9,13 +9,18 @@ import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
-  title: 'טופר שיער לשיער דליל – כיסוי שביל וקודקוד | David Hair',
-  description: 'טופרים מותאמים לשיער דליל ולשביל מתרחב. כיסוי קל משקל וכמעט בלתי נראה שמחזיר נפח באופן טבעי. קביעת ייעוץ ללא התחייבות.',
-  keywords: 'טופר לשיער דליל, כיסוי שביל, שיער דליל נשים, נשירת שיער, טופר נפח, כיסוי קרקפת',
+  title: 'טופר לשיער דליל נס ציונה – כיסוי שביל וקודקוד | David Hair',
+  description: 'טופרים מותאמים לשיער דליל בנס ציונה ולשביל מתרחב. כיסוי קל משקל וכמעט בלתי נראה שמחזיר נפח באופן טבעי. משרתות גם ראשון לציון ורחובות.',
+  keywords: 'טופר לשיער דליל נס ציונה, כיסוי שביל ראשון לציון, שיער דליל נשים, נשירת שיער מרכז, טופר נפח, כיסוי קרקפת',
+  alternates: {
+    canonical: 'https://davidhair.co.il/hair-toppers-thin-hair',
+    languages: { 'he-IL': 'https://davidhair.co.il/hair-toppers-thin-hair' },
+  },
   openGraph: {
-    title: 'טופר שיער לשיער דליל – כיסוי שביל וקודקוד',
-    description: 'טופרים מותאמים לשיער דליל ולשביל מתרחב, עם כיסוי קל וכמעט בלתי נראה.',
+    title: 'טופר לשיער דליל נס ציונה – כיסוי שביל וקודקוד',
+    description: 'טופרים מותאמים לשיער דליל בנס ציונה ולשביל מתרחב, עם כיסוי קל וכמעט בלתי נראה.',
     type: 'website',
+    locale: 'he_IL',
   },
 };
 

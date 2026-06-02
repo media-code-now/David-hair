@@ -9,13 +9,18 @@ import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
-  title: 'שילוב וגזירה בסלון – צבע, שכבות והתאמה | David Hair',
-  description: 'שירותי סלון מקצועיים לטופרים ולפאות. גזירה, צביעה, שילוב ועיצוב למראה טבעי וחלק. קביעת תור לסלון.',
-  keywords: 'סלון שילוב פאה, גזירת טופר, צביעת פאה, שילוב שיער, סלון פאות, עיצוב טופר',
+  title: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה | David Hair',
+  description: 'שירותי סלון מקצועיים לטופרים ולפאות בנס ציונה. גזירה, צביעה, שילוב ועיצוב למראה טבעי וחלק. משרתות גם ראשון לציון ורחובות. קביעת תור.',
+  keywords: 'סלון שילוב פאה נס ציונה, גזירת טופר ראשון לציון, צביעת פאה נס ציונה, שילוב שיער מרכז, סלון פאות, עיצוב טופר',
+  alternates: {
+    canonical: 'https://davidhair.co.il/salon-blending',
+    languages: { 'he-IL': 'https://davidhair.co.il/salon-blending' },
+  },
   openGraph: {
-    title: 'שילוב וגזירה בסלון – צבע, שכבות והתאמה',
-    description: 'שירותי סלון מקצועיים לטופרים ולפאות, עם גזירה, צביעה ושילוב למראה טבעי.',
+    title: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה',
+    description: 'שירותי סלון מקצועיים לטופרים ולפאות בנס ציונה, עם גזירה, צביעה ושילוב למראה טבעי.',
     type: 'website',
+    locale: 'he_IL',
   },
 };
 

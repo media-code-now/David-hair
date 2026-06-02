@@ -9,13 +9,18 @@ import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
-  title: 'תיקון ושדרוג פאות וטופרים – חידוש מקצועי | David Hair',
-  description: 'שירותי תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים. פתיחת סבכים, החלפת רשת, צביעה מחדש והתאמת מידה. שחזור כמעט כמו חדש.',
-  keywords: 'תיקון פאה, חידוש פאה, שדרוג פאה, תיקון טופר, תחזוקת פאה, wig repair',
+  title: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי | David Hair',
+  description: 'שירותי תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים בנס ציונה. פתיחת סבכים, החלפת רשת, צביעה מחדש והתאמת מידה. משרתות גם ראשון לציון ורחובות.',
+  keywords: 'תיקון פאה נס ציונה, חידוש פאה ראשון לציון, שדרוג פאה מרכז, תיקון טופר, תחזוקת פאה, wig repair israel',
+  alternates: {
+    canonical: 'https://davidhair.co.il/wig-repairs-upgrades',
+    languages: { 'he-IL': 'https://davidhair.co.il/wig-repairs-upgrades' },
+  },
   openGraph: {
-    title: 'תיקון ושדרוג פאות וטופרים – חידוש מקצועי',
-    description: 'תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים, עם שחזור כמעט כמו חדש.',
+    title: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי',
+    description: 'תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים בנס ציונה, עם שחזור כמעט כמו חדש.',
     type: 'website',
+    locale: 'he_IL',
   },
 };
 
