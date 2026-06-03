@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://davidhair.co.il';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ?? 'https://hairtoppersisrael.com';
 
   // Pin exact dates for stable sitemap (update when content changes)
   const homeModified    = new Date('2026-06-03');

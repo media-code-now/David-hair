@@ -11,7 +11,7 @@ interface BreadcrumbHeroProps {
 
 export default function BreadcrumbHero({ title, subtitle }: BreadcrumbHeroProps) {
   const pathname = usePathname();
-  const baseUrl = 'https://davidhair.co.il';
+  const baseUrl = 'https://hairtoppersisrael.com';
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',

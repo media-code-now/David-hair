@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description: 'שירותי תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים בנס ציונה. פתיחת סבכים, החלפת רשת, צביעה מחדש והתאמת מידה. משרתות גם ראשון לציון ורחובות.',
   keywords: 'תיקון פאה נס ציונה, חידוש פאה ראשון לציון, שדרוג פאה מרכז, תיקון טופר, תחזוקת פאה, wig repair israel',
   alternates: {
-    canonical: 'https://davidhair.co.il/wig-repairs-upgrades',
-    languages: { 'he-IL': 'https://davidhair.co.il/wig-repairs-upgrades' },
+    canonical: 'https://hairtoppersisrael.com/wig-repairs-upgrades',
+    languages: { 'he-IL': 'https://hairtoppersisrael.com/wig-repairs-upgrades' },
   },
   openGraph: {
     title: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי',

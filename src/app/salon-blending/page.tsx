@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description: 'שירותי סלון מקצועיים לטופרים ולפאות בנס ציונה. גזירה, צביעה, שילוב ועיצוב למראה טבעי וחלק. משרתות גם ראשון לציון ורחובות. קביעת תור.',
   keywords: 'סלון שילוב פאה נס ציונה, גזירת טופר ראשון לציון, צביעת פאה נס ציונה, שילוב שיער מרכז, סלון פאות, עיצוב טופר',
   alternates: {
-    canonical: 'https://davidhair.co.il/salon-blending',
-    languages: { 'he-IL': 'https://davidhair.co.il/salon-blending' },
+    canonical: 'https://hairtoppersisrael.com/salon-blending',
+    languages: { 'he-IL': 'https://hairtoppersisrael.com/salon-blending' },
   },
   openGraph: {
     title: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה',

@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description: 'פאות רפואיות בנס ציונה לכימותרפיה, אלופציה ונשירת שיער רפואית. התאמה נוחה ודיסקרטית בחדר פרטי, עם ליווי לביטוח. משרתות גם ראשון לציון, רחובות ואשדוד.',
   keywords: 'פאה רפואית נס ציונה, פאה לכימותרפיה ראשון לציון, פאה לאלופציה מרכז, נשירת שיער רפואית, פאה רפואית מרכז, medical wig israel',
   alternates: {
-    canonical: 'https://davidhair.co.il/medical-wigs',
-    languages: { 'he-IL': 'https://davidhair.co.il/medical-wigs' },
+    canonical: 'https://hairtoppersisrael.com/medical-wigs',
+    languages: { 'he-IL': 'https://hairtoppersisrael.com/medical-wigs' },
   },
   openGraph: {
     title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | David Hair',

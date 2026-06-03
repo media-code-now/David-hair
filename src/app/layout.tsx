@@ -11,11 +11,11 @@ const LOCAL_BUSINESS_SCHEMA = {
   name: "David Hair Solutions",
   description:
     "טופרים, פאות בהתאמה אישית ופאות רפואיות עם התאמה דיסקרטית בחדר פרטי. שילוב וגזירה מקצועיים בסלון נשים פרטי בנס ציונה.",
-  url: "https://davidhair.co.il",
+  url: "https://hairtoppersisrael.com",
   telephone: "+972504001187",
   email: "contact@davidhair.co.il",
-  image: "https://davidhair.co.il/logo-black.png",
-  logo: "https://davidhair.co.il/logo-black.png",
+  image: "https://hairtoppersisrael.com/logo-black.png",
+  logo: "https://hairtoppersisrael.com/logo-black.png",
   priceRange: "₪₪",
   currenciesAccepted: "ILS",
   paymentAccepted: "Cash, Credit Card, Bank Transfer",
@@ -119,10 +119,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "he_IL",
     siteName: "David Hair Solutions",
-    url: "https://davidhair.co.il",
+    url: "https://hairtoppersisrael.com",
     images: [
       {
-        url: "https://davidhair.co.il/og-image.jpg",
+        url: "https://hairtoppersisrael.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "David Hair Solutions – טופרים ופאות נס ציונה",
@@ -134,12 +134,12 @@ export const metadata: Metadata = {
     title: "David Hair Solutions – טופרים ופאות | נס ציונה",
     description:
       "טופרים, פאות בהתאמה אישית ופאות רפואיות בנס ציונה. שירות דיסקרטי לנשים בלבד.",
-    images: ["https://davidhair.co.il/og-image.jpg"],
+    images: ["https://hairtoppersisrael.com/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://davidhair.co.il",
+    canonical: "https://hairtoppersisrael.com",
     languages: {
-      "he-IL": "https://davidhair.co.il",
+      "he-IL": "https://hairtoppersisrael.com",
     },
   },
   robots: {
@@ -153,7 +153,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  metadataBase: new URL("https://davidhair.co.il"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hairtoppersisrael.com'),
 };
 
 export default function RootLayout({

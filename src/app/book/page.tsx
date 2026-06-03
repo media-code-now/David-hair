@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description: 'קבעי ייעוץ שיער חינם בנס ציונה. פגישה פרטית ודיסקרטית להתאמת טופר או פאה. משרתות גם ראשון לציון, רחובות ואזור המרכז. ללא התחייבות.',
   keywords: 'קביעת ייעוץ שיער נס ציונה, תור לטופר ראשון לציון, תור לפאה מרכז, ייעוץ חינם שיער, התאמת פאה נס ציונה',
   alternates: {
-    canonical: 'https://davidhair.co.il/book',
-    languages: { 'he-IL': 'https://davidhair.co.il/book' },
+    canonical: 'https://hairtoppersisrael.com/book',
+    languages: { 'he-IL': 'https://hairtoppersisrael.com/book' },
   },
   openGraph: {
     title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | David Hair',

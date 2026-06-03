@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description: 'טופרי שיער בנס ציונה לכיסוי הקודקוד והשביל במראה טבעי. קלים, דיסקרטיים ובהתאמה אישית בחדר פרטי. משרתות גם ראשון לציון ורחובות. קביעת ייעוץ ללא התחייבות.',
   keywords: 'טופר שיער נס ציונה, טופר שיער ראשון לציון, טופר לשיער דליל, כיסוי שביל נס ציונה, טופר שיער טבעי, נפח לשיער, hair toppers israel',
   alternates: {
-    canonical: 'https://davidhair.co.il/hair-toppers',
-    languages: { 'he-IL': 'https://davidhair.co.il/hair-toppers' },
+    canonical: 'https://hairtoppersisrael.com/hair-toppers',
+    languages: { 'he-IL': 'https://hairtoppersisrael.com/hair-toppers' },
   },
   openGraph: {
     title: 'טופר שיער נס ציונה – כיסוי שביל וקודקוד | David Hair',

@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description: 'פאות בהתאמה אישית בנס ציונה לפי צבע, אורך, מרקם וסגנון. שיער טבעי 100%, בנייה ידנית והתאמה למבנה הפנים בחדר פרטי. משרתות גם ראשון לציון ורחובות.',
   keywords: 'פאות בהתאמה אישית נס ציונה, פאה מותאמת ראשון לציון, פאת שיער טבעי מרכז, התאמת פאה נס ציונה, פאה לפי מידה, custom wigs israel',
   alternates: {
-    canonical: 'https://davidhair.co.il/custom-wigs',
-    languages: { 'he-IL': 'https://davidhair.co.il/custom-wigs' },
+    canonical: 'https://hairtoppersisrael.com/custom-wigs',
+    languages: { 'he-IL': 'https://hairtoppersisrael.com/custom-wigs' },
   },
   openGraph: {
     title: 'פאות בהתאמה אישית נס ציונה – עיצוב והתאמה מלאה',
