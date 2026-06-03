@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown, MessageCircle, Phone } from 'lucide-react';
+import Script from 'next/script';
 
 const faqs = [
   { id: 1, question: 'איך אדע איזה פתרון מתאים לי מבלי לנסות?', answer: 'בייעוץ האישי שלנו אנחנו בודקות את מצב השיער, מבנה הפנים, ואורח החיים שלך. בהתבסס על זה אנחנו ממליצות על הפתרון המדויק – טופר או פאה. הייעוץ חינם וללא התחייבות.' },
@@ -17,8 +18,26 @@ const faqs = [
 export default function FAQ() {
   const [openId, setOpenId] = useState<number | null>(null);
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <section id="faq" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white/40 to-navy-50/20">
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-14">

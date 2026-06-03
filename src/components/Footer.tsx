@@ -28,11 +28,11 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {[
-                { icon: Facebook, label: 'Facebook', href: '#' },
-                { icon: Instagram, label: 'Instagram', href: '#' },
+                { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/davidhairsolution/' },
+                { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/david_hair_solutions/' },
                 { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/972504001187' },
               ].map(({ icon: Icon, label, href }) => (
-                <a key={label} href={href} className="w-9 h-9 rounded-[10px] bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all duration-200 active:scale-90" aria-label={label}>
+                <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-[10px] bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all duration-200 active:scale-90" aria-label={label}>
                   <Icon size={17} strokeWidth={2} />
                 </a>
               ))}

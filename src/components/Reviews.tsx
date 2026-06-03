@@ -1,6 +1,7 @@
 'use client';
 
 import { Star, Play } from 'lucide-react';
+import Script from 'next/script';
 
 const reviews = [
   {
@@ -21,8 +22,33 @@ const reviews = [
 ];
 
 export default function Reviews() {
+  const reviewSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'David Hair Solutions',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '500',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    review: reviews.map((r) => ({
+      '@type': 'Review',
+      author: { '@type': 'Person', name: r.name },
+      reviewRating: { '@type': 'Rating', ratingValue: String(r.rating), bestRating: '5' },
+      name: r.title,
+      reviewBody: r.content,
+    })),
+  };
+
   return (
     <section id="reviews" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-gold-50/40 via-white to-navy-50/30 relative overflow-hidden">
+      <Script
+        id="reviews-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
       {/* Ambient blob */}
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-gold-100/20 rounded-full blur-3xl" />
 
