@@ -1,7 +1,10 @@
 'use client';
 
 import { ReactNode } from 'react';
+import Image from 'next/image';
 import { Check, Star } from 'lucide-react';
+import bannerOne from '@/images/banners/1.jpg';
+import bannerTwo from '@/images/banners/2.jpg';
 
 interface ServiceBenefit {
   title: string;
@@ -13,6 +16,8 @@ interface ServiceDetailSectionProps {
   title: string;
   description: string;
   benefits: ServiceBenefit[];
+  imageSrc?: string;
+  imageAlt?: string;
   imagePlaceholder?: string;
   reversed?: boolean;
 }
@@ -22,9 +27,15 @@ export default function ServiceDetailSection({
   title,
   description,
   benefits,
+  imageSrc,
+  imageAlt,
   imagePlaceholder = '📸',
   reversed = false,
 }: ServiceDetailSectionProps) {
+  const fallbackImages = [bannerOne, bannerTwo, '/breadcrumb-hairshades.jpg'] as const;
+  const fallbackIndex = (title.length + imagePlaceholder.length) % fallbackImages.length;
+  const resolvedImage = imageSrc ?? fallbackImages[fallbackIndex];
+
   return (
     <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
       {/* Ambient blob */}
@@ -51,14 +62,14 @@ export default function ServiceDetailSection({
             <div className="space-y-4">
               {benefits.map((benefit, i) => (
                 <div key={i} className="glass-card flex gap-4 p-4 rounded-[14px] stagger-item">
-                  <div>
-                    <h3 className="font-semibold text-gray-900">{benefit.title}</h3>
-                    <p className="text-gray-500 text-sm mt-0.5">{benefit.description}</p>
-                  </div>
                   <div className="flex-shrink-0 mt-0.5">
                     <div className="w-7 h-7 rounded-[8px] bg-gradient-to-br from-green-400 to-green-500 flex items-center justify-center">
                       <Check size={14} className="text-white" />
                     </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">{benefit.title}</h3>
+                    <p className="text-gray-500 text-sm mt-0.5">{benefit.description}</p>
                   </div>
                 </div>
               ))}
@@ -67,11 +78,14 @@ export default function ServiceDetailSection({
 
           {/* Image Side */}
           <div className={reversed ? 'md:order-1' : ''}>
-            <div className="glass-card aspect-[4/3] rounded-[22px] flex items-center justify-center overflow-hidden">
-              <div className="text-center">
-                <div className="text-6xl mb-3">{imagePlaceholder}</div>
-                <p className="text-gray-400 text-sm">(יוחלף בתמונה אמיתית)</p>
-              </div>
+            <div className="glass-card relative aspect-[4/3] rounded-[22px] flex items-center justify-center overflow-hidden">
+              <Image
+                src={resolvedImage}
+                alt={imageAlt ?? `${title} - תמונה להמחשה`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>

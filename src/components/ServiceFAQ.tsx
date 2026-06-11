@@ -45,15 +45,15 @@ export default function ServiceFAQ({
                 aria-expanded={openIndex === index}
                 dir="rtl"
               >
-                <span className="text-lg font-semibold text-gray-900 pl-4">
-                  {faq.question}
-                </span>
                 <ChevronDown
                   size={22}
                   className={`flex-shrink-0 text-navy-900 transition-transform duration-200 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
                 />
+                <span className="text-lg font-semibold text-gray-900 pl-4">
+                  {faq.question}
+                </span>
               </button>
               {openIndex === index && (
                 <div className="px-6 py-4 bg-white border-t border-gray-200" dir="rtl">

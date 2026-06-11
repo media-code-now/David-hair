@@ -64,12 +64,12 @@ export default function FAQ() {
                 aria-expanded={openId === faq.id}
                 dir="rtl"
               >
-                <span className="text-[15px] font-bold text-gray-900 pl-4 tracking-tight">
-                  {faq.question}
-                </span>
                 <div className={`w-7 h-7 rounded-[8px] bg-navy-50/60 flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${openId === faq.id ? 'rotate-180' : ''}`}>
                   <ChevronDown size={16} className="text-navy-800" strokeWidth={2.5} />
                 </div>
+                <span className="text-[15px] font-bold text-gray-900 pl-4 tracking-tight">
+                  {faq.question}
+                </span>
               </button>
 
               {/* Answer with smooth feel */}

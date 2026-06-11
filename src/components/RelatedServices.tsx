@@ -5,6 +5,8 @@ import { ArrowLeft, Sparkles, ShoppingBag, Heart, Scissors, Wrench, Crown } from
 
 const allServices = [
   { href: '/hair-toppers', title: 'טופרי שיער', description: 'כיסוי טבעי לשיער דליל', icon: Crown, color: 'from-pink-50 to-rose-50' },
+  { href: '/padachat', title: 'פדחת לשיער', description: 'כיסוי ממוקד לקדמת הראש', icon: Crown, color: 'from-amber-50 to-yellow-50' },
+  { href: '/tzamidei-sear', title: 'צמידי שיער', description: 'תוספת נפח ואורך מהירה', icon: Sparkles, color: 'from-indigo-50 to-blue-50' },
   { href: '/hair-toppers-thin-hair', title: 'טופרים לשיער דליל', description: 'פתרונות לשביל ונפח', icon: Sparkles, color: 'from-purple-50 to-violet-50' },
   { href: '/custom-wigs', title: 'פאות בהתאמה אישית', description: 'עיצוב מותאם לחלוטין', icon: ShoppingBag, color: 'from-blue-50 to-cyan-50' },
   { href: '/medical-wigs', title: 'פאות רפואיות', description: 'פתרונות רגישים לנשירת שיער', icon: Heart, color: 'from-green-50 to-emerald-50' },

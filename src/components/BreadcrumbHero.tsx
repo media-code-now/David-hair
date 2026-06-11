@@ -3,13 +3,15 @@
 import Image from 'next/image';
 import Script from 'next/script';
 import { usePathname } from 'next/navigation';
+import type { StaticImageData } from 'next/image';
 
 interface BreadcrumbHeroProps {
   title: string;
   subtitle?: string;
+  backgroundImage?: string | StaticImageData;
 }
 
-export default function BreadcrumbHero({ title, subtitle }: BreadcrumbHeroProps) {
+export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/breadcrumb-hairshades.jpg' }: BreadcrumbHeroProps) {
   const pathname = usePathname();
   const baseUrl = 'https://hairtoppersisrael.com';
 
@@ -41,7 +43,7 @@ export default function BreadcrumbHero({ title, subtitle }: BreadcrumbHeroProps)
       />
       {/* Background Image */}
       <Image
-        src="/breadcrumb-hairshades.jpg"
+        src={backgroundImage}
         alt={title}
         fill
         className="object-cover object-center"

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { MessageCircle, Phone, ArrowLeft } from 'lucide-react';
+import { MessageCircle, Phone, ArrowRight } from 'lucide-react';
 
 interface ServiceCTAProps {
   title?: string;
@@ -26,8 +26,8 @@ export default function ServiceCTA({
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Link href="/book" className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-navy-900 text-white hover:bg-navy-800 transition font-semibold text-lg shadow-lg shadow-navy-900/20">
+            <ArrowRight size={20} className="rtl:rotate-180" />
             {ctaText}
-            <ArrowLeft size={20} className="rtl:rotate-180" />
           </Link>
           <a
             href="https://wa.me/972504001187"

@@ -7,8 +7,8 @@ import AccessibleMenu from './AccessibleMenu';
 
 const navItems = [
   { href: '/hair-toppers', label: 'טופרים', ariaLabel: 'טופרים לשיער' },
-  { href: '/custom-wigs', label: 'פאות בהתאמה אישית', ariaLabel: 'פאות בהתאמה אישית' },
-  { href: '/medical-wigs', label: 'פאה רפואית', ariaLabel: 'פאה רפואית' },
+  { href: '/padachat', label: 'פדחת לשיער', ariaLabel: 'פדחת לשיער דליל' },
+  { href: '/tzamidei-sear', label: 'צמידי שיער', ariaLabel: 'צמידי שיער להארכה ונפח' },
   { href: '/salon-blending', label: 'סלון ושילוב', ariaLabel: 'סלון ושילוב שיער' },
   { href: '/wig-repairs-upgrades', label: 'תיקון ושדרוג', ariaLabel: 'תיקון ושדרוג פאות' },
   { href: '/#faq', label: 'שאלות נפוצות', ariaLabel: 'שאלות נפוצות' },

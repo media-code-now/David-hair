@@ -37,10 +37,10 @@ export default function ServiceHero({
         <div className="max-w-3xl mx-auto text-center" dir="rtl">
           {badge && (
             <div className="glass inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium mb-6 text-navy-800">
-              {badge}
               <div className="w-5 h-5 rounded-[6px] bg-gradient-to-br from-gold-400 to-gold-500 flex items-center justify-center">
                 <Star size={11} className="text-white" />
               </div>
+              {badge}
             </div>
           )}
 
@@ -64,10 +64,10 @@ export default function ServiceHero({
                   key={i}
                   className="glass flex items-center gap-2 px-4 py-2 rounded-[14px] text-sm text-gray-700"
                 >
-                  {feature}
                   <div className="w-5 h-5 rounded-[6px] bg-gradient-to-br from-navy-800 to-navy-900 flex items-center justify-center">
                     <Shield size={10} className="text-white" />
                   </div>
+                  {feature}
                 </div>
               ))}
             </div>

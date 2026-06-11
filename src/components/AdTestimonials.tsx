@@ -1,11 +1,11 @@
 'use client';
 
-import { Star, Play } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const testimonials = [
   {
     id: 1,
-    name: 'שרה מ., 34, תל אביב',
+    name: 'נועה כ., 34, תל אביב',
     title: 'התחיל לי להיות דליל אחרי ההיריון',
     content: 'אחרי הלידה השנייה, השיער שלי התחיל להיות דליל בחלק מהעוקץ. הייתי סוגרת את הרץ של התשובה השלי עם אדום וקלום. כשקראתי על David Hair, הייתי בפחד. אבל כשהגעתי, הצוות היו כל כך רכות וחנונות. הטופר שקיבלתי בדיוק מתאים ונראה כמו השיער שלי. זה שינה את החיים שלי!',
     hasVideo: true,
@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: 'ג\'ניפר ל., 42, חיפה',
+    name: 'יעל ב., 42, חיפה',
     title: 'סובלתי מירידה קשה בשל סטרס',
     content: 'לאחר זמן בעל לחץ גבוה, שיערי החל לקחת בכמויות גדולות. זה היה בעצום אולם. חיפשתי כל מיני פתרונות כשהמלצה על David Hair. זה היה המעבר הטוב ביותר. לא רק שהשיער נראה טבעי, אלא הצוות הטפל בי כמו משפחה, לא כלקוחה.',
     hasVideo: true,
@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: 'מישל פ., 29, ירושלים',
+    name: 'מיכל ד., 29, ירושלים',
     title: 'איבדתי הרבה שיער בשל טיפולים רפואיים',
     content: 'כשעברתי טיפול רפואי, שיערי נשר כל כך הרבה. הייתי מנושלת וביודו אילו מישהי אחרת בגוף שלי. ובכנס ביקרתי David Hair ודלבר בדברו עם היצירה אלו הביטחון שלי.',
     hasVideo: true,
@@ -68,14 +68,6 @@ export default function AdTestimonials() {
               <p className="text-gray-600 leading-relaxed mb-6 text-[14px] flex-grow" dir="rtl">
                 &ldquo;{testimonial.content}&rdquo;
               </p>
-
-              {/* Video indicator - future enhancement */}
-              {testimonial.hasVideo && (
-                <div className="mb-5 p-3 bg-blue-50/50 rounded-lg flex items-center gap-2 cursor-pointer hover:bg-blue-100/50 transition">
-                  <span className="text-[12px] font-semibold text-blue-700">צפייה בסרטון ביקורת</span>
-                  <Play size={16} className="fill-blue-600 text-blue-600" />
-                </div>
-              )}
 
               {/* Reviewer info */}
               <div className="flex items-center gap-3.5 pt-4 border-t border-gray-100/60">

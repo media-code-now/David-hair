@@ -2,15 +2,13 @@
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { X, ChevronLeft, Scissors, Crown, Heart, Sparkles, Wrench, HelpCircle, Phone, MessageCircle, CalendarCheck } from 'lucide-react';
+import { X, ChevronLeft, Scissors, Sparkles, Wrench, HelpCircle, Phone, MessageCircle, CalendarCheck } from 'lucide-react';
 
 const menuSections = [
   {
     title: 'שירותים',
     items: [
       { href: '/hair-toppers', label: 'טופרים לשיער דליל', icon: Sparkles, color: 'from-pink-100/80 to-rose-50/80' },
-      { href: '/custom-wigs', label: 'פאות בהתאמה אישית', icon: Crown, color: 'from-blue-100/80 to-cyan-50/80' },
-      { href: '/medical-wigs', label: 'פאה רפואית', icon: Heart, color: 'from-green-100/80 to-emerald-50/80' },
       { href: '/salon-blending', label: 'סלון ושילוב', icon: Scissors, color: 'from-purple-100/80 to-violet-50/80' },
       { href: '/wig-repairs-upgrades', label: 'תיקון ושדרוג', icon: Wrench, color: 'from-orange-100/80 to-amber-50/80' },
     ],

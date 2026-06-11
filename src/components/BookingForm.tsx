@@ -338,8 +338,8 @@ export default function BookingForm() {
                       : 'glass text-gray-300 cursor-not-allowed'
                   }`}
                 >
-                  המשך
                   <ArrowLeft size={20} />
+                  המשך
                 </button>
               </div>
             </div>
@@ -574,8 +574,8 @@ export default function BookingForm() {
                   type="submit"
                   className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-[14px] bg-gradient-to-b from-navy-800 to-navy-900 text-white hover:from-navy-700 hover:to-navy-800 transition-all font-semibold text-lg shadow-lg shadow-navy-900/25 order-1 sm:order-2 active:scale-[0.97]"
                 >
-                  קביעת הייעוץ שלי
                   <ArrowLeft size={20} />
+                  קביעת הייעוץ שלי
                 </button>
               </div>
             </form>

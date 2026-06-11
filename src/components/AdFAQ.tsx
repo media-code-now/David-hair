@@ -59,9 +59,6 @@ export default function AdFAQ() {
                 onClick={() => setExpandedIndex(expandedIndex === idx ? null : idx)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-navy-50/40 transition-colors duration-200"
               >
-                <h3 className="text-[17px] font-bold text-gray-900 tracking-tight flex-1 pr-4" dir="rtl">
-                  {faq.q}
-                </h3>
                 <ChevronDown
                   size={20}
                   className={`flex-shrink-0 text-gray-500 transition-transform duration-300 ${
@@ -69,6 +66,9 @@ export default function AdFAQ() {
                   }`}
                   strokeWidth={2}
                 />
+                <h3 className="text-[17px] font-bold text-gray-900 tracking-tight flex-1 pr-4" dir="rtl">
+                  {faq.q}
+                </h3>
               </button>
 
               {expandedIndex === idx && (

@@ -33,8 +33,8 @@ export default function AdCTA() {
                 href="/book"
                 className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-gradient-to-b from-gold-400 to-gold-500 text-navy-900 hover:from-gold-300 hover:to-gold-400 transition-all duration-300 font-bold text-[18px] shadow-2xl shadow-gold-400/30 active:scale-[0.97] flex items-center justify-center gap-2 group"
               >
-                קביעת ייעוץ בחינם
                 <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
+                קביעת ייעוץ בחינם
               </Link>
 
               <a

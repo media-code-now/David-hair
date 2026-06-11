@@ -200,6 +200,8 @@ export default async function AreaCityPage({ params }: PageProps) {
             <div className="grid sm:grid-cols-2 gap-3">
               <Link href="/hair-toppers" className="text-navy-900 hover:underline font-medium">טופר שיער</Link>
               <Link href="/hair-toppers-thin-hair" className="text-navy-900 hover:underline font-medium">טופרים לשיער דליל</Link>
+              <Link href="/padachat" className="text-navy-900 hover:underline font-medium">פדחת לשיער דליל</Link>
+              <Link href="/tzamidei-sear" className="text-navy-900 hover:underline font-medium">צמידי שיער</Link>
               <Link href="/custom-wigs" className="text-navy-900 hover:underline font-medium">פאות בהתאמה אישית</Link>
               <Link href="/medical-wigs" className="text-navy-900 hover:underline font-medium">פאה רפואית</Link>
               <Link href="/salon-blending" className="text-navy-900 hover:underline font-medium">שילוב וגזירה בסלון</Link>

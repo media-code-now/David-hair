@@ -40,8 +40,8 @@ export default function PersonalCustomization() {
           <div className="space-y-8">
             <div>
               <div className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2 mb-6">
-                <span className="text-sm font-bold text-navy-900 tracking-tight">התאמה אישית</span>
                 <Sparkles size={16} className="text-navy-800" strokeWidth={2.5} />
+                <span className="text-sm font-bold text-navy-900 tracking-tight">התאמה אישית</span>
               </div>
               
               <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-gray-900 mb-5 tracking-tight leading-[1.2]" dir="rtl">

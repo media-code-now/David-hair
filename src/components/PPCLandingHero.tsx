@@ -1,8 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckCircle2, ArrowLeft, Clock, Trophy } from 'lucide-react';
 import { useState } from 'react';
+import ppcBanner from '@/images/banners/2.jpg';
 
 export default function PPCLandingHero() {
   const [formData, setFormData] = useState({ phone: '', name: '' });
@@ -35,8 +37,8 @@ export default function PPCLandingHero() {
           <div>
             {/* Urgency Badge */}
             <div className="mb-6 inline-flex items-center gap-2 glass-dark-card rounded-full px-4 py-2">
-              <span className="text-[12px] font-bold text-green-300 uppercase tracking-wide">🔥 הצעה מוגבלת</span>
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+              <span className="text-[12px] font-bold text-green-300 uppercase tracking-wide">🔥 הצעה מוגבלת</span>
             </div>
 
             {/* Magnetic Headline */}
@@ -75,6 +77,16 @@ export default function PPCLandingHero() {
                 <div className="text-2xl font-black text-gold-300">15+</div>
                 <p className="text-[13px] text-navy-200 mt-1">שנות ניסיון</p>
               </div>
+            </div>
+
+            {/* In-page banner image */}
+            <div className="mb-10 rounded-2xl overflow-hidden border border-gold-400/30 shadow-xl shadow-navy-900/30">
+              <Image
+                src={ppcBanner}
+                alt="לפני ואחרי פתרונות שיער בהתאמה אישית"
+                className="w-full h-auto object-cover"
+                priority
+              />
             </div>
 
             {/* Key Benefits - Specific */}
@@ -166,8 +178,8 @@ export default function PPCLandingHero() {
                       disabled={loading}
                       className="w-full mt-6 px-6 py-4 rounded-xl bg-gradient-to-r from-gold-400 to-gold-500 text-navy-900 hover:from-gold-300 hover:to-gold-400 disabled:opacity-70 disabled:cursor-not-allowed transition-all duration-300 font-black text-[17px] shadow-xl shadow-gold-400/40 active:scale-[0.97] flex items-center justify-center gap-2"
                     >
-                      {loading ? 'שולח...' : 'קביעה עכשיו'}
                       {!loading && <ArrowLeft size={18} />}
+                      {loading ? 'שולח...' : 'קביעה עכשיו'}
                     </button>
 
                     {/* Friction Reducer */}

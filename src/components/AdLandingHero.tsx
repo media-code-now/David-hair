@@ -32,8 +32,8 @@ export default function AdLandingHero() {
           <div>
             {/* Top badge */}
             <div className="mb-8 inline-flex items-center gap-2 glass-dark-card rounded-full px-4 py-2.5">
-              <span className="text-[13px] font-semibold text-green-300">זמין עכשיו - פגישות בתאריכים הקרובים</span>
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+              <span className="text-[13px] font-semibold text-green-300">זמין עכשיו - פגישות בתאריכים הקרובים</span>
             </div>
 
             {/* Main Headline */}
@@ -70,8 +70,8 @@ export default function AdLandingHero() {
                 href="/book"
                 className="px-8 py-5 rounded-2xl bg-gradient-to-b from-gold-400 to-gold-500 text-navy-900 hover:from-gold-300 hover:to-gold-400 transition-all duration-300 font-bold text-[18px] shadow-2xl shadow-gold-400/30 active:scale-[0.97] flex items-center gap-2 group"
               >
-                קביעת ייעוץ חינם עכשיו
                 <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
+                קביעת ייעוץ חינם עכשיו
               </Link>
 
               {/* Social proof - small */}
@@ -157,8 +157,8 @@ export default function AdLandingHero() {
                     type="submit"
                     className="w-full mt-8 px-6 py-4 rounded-2xl bg-gradient-to-b from-gold-400 to-gold-500 text-navy-900 hover:from-gold-300 hover:to-gold-400 transition-all duration-300 font-bold text-[16px] shadow-xl shadow-gold-400/30 active:scale-[0.97] flex items-center justify-center gap-2 group"
                   >
-                    קביעת ייעוץ חינם
                     <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
+                    קביעת ייעוץ חינם
                   </button>
 
                   {/* Privacy notice */}
@@ -186,16 +186,16 @@ export default function AdLandingHero() {
                 className="flex items-center gap-3 text-navy-100 hover:text-gold-300 transition group"
                 dir="rtl"
               >
-                <span className="text-[15px] font-medium group-hover:underline">התקשרי עכשיו</span>
                 <Phone size={18} className="flex-shrink-0 text-gold-300" strokeWidth={2} />
+                <span className="text-[15px] font-medium group-hover:underline">התקשרי עכשיו</span>
               </a>
               <a
                 href="mailto:info@davidhair.co.il"
                 className="flex items-center gap-3 text-navy-100 hover:text-gold-300 transition group"
                 dir="rtl"
               >
-                <span className="text-[15px] font-medium group-hover:underline">שלחי הודעה</span>
                 <Mail size={18} className="flex-shrink-0 text-gold-300" strokeWidth={2} />
+                <span className="text-[15px] font-medium group-hover:underline">שלחי הודעה</span>
               </a>
             </div>
           </div>

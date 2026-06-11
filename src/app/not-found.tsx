@@ -49,8 +49,8 @@ export default function NotFound() {
                 href={link.href}
                 className="glass-card rounded-[16px] px-4 py-3.5 text-[14px] font-semibold text-gray-800 hover:shadow-md hover:scale-[1.02] transition-all duration-200 active:scale-[0.98] flex items-center justify-between gap-2"
               >
-                <span>{link.label}</span>
                 <ArrowRight size={14} className="text-navy-600 flex-shrink-0 rotate-180" />
+                <span>{link.label}</span>
               </Link>
             ))}
           </div>

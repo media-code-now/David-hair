@@ -1,21 +1,21 @@
 'use client';
 
-import { Star, Play } from 'lucide-react';
+import { Star } from 'lucide-react';
 import Script from 'next/script';
 
 const reviews = [
   {
-    id: 1, name: 'שרה מ., 34, תל אביב', rating: 5, title: 'אחרי 10 שנים עם שיער דליל',
+    id: 1, name: 'נועה כ., 34, תל אביב', rating: 5, title: 'אחרי 10 שנים עם שיער דליל',
     content: 'השיער שלי התחיל להיות דליל אחרי הלידה השנייה. ניסיתי כל מיני פתרונות והרגשתי שכולם רואים. כשהגעתי לסלון, הייעוצנית בילתה איתי שעה שלמה, בדקה כל פרט, והתאימה לי טופר שבאמת נראה כמו השיער שלי. זה שינה את החיים שלי.',
     hasVideo: true,
   },
   {
-    id: 2, name: 'ג׳ניפר ל., 42, חיפה', rating: 5, title: 'לאחרי טיפולי כימותרפיה',
+    id: 2, name: 'יעל ב., 42, חיפה', rating: 5, title: 'לאחרי טיפולי כימותרפיה',
     content: 'אחרי הטיפולים השיער שלי נשר. הייתי מנושלת ופחדתי שאף פאה לא תראה טבעית. הצוות כאן הייתה מדהימה – ישבנו, דיברנו, והן עזרו לי להרגיש בטוחה שוב. הפאה שקיבלתי נראית ומרגישה אמיתית. אני ממליצה לכל אישה שעוברת את זה.',
     hasVideo: false,
   },
   {
-    id: 3, name: 'מישל פ., 29, ירושלים', rating: 5, title: 'הפתרון לשיער דליל בקודקוד',
+    id: 3, name: 'מיכל ד., 29, ירושלים', rating: 5, title: 'הפתרון לשיער דליל בקודקוד',
     content: 'השיער שלי תמיד היה דק, אבל בשנים האחרונות השביל בקודקוד התרחב וזה הראה לי מבוגרת מדי. הטופר שקיבלתי פה בדיוק מתאים לאיזור, קל לשימוש, והכי חשוב – נראה טבעי לגמרי. אני משתמשת בו כבר שנה והוא נשאר מושלם.',
     hasVideo: true,
   },
@@ -95,12 +95,6 @@ export default function Reviews() {
                 <div className="w-10 h-10 rounded-[12px] bg-gradient-to-br from-gold-200 to-gold-300 flex-shrink-0 shadow-sm" />
                 <div>
                   <p className="font-semibold text-gray-900 text-[14px]">{review.name}</p>
-                  {review.hasVideo && (
-                    <div className="flex items-center gap-1.5 text-navy-800 text-[12px] font-semibold cursor-pointer hover:text-navy-600 transition">
-                      סרטון ביקורת
-                      <Play size={11} className="fill-navy-800" />
-                    </div>
-                  )}
                 </div>
               </div>
             </div>

@@ -240,8 +240,8 @@ export default function HairQuiz() {
                   href={userResult.relatedService}
                   className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 bg-navy-900 text-white rounded-xl hover:bg-navy-800 transition-all duration-200 font-semibold active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-navy-500"
                 >
-                  <span>למידע נוסף</span>
                   <ChevronLeft size={20} />
+                  <span>למידע נוסף</span>
                 </a>
                 <button
                   onClick={() => {
@@ -249,8 +249,8 @@ export default function HairQuiz() {
                   }}
                   className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 bg-green-50 text-green-700 rounded-xl hover:bg-green-100 transition-all duration-200 font-semibold border-2 border-green-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                 >
-                  <span>קביעת ייעוץ</span>
                   <ChevronLeft size={20} />
+                  <span>קביעת ייעוץ</span>
                 </button>
               </div>
 

@@ -44,8 +44,8 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4 text-[14px] tracking-tight" dir="rtl">שירותים</h4>
             <ul className="space-y-2.5 text-[13px]" dir="rtl">
               <li><Link href="/hair-toppers" className="hover:text-white transition-colors duration-200">טופר שיער לשיער דליל</Link></li>
-              <li><Link href="/custom-wigs" className="hover:text-white transition-colors duration-200">פאות בהתאמה אישית</Link></li>
-              <li><Link href="/medical-wigs" className="hover:text-white transition-colors duration-200">פאה רפואית</Link></li>
+              <li><Link href="/padachat" className="hover:text-white transition-colors duration-200">פדחת לשיער דליל</Link></li>
+              <li><Link href="/tzamidei-sear" className="hover:text-white transition-colors duration-200">צמידי שיער</Link></li>
               <li><Link href="/salon-blending" className="hover:text-white transition-colors duration-200">שילוב וגזירה בסלון</Link></li>
               <li><Link href="/wig-repairs-upgrades" className="hover:text-white transition-colors duration-200">תיקון ושדרוג פאה</Link></li>
             </ul>
