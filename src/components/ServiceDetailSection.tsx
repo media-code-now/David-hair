@@ -2,6 +2,7 @@
 
 import { ReactNode } from 'react';
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
 import { Check, Star } from 'lucide-react';
 import bannerOne from '@/images/banners/1.jpg';
 import bannerTwo from '@/images/banners/2.jpg';
@@ -16,7 +17,7 @@ interface ServiceDetailSectionProps {
   title: string;
   description: string;
   benefits: ServiceBenefit[];
-  imageSrc?: string;
+  imageSrc?: string | StaticImageData;
   imageAlt?: string;
   imagePlaceholder?: string;
   reversed?: boolean;

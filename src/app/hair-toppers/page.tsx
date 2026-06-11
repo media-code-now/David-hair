@@ -8,6 +8,8 @@ import ServiceCTA from '@/components/ServiceCTA';
 import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
+import bannerTwo from '@/images/banners/2.jpg';
+import beforeAfterOne from '@/images/before-after/before-after-1.jpg';
 
 export const metadata: Metadata = {
   title: 'טופר שיער נס ציונה – כיסוי שביל וקודקוד | David Hair',
@@ -90,6 +92,8 @@ export default function HairToppersPage() {
           { title: 'אפשרויות כיסוי מגוונות', description: 'מקליפסים קטנים לכיסוי שביל ועד יחידות גדולות יותר לאזורים רחבים — אנחנו מתאימות את הגודל המדויק לצרכים שלך.' },
           { title: 'חופש עיצוב', description: 'סלסול, החלקה, ייבוש — שיער אנושי אמיתי מאפשר אפשרויות עיצוב ללא הגבלה, עם תנועה וברק טבעיים.' },
         ]}
+        imageSrc={bannerTwo}
+        imageAlt="טופר שיער טבעי בהתאמה אישית"
         imagePlaceholder="💇‍♀️"
       />
 
@@ -103,6 +107,8 @@ export default function HairToppersPage() {
           { title: 'התאמה מאובטחת', description: 'אנחנו ממקמות ומצמידות את הטופר לנוחות ואבטחה מקסימלית, ומכווננות עד שההתאמה מושלמת.' },
           { title: 'עיצוב מקצועי', description: 'צוות הסלון שלנו גוזר ומשלב את הטופר עם השיער הטבעי שלך למראה חלק וכמעט בלתי ניתן לזיהוי.' },
         ]}
+        imageSrc={beforeAfterOne}
+        imageAlt="תהליך התאמה אישית לטופר שיער"
         imagePlaceholder="✨"
         reversed
       />

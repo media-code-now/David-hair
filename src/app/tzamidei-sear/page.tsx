@@ -10,6 +10,7 @@ import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 import tzamideiBanner from '@/images/banners/1.jpg';
+import beforeAfterFive from '@/images/before-after/5.jpg';
 
 export const metadata: Metadata = {
   title: 'צמידי שיער נס ציונה – תוספת נפח ואורך מהירה | David Hair',
@@ -121,6 +122,8 @@ export default function TzamideiSearPage() {
             { title: 'אפשרות להארכה', description: 'בחירה מדויקת של אורך חדש לפי הסגנון שאת רוצה – טבעי, מודגש או דרמטי יותר.' },
             { title: 'התאמה לגוון האישי', description: 'שילוב גוונים ליצירת מעבר רך בין השיער שלך לתוספת.' },
           ]}
+          imageSrc={beforeAfterFive}
+          imageAlt="צמידי שיער לפני ואחרי - נפח ואורך"
           imagePlaceholder="💁‍♀️"
         />
 

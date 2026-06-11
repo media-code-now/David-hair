@@ -10,6 +10,7 @@ import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 import padachatBanner from '@/images/banners/2.jpg';
+import beforeAfterFive from '@/images/before-after/5.jpg';
 
 export const metadata: Metadata = {
   title: 'פדחת לשיער דליל נס ציונה – כיסוי טבעי לקדמת הראש | David Hair',
@@ -134,6 +135,8 @@ export default function PadachatPage() {
             { title: 'גזירה ושילוב בסלון', description: 'עיצוב היחידה יחד עם השיער הטבעי כך שהמעבר יהיה חלק וכמעט בלתי נראה.' },
             { title: 'הדרכה ותחזוקה', description: 'הנחיות שימוש, ניקוי ואחסון כדי לשמור על תוצאה יפה לאורך זמן.' },
           ]}
+          imageSrc={beforeAfterFive}
+          imageAlt="תהליך התאמה לפדחת לשיער"
           imagePlaceholder="✨"
           reversed
         />
