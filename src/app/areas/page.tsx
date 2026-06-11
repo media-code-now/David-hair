@@ -41,7 +41,7 @@ export default function AreasIndexPage() {
             אנחנו מלוות נשים מכל אזור המרכז
           </h1>
           <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-            בחרי את העיר שלך כדי לקרוא על השירות המקומי ולקבל מידע רלוונטי על טופרים, פאות בהתאמה אישית ופאות רפואיות.
+            בחרו את העיר שלכם כדי לקרוא על השירות המקומי ולקבל מידע רלוונטי על טופרים, פאות בהתאמה אישית ופאות רפואיות.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

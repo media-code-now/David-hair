@@ -140,7 +140,7 @@ export default function PPCLandingHero() {
                     קבעו ייעוץ חינם
                   </h2>
                   <p className="text-gold-200 text-[15px] font-semibold mb-8" dir="rtl">
-                    השאירי פרטים ונחזור אלייך לייעוץ אישי מותאם:
+                    השאירו פרטים ונחזור אליכם לייעוץ אישי מותאם:
                   </p>
 
                   <form onSubmit={handleSubmit} className="space-y-4">

@@ -32,7 +32,7 @@ const valueProps: ValueProp[] = [
   {
     icon: Shield,
     title: 'אחריות שלמה',
-    desc: 'משהו לא בסדר? אנחנו מטפלות בזה. לא קשה.'
+    desc: 'משהו לא בסדר? אנחנו מטפלים בזה. לא קשה.'
   },
   {
     icon: Heart,

@@ -38,7 +38,7 @@ export default function NotFound() {
           <p className="text-[17px] text-gray-500 leading-relaxed mb-10">
             ייתכן שהקישור שגוי, הדף הועבר, או שהוא פשוט לא קיים.
             <br />
-            אבל השיער שלך — זה כבר אנחנו יכולות לטפל בו.
+            אבל השיער שלכם — זה כבר אנחנו יכולים לטפל בו.
           </p>
 
           {/* Quick links */}
