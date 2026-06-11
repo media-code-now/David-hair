@@ -7,6 +7,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const homeModified    = new Date('2026-06-03');
   const serviceModified = new Date('2026-06-01');
   const bookModified    = new Date('2026-06-01');
+  const areasModified   = new Date('2026-06-10');
+
+  const areaSlugs = ['nes-ziona', 'rishon-lezion', 'rehovot', 'ashdod', 'tel-aviv'];
 
   return [
     {
@@ -59,6 +62,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.95,
     },
+    {
+      url: `${baseUrl}/areas`,
+      lastModified: areasModified,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    ...areaSlugs.map((slug) => ({
+      url: `${baseUrl}/areas/${slug}`,
+      lastModified: areasModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.82,
+    })),
   ];
 }
 

@@ -7,6 +7,7 @@ import ServiceDetailSection from '@/components/ServiceDetailSection';
 import ServiceCTA from '@/components/ServiceCTA';
 import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
+import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
   title: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי | David Hair',
@@ -55,6 +56,16 @@ export default function WigRepairsPage() {
   return (
     <>
       <Header />
+      <ServiceReviewSchema
+        serviceName="תיקון ושדרוג פאות וטופרים"
+        serviceUrl="https://hairtoppersisrael.com/wig-repairs-upgrades"
+        aggregateRatingValue={4.8}
+        reviewCount={79}
+        reviews={[
+          { author: 'קרן ל.', reviewBody: 'שיקמו את הפאה שלי בצורה מדהימה וחסכו לי רכישה חדשה.', rating: 5 },
+          { author: 'אורית מ.', reviewBody: 'תיקון מהיר, גימור מקצועי ושירות נהדר.', rating: 5 },
+        ]}
+      />
       <BreadcrumbHero 
         title="תיקון ושדרוג"
         subtitle="חידוש מקצועי לפאות וטופרים"

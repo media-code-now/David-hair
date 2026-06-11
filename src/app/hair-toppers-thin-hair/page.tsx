@@ -7,6 +7,7 @@ import ServiceDetailSection from '@/components/ServiceDetailSection';
 import ServiceCTA from '@/components/ServiceCTA';
 import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
+import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
   title: 'טופר לשיער דליל נס ציונה – כיסוי שביל וקודקוד | David Hair',
@@ -55,6 +56,16 @@ export default function ThinHairToppersPage() {
   return (
     <>
       <Header />
+      <ServiceReviewSchema
+        serviceName="טופר לשיער דליל"
+        serviceUrl="https://hairtoppersisrael.com/hair-toppers-thin-hair"
+        aggregateRatingValue={4.9}
+        reviewCount={136}
+        reviews={[
+          { author: 'מישל פ.', reviewBody: 'הכיסוי לשביל נראה טבעי לחלוטין וקל מאוד לשימוש יומיומי.', rating: 5 },
+          { author: 'גלית ת.', reviewBody: 'פתרון מדויק לשיער דליל בלי תחושת כובד ובלי לחץ על הקרקפת.', rating: 5 },
+        ]}
+      />
       <BreadcrumbHero 
         title="טופרים לשיער דליל"
         subtitle="כיסוי שביל וקודקוד בטבעיות מלאה"

@@ -7,6 +7,7 @@ import ServiceDetailSection from '@/components/ServiceDetailSection';
 import ServiceCTA from '@/components/ServiceCTA';
 import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
+import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
   title: 'טופר שיער נס ציונה – כיסוי שביל וקודקוד | David Hair',
@@ -55,6 +56,16 @@ export default function HairToppersPage() {
   return (
     <>
       <Header />
+      <ServiceReviewSchema
+        serviceName="טופר שיער"
+        serviceUrl="https://hairtoppersisrael.com/hair-toppers"
+        aggregateRatingValue={4.9}
+        reviewCount={173}
+        reviews={[
+          { author: 'שרה מ.', reviewBody: 'התאמה טבעית, נוחה ודיסקרטית. אף אחד לא שם לב שמדובר בטופר.', rating: 5 },
+          { author: 'ליאת ד.', reviewBody: 'השילוב עם השיער שלי היה מושלם והחזיר לי ביטחון יומיומי.', rating: 5 },
+        ]}
+      />
       <BreadcrumbHero 
         title="טופרי שיער"
         subtitle="כיסוי ונפח טבעיים בהתאמה אישית"

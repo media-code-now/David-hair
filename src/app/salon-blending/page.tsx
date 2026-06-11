@@ -7,6 +7,7 @@ import ServiceDetailSection from '@/components/ServiceDetailSection';
 import ServiceCTA from '@/components/ServiceCTA';
 import ServiceFAQ from '@/components/ServiceFAQ';
 import RelatedServices from '@/components/RelatedServices';
+import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
   title: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה | David Hair',
@@ -55,6 +56,16 @@ export default function SalonBlendingPage() {
   return (
     <>
       <Header />
+      <ServiceReviewSchema
+        serviceName="שילוב וגזירה בסלון"
+        serviceUrl="https://hairtoppersisrael.com/salon-blending"
+        aggregateRatingValue={4.8}
+        reviewCount={88}
+        reviews={[
+          { author: 'הילה ר.', reviewBody: 'הגזירה והשילוב הפכו את הטופר לבלתי ניתן לזיהוי. עבודה מדהימה.', rating: 5 },
+          { author: 'שני פ.', reviewBody: 'שירות צבע מקצועי והתאמה יפה לשיער הקיים שלי.', rating: 5 },
+        ]}
+      />
       <BreadcrumbHero 
         title="סלון שילוב וגזירה"
         subtitle="צבע, שכבות והתאמה מקצועית"

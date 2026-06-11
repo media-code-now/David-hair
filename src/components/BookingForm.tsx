@@ -18,6 +18,7 @@ import {
   MessageCircle,
   Phone,
 } from 'lucide-react';
+import { trackGaEvent, trackMetaEvent } from '@/lib/tracking';
 
 type ServiceType = 'topper' | 'wig' | 'medical' | 'refresh' | null;
 
@@ -129,6 +130,20 @@ export default function BookingForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const service = serviceOptions.find((option) => option.id === formData.service)?.title ?? 'לא נבחר';
+    const payload = {
+      service,
+      city: formData.city || 'לא צוין',
+      preferred_time: formData.preferredTime || 'לא צוין',
+      source: 'booking-form',
+    };
+
+    trackMetaEvent('Lead', payload);
+    trackMetaEvent('Contact', payload);
+    trackGaEvent('generate_lead', payload);
+    trackGaEvent('contact', payload);
+
     console.log('Booking submitted:', formData);
     setSubmitted(true);
   };
