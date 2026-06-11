@@ -60,7 +60,7 @@ export default function AdProblemAgitate() {
         <div className="bg-gradient-to-br from-red-50/80 to-red-50/40 border-l-4 border-red-400 rounded-lg p-8 text-center" dir="rtl">
           <p className="text-gray-800 text-lg font-semibold mb-2">
             <AlertCircle size={24} className="text-red-600 inline mr-2 align-text-bottom" strokeWidth={2} />
-            <strong>אל תחזרי לפתרונות שעבדו לפני 10 שנים.</strong>
+            <strong>אל תחזרו לפתרונות שעבדו לפני 10 שנים.</strong>
           </p>
           <p className="text-gray-600 text-[15px]">
             הטכנולוגיה התקדמה. הפתרונות התקדמו. וכיום יש אפשרות שבאמת עובדת – וזה טבעי כל כך שאיש לא יבחין.

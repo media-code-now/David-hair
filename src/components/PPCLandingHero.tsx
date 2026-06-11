@@ -43,7 +43,7 @@ export default function PPCLandingHero() {
 
             {/* Magnetic Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-black text-white mb-4 leading-[1.05] tracking-tight" dir="rtl">
-              החזרי את{' '}
+              החזירו את{' '}
               <span className="bg-gradient-to-l from-gold-300 via-gold-200 to-gold-400 bg-clip-text text-transparent">הביטחון שלך</span>
               {' '}בשיער
             </h1>
@@ -117,7 +117,7 @@ export default function PPCLandingHero() {
               href="https://wa.me/972504001187"
               className="block w-full px-8 py-4 rounded-2xl border-2 border-gold-400 text-gold-400 hover:bg-gold-400/10 transition-all duration-300 font-bold text-[17px] text-center"
             >
-              או שלחי הודעה עכשיו בוואטסאפ
+              או שלחו הודעה עכשיו בוואטסאפ
             </a>
 
             {/* Trust Elements */}
@@ -137,7 +137,7 @@ export default function PPCLandingHero() {
               {!submitted ? (
                 <>
                   <h2 className="text-3xl font-black text-white mb-2 tracking-tight" dir="rtl">
-                    קבעי ייעוץ חינם
+                    קבעו ייעוץ חינם
                   </h2>
                   <p className="text-gold-200 text-[15px] font-semibold mb-8" dir="rtl">
                     השאירי פרטים ונחזור אלייך לייעוץ אישי מותאם:
@@ -224,7 +224,7 @@ export default function PPCLandingHero() {
             {!submitted && (
               <div className="mt-6 p-4 rounded-xl border border-gold-400/30 text-center">
                 <p className="text-navy-200 text-[13px] mb-3" dir="rtl">
-                  מעדיפה ליצור קשר ישירות?
+                  מעדיפים ליצור קשר ישירות?
                 </p>
                 <a
                   href="https://wa.me/972504001187"

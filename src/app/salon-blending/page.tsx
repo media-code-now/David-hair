@@ -193,7 +193,7 @@ export default function SalonBlendingPage() {
       <ServiceFAQ faqs={faqs} subtitle="שאלות נפוצות על שירותי הסלון שלנו" />
 
       <ServiceCTA
-        title="קבעי תור לסלון"
+        title="קבעו תור לסלון"
         subtitle="בין אם זה השילוב הראשון שלך או תחזוקה שוטפת — המעצבות המומחות שלנו מוכנות לגרום לפריט שלך להיראות במיטבו."
         ctaText="קביעת תור לסלון"
       />

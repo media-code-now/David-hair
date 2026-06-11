@@ -166,7 +166,7 @@ export default function MedicalWigsPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-navy-900 font-bold">3.</span>
-                  <p>קבעי ייעוץ אצלנו (אנחנו נטפל בתיעוד)</p>
+                  <p>קבעו ייעוץ אצלנו (אנחנו נטפל בתיעוד)</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-navy-900 font-bold">4.</span>
@@ -185,7 +185,7 @@ export default function MedicalWigsPage() {
 
       <ServiceCTA
         title="מגיע לך להרגיש יפה"
-        subtitle="קבעי ייעוץ חינם ופרטי. אנחנו נדאג לכל דבר — ממציאת הפאה המושלמת ועד עזרה בניירת הביטוח. ללא לחץ, רק תמיכה."
+        subtitle="קבעו ייעוץ חינם ופרטי. אנחנו נדאג לכל דבר — ממציאת הפאה המושלמת ועד עזרה בניירת הביטוח. ללא לחץ, רק תמיכה."
         ctaText="ייעוץ לפאה רפואית"
       />
 

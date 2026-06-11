@@ -6,7 +6,7 @@ import { Home, ArrowRight, MessageCircle, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'הדף לא נמצא (404) | David Hair Solutions',
-  description: 'הדף שחיפשת לא קיים. חזרי לדף הבית או צרי קשר לקביעת ייעוץ.',
+  description: 'הדף שחיפשת לא קיים. חזרו לדף הבית או צרו קשר לקביעת ייעוץ.',
   robots: { index: false, follow: false },
 };
 
@@ -62,7 +62,7 @@ export default function NotFound() {
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-b from-navy-800 to-navy-900 text-white font-bold text-[15px] shadow-xl shadow-navy-900/25 hover:from-navy-700 hover:to-navy-800 transition-all duration-300 active:scale-[0.97]"
             >
               <Home size={16} strokeWidth={2.2} />
-              חזרי לדף הבית
+              חזרו לדף הבית
             </Link>
             <a
               href="https://wa.me/972504001187"

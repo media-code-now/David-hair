@@ -49,11 +49,11 @@ export default function Hero() {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-gray-900 leading-[1.2] tracking-tight" dir="rtl">
-                השיער שלך מגדיר איך את מרגישה.{' '}
-                <span className="bg-gradient-to-l from-navy-800 to-navy-600 bg-clip-text text-transparent">אנחנו כאן כדי להחזיר לך את הביטחון.</span>
+                השיער שלכם מגדיר איך אתם מרגישים.{' '}
+                <span className="bg-gradient-to-l from-navy-800 to-navy-600 bg-clip-text text-transparent">אנחנו כאן כדי להחזיר לכם את הביטחון.</span>
               </h1>
               <p className="text-[17px] sm:text-lg text-gray-500 leading-relaxed" dir="rtl">
-                פתרונות שיער פרימיום עם התאמה מושלמת – כך שאף אחד לא יבחין, ורק את תרגישי את ההבדל.
+                פתרונות שיער פרימיום עם התאמה מושלמת – כך שאף אחד לא יבחין, ורק אתם תרגישו את ההבדל.
               </p>
             </div>
 
@@ -63,7 +63,7 @@ export default function Hero() {
                 ייעוץ חינם ללא התחייבות
               </Link>
               <a href="https://wa.me/972504001187" className="px-8 py-4 rounded-2xl bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 font-semibold text-[17px] text-center active:scale-[0.97]">
-                שלחי הודעה בוואטסאפ
+                שלחו הודעה בוואטסאפ
               </a>
             </div>
 

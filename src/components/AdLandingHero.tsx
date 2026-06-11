@@ -187,7 +187,7 @@ export default function AdLandingHero() {
                 dir="rtl"
               >
                 <Phone size={18} className="flex-shrink-0 text-gold-300" strokeWidth={2} />
-                <span className="text-[15px] font-medium group-hover:underline">התקשרי עכשיו</span>
+                <span className="text-[15px] font-medium group-hover:underline">התקשרו עכשיו</span>
               </a>
               <a
                 href="mailto:info@davidhair.co.il"
@@ -195,7 +195,7 @@ export default function AdLandingHero() {
                 dir="rtl"
               >
                 <Mail size={18} className="flex-shrink-0 text-gold-300" strokeWidth={2} />
-                <span className="text-[15px] font-medium group-hover:underline">שלחי הודעה</span>
+                <span className="text-[15px] font-medium group-hover:underline">שלחו הודעה</span>
               </a>
             </div>
           </div>

@@ -209,7 +209,7 @@ export default function BookingForm() {
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium shadow-lg shadow-[#25D366]/25 active:scale-[0.97]"
             >
               <MessageCircle size={18} />
-              שלחי הודעה עכשיו
+              שלחו הודעה עכשיו
             </a>
           </div>
         </div>
@@ -291,7 +291,7 @@ export default function BookingForm() {
                 איזה שירות מעניין אותך?
               </h2>
               <p className="text-gray-400 mb-8">
-                בחרי את השירות שהכי מתאים לך
+                בחרו את השירות שהכי מתאים לכם
               </p>
 
               <div className="grid sm:grid-cols-2 gap-4">
@@ -364,7 +364,7 @@ export default function BookingForm() {
               </div>
 
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
-                ספרי לנו קצת על עצמך
+                ספרו לנו קצת עליכם
               </h2>
               <p className="text-gray-400 mb-8">
                 הפרטים האלה יעזרו לנו להתכונן לייעוץ שלך
@@ -431,7 +431,7 @@ export default function BookingForm() {
                         setFormData({ ...formData, whatsapp: e.target.value })
                       }
                       className="w-full px-4 py-3 rounded-[12px] glass border-0 focus:ring-2 focus:ring-navy-900/30 outline-none transition text-gray-900 placeholder:text-gray-300"
-                      placeholder="השאירי ריק אם זה אותו מספר"
+                      placeholder="השאירו ריק אם זה אותו מספר"
                     />
                   </div>
                 </div>
@@ -477,7 +477,7 @@ export default function BookingForm() {
                       className="w-full px-4 py-3 rounded-[12px] glass border-0 focus:ring-2 focus:ring-navy-900/30 outline-none transition text-gray-900 bg-transparent appearance-none"
                     >
                       <option value="" disabled>
-                        בחרי שעה...
+                        בחרו שעה...
                       </option>
                       {timeSlots.map((slot) => (
                         <option key={slot} value={slot}>
@@ -523,7 +523,7 @@ export default function BookingForm() {
                         <Upload size={16} className="text-navy-700" />
                       </div>
                       <span className="text-sm font-medium">
-                        העלי תמונה של השיער שלך
+                        העלו תמונה של השיער
                       </span>
                     </button>
                   )}
@@ -600,7 +600,7 @@ export default function BookingForm() {
         {/* Alternative contact */}
         <div className="mt-10 glass-card rounded-[18px] p-6 sm:p-8">
           <p className="text-center text-gray-600 mb-5 font-medium">
-            מעדיפה ליצור קשר ישירות?
+            מעדיפים ליצור קשר ישירות?
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -608,7 +608,7 @@ export default function BookingForm() {
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium shadow-lg shadow-[#25D366]/25 active:scale-[0.97]"
             >
               <MessageCircle size={18} />
-              שלחי הודעה בוואטסאפ
+              שלחו הודעה בוואטסאפ
             </a>
             <a
               href="tel:+972504001187"

@@ -22,7 +22,7 @@ export default function ServiceHero({
   subtitle,
   features = [],
   ctaText = 'קביעת ייעוץ חינם',
-  ctaSecondaryText = 'שלחי הודעה בוואטסאפ',
+  ctaSecondaryText = 'שלחו הודעה בוואטסאפ',
 }: ServiceHeroProps) {
   return (
     <section className="relative pt-16 pb-16 sm:pt-20 sm:pb-20 lg:pt-24 lg:pb-24 overflow-hidden bg-[#fafbfd]">

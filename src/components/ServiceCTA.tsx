@@ -10,8 +10,8 @@ interface ServiceCTAProps {
 }
 
 export default function ServiceCTA({
-  title = 'מוכנה להתחיל?',
-  subtitle = 'קבעי ייעוץ חינם ללא התחייבות. נעזור לך למצוא את הפתרון המתאים ביותר עבורך, בסביבה פרטית ונעימה.',
+  title = 'מוכנים להתחיל?',
+  subtitle = 'קבעו ייעוץ חינם ללא התחייבות. נעזור למצוא את הפתרון המתאים ביותר עבורכם, בסביבה פרטית ונעימה.',
   ctaText = 'קביעת ייעוץ חינם',
 }: ServiceCTAProps) {
   return (
@@ -34,14 +34,14 @@ export default function ServiceCTA({
             className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#25D366] text-white hover:bg-[#20BA5A] transition font-semibold text-lg"
           >
             <MessageCircle size={20} />
-            שלחי הודעה בוואטסאפ
+            שלחו הודעה בוואטסאפ
           </a>
           <a
             href="tel:+972504001187"
             className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg border-2 border-gray-300 text-gray-900 hover:border-gray-400 transition font-semibold text-lg"
           >
             <Phone size={20} />
-            התקשרי עכשיו
+            התקשרו עכשיו
           </a>
         </div>
 
