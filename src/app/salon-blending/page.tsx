@@ -22,6 +22,22 @@ export const metadata: Metadata = {
     description: 'שירותי סלון מקצועיים לטופרים ולפאות בנס ציונה, עם גזירה, צביעה ושילוב למראה טבעי.',
     type: 'website',
     locale: 'he_IL',
+    siteName: 'David Hair Solutions',
+    url: 'https://hairtoppersisrael.com/salon-blending',
+    images: [
+      {
+        url: 'https://hairtoppersisrael.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה',
+    description: 'שירותי סלון מקצועיים לטופרים ולפאות בנס ציונה, עם גזירה, צביעה ושילוב למראה טבעי.',
+    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

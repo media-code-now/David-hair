@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   title: 'אזורי שירות – טופרים ופאות במרכז | David Hair',
   description:
     'אזורי השירות של David Hair Solutions: נס ציונה, ראשון לציון, רחובות, אשדוד ותל אביב. טופרים, פאות רפואיות ופאות בהתאמה אישית.',
+  keywords:
+    'טופרים ופאות נס ציונה, טופר שיער ראשון לציון, פאה רפואית רחובות, פתרון שיער אשדוד, טופר שיער תל אביב, סלון שיער מרכז',
   alternates: {
     canonical: 'https://hairtoppersisrael.com/areas',
     languages: { 'he-IL': 'https://hairtoppersisrael.com/areas' },
@@ -26,7 +28,23 @@ export const metadata: Metadata = {
       'נס ציונה, ראשון לציון, רחובות, אשדוד ותל אביב – שירותי טופרים ופאות בהתאמה אישית.',
     type: 'website',
     locale: 'he_IL',
+    siteName: 'David Hair Solutions',
     url: 'https://hairtoppersisrael.com/areas',
+    images: [
+      {
+        url: 'https://hairtoppersisrael.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'אזורי שירות – טופרים ופאות במרכז',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'אזורי שירות – טופרים ופאות במרכז',
+    description:
+      'נס ציונה, ראשון לציון, רחובות, אשדוד ותל אביב – שירותי טופרים ופאות בהתאמה אישית.',
+    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

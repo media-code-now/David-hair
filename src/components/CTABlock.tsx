@@ -15,7 +15,7 @@ export default function CTABlock() {
               זה הזמן להרגיש שוב כמו עצמך.
             </h2>
             <p className="text-[17px] text-navy-200 leading-relaxed mb-10 max-w-xl mx-auto" dir="rtl">
-              בואי לשיחה קצרה וכנה. אין לחץ, אין מכירה אגרסיבית. רק שיחה אמיתית על מה שטוב בשבילך.
+              בואי לשיחה קצרה וכנה. אין לחץ. רק שיחה אמיתית על מה שטוב בשבילך.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">

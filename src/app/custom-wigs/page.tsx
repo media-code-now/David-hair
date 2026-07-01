@@ -22,6 +22,22 @@ export const metadata: Metadata = {
     description: 'פאות מעוצבות בהתאמה אישית בנס ציונה לפי המפרט המדויק שלך, עם שיער אנושי 100% ובנייה ידנית.',
     type: 'website',
     locale: 'he_IL',
+    siteName: 'David Hair Solutions',
+    url: 'https://hairtoppersisrael.com/custom-wigs',
+    images: [
+      {
+        url: 'https://hairtoppersisrael.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'פאות בהתאמה אישית נס ציונה – עיצוב והתאמה מלאה',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'פאות בהתאמה אישית נס ציונה – עיצוב והתאמה מלאה',
+    description: 'פאות מעוצבות בהתאמה אישית בנס ציונה לפי המפרט המדויק שלך, עם שיער אנושי 100% ובנייה ידנית.',
+    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

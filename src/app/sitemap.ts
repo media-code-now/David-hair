@@ -32,6 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/hair-units`,
+      lastModified: serviceModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/padachat`,
       lastModified: serviceModified,
       changeFrequency: 'monthly',

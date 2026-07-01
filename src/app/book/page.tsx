@@ -17,6 +17,22 @@ export const metadata: Metadata = {
     description: 'קביעת ייעוץ חינם להתאמת טופר או פאה בנס ציונה. ללא התחייבות ובדיסקרטיות מלאה.',
     type: 'website',
     locale: 'he_IL',
+    siteName: 'David Hair Solutions',
+    url: 'https://hairtoppersisrael.com/book',
+    images: [
+      {
+        url: 'https://hairtoppersisrael.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | David Hair',
+    description: 'קביעת ייעוץ חינם להתאמת טופר או פאה בנס ציונה. ללא התחייבות ובדיסקרטיות מלאה.',
+    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

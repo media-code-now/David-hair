@@ -28,6 +28,23 @@ export const metadata: Metadata = {
       'כיסוי טבעי לקדמת הראש עם פדחת בהתאמה אישית: טופ סקין, לייס ומיקרוליין לנוחות ומראה בלתי נראה.',
     type: 'website',
     locale: 'he_IL',
+    siteName: 'David Hair Solutions',
+    url: 'https://hairtoppersisrael.com/padachat',
+    images: [
+      {
+        url: 'https://hairtoppersisrael.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'פדחת לשיער דליל נס ציונה – כיסוי טבעי לקדמת הראש',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'פדחת לשיער דליל נס ציונה – כיסוי טבעי לקדמת הראש',
+    description:
+      'כיסוי טבעי לקדמת הראש עם פדחת בהתאמה אישית: טופ סקין, לייס ומיקרוליין לנוחות ומראה בלתי נראה.',
+    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

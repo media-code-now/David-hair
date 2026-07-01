@@ -22,6 +22,22 @@ export const metadata: Metadata = {
     description: 'תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים בנס ציונה, עם שחזור כמעט כמו חדש.',
     type: 'website',
     locale: 'he_IL',
+    siteName: 'David Hair Solutions',
+    url: 'https://hairtoppersisrael.com/wig-repairs-upgrades',
+    images: [
+      {
+        url: 'https://hairtoppersisrael.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי',
+    description: 'תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים בנס ציונה, עם שחזור כמעט כמו חדש.',
+    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

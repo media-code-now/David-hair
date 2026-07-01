@@ -57,6 +57,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   ],
   serviceType: [
     "טופר שיער",
+    "יחידות שיער",
     "פאות בהתאמה אישית",
     "פאה רפואית",
     "שילוב פאה בסלון",
@@ -64,6 +65,54 @@ const LOCAL_BUSINESS_SCHEMA = {
     "פתרון לשיער דליל",
   ],
   hasMap: "https://maps.google.com/?q=שביט+8+נס+ציונה",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "905",
+    bestRating: "5",
+    worstRating: "1",
+  },
+};
+
+const WEBSITE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "David Hair Solutions",
+  url: "https://hairtoppersisrael.com",
+  inLanguage: "he-IL",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://hairtoppersisrael.com/?s={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const ORGANIZATION_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "David Hair Solutions",
+  alternateName: "דיוויד הייר סולושנס",
+  url: "https://hairtoppersisrael.com",
+  logo: "https://hairtoppersisrael.com/logo-black.png",
+  image: "https://hairtoppersisrael.com/og-image.jpg",
+  telephone: "+972504001187",
+  email: "contact@davidhair.co.il",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "שביט 8",
+    addressLocality: "נס ציונה",
+    addressRegion: "מרכז",
+    postalCode: "7408028",
+    addressCountry: "IL",
+  },
+  sameAs: [
+    "https://wa.me/972504001187",
+    "https://www.facebook.com/davidhairsolution/",
+    "https://www.instagram.com/david_hair_solutions/",
+  ],
 };
 
 const geistSans = Geist({
@@ -172,6 +221,16 @@ export default function RootLayout({
           id="local-business-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }}
+        />
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }}
+        />
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }}
         />
         {GA_MEASUREMENT_ID ? (
           <>

@@ -146,7 +146,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: cityData.description,
       locale: 'he_IL',
       type: 'website',
+      siteName: 'David Hair Solutions',
       url: canonical,
+      images: [
+        {
+          url: 'https://hairtoppersisrael.com/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: cityData.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: cityData.title,
+      description: cityData.description,
+      images: ['https://hairtoppersisrael.com/og-image.jpg'],
     },
   };
 }

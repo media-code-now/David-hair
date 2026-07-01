@@ -22,6 +22,22 @@ export const metadata: Metadata = {
     description: 'פאות רפואיות בנס ציונה לכימותרפיה ואלופציה, עם התאמה נוחה ודיסקרטית בחדר פרטי.',
     type: 'website',
     locale: 'he_IL',
+    siteName: 'David Hair Solutions',
+    url: 'https://hairtoppersisrael.com/medical-wigs',
+    images: [
+      {
+        url: 'https://hairtoppersisrael.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | David Hair',
+    description: 'פאות רפואיות בנס ציונה לכימותרפיה ואלופציה, עם התאמה נוחה ודיסקרטית בחדר פרטי.',
+    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

@@ -13,10 +13,30 @@ import AdFAQ from '@/components/AdFAQ';
 export const metadata: Metadata = {
   title: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם | David Hair',
   description: 'נשים רבות מתמודדות עם דלילות שיער. David Hair מציעה טופרים ופאות במראה טבעי ובהתאמה אישית. ייעוץ חינם ללא התחייבות.',
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם | David Hair',
     description: 'נשים רבות מתמודדות עם דלילות שיער. David Hair מציעה טופרים ופאות במראה טבעי ובהתאמה אישית. ייעוץ חינם ללא התחייבות.',
     type: 'website',
+    locale: 'he_IL',
+    siteName: 'David Hair Solutions',
+    images: [
+      {
+        url: 'https://hairtoppersisrael.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם | David Hair',
+    description: 'נשים רבות מתמודדות עם דלילות שיער. David Hair מציעה טופרים ופאות במראה טבעי ובהתאמה אישית. ייעוץ חינם ללא התחייבות.',
+    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

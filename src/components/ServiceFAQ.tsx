@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import Script from 'next/script';
 
 export interface FAQItem {
   question: string;
@@ -21,8 +22,28 @@ export default function ServiceFAQ({
 }: ServiceFAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
+  const schemaId = `service-faq-schema-${faqs[0]?.question ?? title}`.replace(/[^a-zA-Z0-9\u0590-\u05FF]/g, '-').slice(0, 80);
+
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-white via-gold-50/20 to-navy-50/15">
+      <Script
+        id={schemaId}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12" dir="rtl">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">

@@ -28,6 +28,23 @@ export const metadata: Metadata = {
       'פתרון מהיר לנפח ואורך עם צמידי שיער, כולל התאמת גוון מקצועית ואבחון אישי לשיטת חיבור נכונה.',
     type: 'website',
     locale: 'he_IL',
+    siteName: 'David Hair Solutions',
+    url: 'https://hairtoppersisrael.com/tzamidei-sear',
+    images: [
+      {
+        url: 'https://hairtoppersisrael.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'צמידי שיער נס ציונה – תוספת נפח ואורך מהירה',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'צמידי שיער נס ציונה – תוספת נפח ואורך מהירה',
+    description:
+      'פתרון מהיר לנפח ואורך עם צמידי שיער, כולל התאמת גוון מקצועית ואבחון אישי לשיטת חיבור נכונה.',
+    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 
