@@ -15,7 +15,7 @@ const LOCAL_BUSINESS_SCHEMA = {
     "טופרים, פאות בהתאמה אישית ופאות רפואיות עם התאמה דיסקרטית בחדר פרטי. שילוב וגזירה מקצועיים בסלון נשים פרטי בנס ציונה.",
   url: "https://hairtoppersisrael.com",
   telephone: "+972504001187",
-  email: "contact@davidhair.co.il",
+  email: "office@hairtoppersisrael.com",
   image: "https://hairtoppersisrael.com/logo-black.png",
   logo: "https://hairtoppersisrael.com/logo-black.png",
   priceRange: "₪₪",
@@ -99,7 +99,7 @@ const ORGANIZATION_SCHEMA = {
   logo: "https://hairtoppersisrael.com/logo-black.png",
   image: "https://hairtoppersisrael.com/og-image.jpg",
   telephone: "+972504001187",
-  email: "contact@davidhair.co.il",
+  email: "office@hairtoppersisrael.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "שביט 8",

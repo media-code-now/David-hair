@@ -190,7 +190,7 @@ export default function AdLandingHero() {
                 <span className="text-[15px] font-medium group-hover:underline">התקשרו עכשיו</span>
               </a>
               <a
-                href="mailto:info@davidhair.co.il"
+                href="mailto:office@hairtoppersisrael.com"
                 className="flex items-center gap-3 text-navy-100 hover:text-gold-300 transition group"
                 dir="rtl"
               >
