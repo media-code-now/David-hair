@@ -10,6 +10,7 @@ export default function PPCLandingHero() {
   const [formData, setFormData] = useState({ phone: '', name: '' });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,12 +18,29 @@ export default function PPCLandingHero() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitError(false);
     setLoading(true);
-    // TODO: Connect to your backend/CRM
-    await new Promise(resolve => setTimeout(resolve, 800));
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setLoading(false);
+
+    try {
+      const response = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: 'ppc',
+          name: formData.name,
+          phone: formData.phone,
+          pageUrl: typeof window !== 'undefined' ? window.location.href : undefined,
+        }),
+      });
+
+      if (!response.ok) throw new Error('Request failed');
+      setSubmitted(true);
+    } catch (error) {
+      console.error('PPC lead submission failed:', error);
+      setSubmitError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -183,6 +201,12 @@ export default function PPCLandingHero() {
                     </button>
 
                     {/* Friction Reducer */}
+                    {submitError && (
+                      <p className="text-[13px] text-red-300 text-center leading-relaxed" dir="rtl">
+                        משהו השתבש בשליחה. נסו שוב או שלחו הודעה ב{' '}
+                        <a href="https://wa.me/972504001187" className="underline font-semibold">וואטסאפ</a>.
+                      </p>
+                    )}
                     <p className="text-[12px] text-navy-200 text-center leading-relaxed mt-4" dir="rtl">
                       נחזור אלייך בתוך 24 שעות.
                       <br />

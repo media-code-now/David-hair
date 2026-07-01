@@ -20,6 +20,17 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Lead Form Emails (Resend)
+
+The booking form (`/book`) and the ads/PPC landing page forms submit to `src/app/api/lead/route.ts`, which emails the lead to your inbox via [Resend](https://resend.com).
+
+1. Create a free account at [resend.com](https://resend.com) and generate an API key.
+2. Copy `.env.example` to `.env.local` and fill in `RESEND_API_KEY`.
+3. By default, leads are sent to `office@hairtoppersisrael.com` (`LEAD_TO_EMAIL`) from `onboarding@resend.dev` (`RESEND_FROM_EMAIL`) — no domain setup required to get started.
+4. For better deliverability/branding, [verify `hairtoppersisrael.com`](https://resend.com/docs/add-a-domain) in Resend and update `RESEND_FROM_EMAIL` to something like `"David Hair Solutions <leads@hairtoppersisrael.com>"`.
+
+If `RESEND_API_KEY` is missing, form submissions will fail gracefully (the visitor sees a WhatsApp/phone fallback) and the lead payload is logged to the server console.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

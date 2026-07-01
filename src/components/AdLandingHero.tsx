@@ -7,17 +7,40 @@ import { useState } from 'react';
 export default function AdLandingHero() {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Connect to your backend/email service
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    setSubmitError(false);
+    setSubmitting(true);
+
+    try {
+      const response = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: 'ads',
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          pageUrl: typeof window !== 'undefined' ? window.location.href : undefined,
+        }),
+      });
+
+      if (!response.ok) throw new Error('Request failed');
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 3000);
+    } catch (error) {
+      console.error('Ad lead submission failed:', error);
+      setSubmitError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -155,11 +178,19 @@ export default function AdLandingHero() {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full mt-8 px-6 py-4 rounded-2xl bg-gradient-to-b from-gold-400 to-gold-500 text-navy-900 hover:from-gold-300 hover:to-gold-400 transition-all duration-300 font-bold text-[16px] shadow-xl shadow-gold-400/30 active:scale-[0.97] flex items-center justify-center gap-2 group"
+                    disabled={submitting}
+                    className="w-full mt-8 px-6 py-4 rounded-2xl bg-gradient-to-b from-gold-400 to-gold-500 text-navy-900 hover:from-gold-300 hover:to-gold-400 transition-all duration-300 font-bold text-[16px] shadow-xl shadow-gold-400/30 active:scale-[0.97] flex items-center justify-center gap-2 group disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                    קביעת ייעוץ חינם
+                    {submitting ? 'שולח...' : 'קביעת ייעוץ חינם'}
                   </button>
+
+                  {submitError && (
+                    <p className="text-[13px] text-red-300 text-center leading-relaxed" dir="rtl">
+                      משהו השתבש. נסו שוב או שלחו הודעה ב{' '}
+                      <a href="https://wa.me/972504001187" className="underline font-semibold">וואטסאפ</a>.
+                    </p>
+                  )}
 
                   {/* Privacy notice */}
                   <p className="text-[12px] text-navy-200 text-center leading-relaxed" dir="rtl">

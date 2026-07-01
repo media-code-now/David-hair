@@ -80,6 +80,8 @@ const timeSlots = [
 export default function BookingForm() {
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     service: null,
     name: '',
@@ -128,8 +130,10 @@ export default function BookingForm() {
     if (fileInputRef.current) fileInputRef.current.value = '';
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitError(false);
+    setSubmitting(true);
 
     const service = serviceOptions.find((option) => option.id === formData.service)?.title ?? 'לא נבחר';
     const payload = {
@@ -144,8 +148,33 @@ export default function BookingForm() {
     trackGaEvent('generate_lead', payload);
     trackGaEvent('contact', payload);
 
-    console.log('Booking submitted:', formData);
-    setSubmitted(true);
+    try {
+      const response = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: 'booking',
+          name: formData.name,
+          phone: formData.phone,
+          whatsapp: formData.whatsapp,
+          city: formData.city,
+          preferredTime: formData.preferredTime,
+          service,
+          notes: formData.notes,
+          photoBase64: formData.hairPhotoPreview || undefined,
+          photoFileName: formData.hairPhoto?.name,
+          pageUrl: typeof window !== 'undefined' ? window.location.href : undefined,
+        }),
+      });
+
+      if (!response.ok) throw new Error('Request failed');
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Booking submission failed:', error);
+      setSubmitError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const selectedServiceLabel =
@@ -560,6 +589,15 @@ export default function BookingForm() {
                 </div>
               </div>
 
+              {submitError && (
+                <div className="mt-6 rounded-[14px] p-4 text-sm text-red-600 bg-red-50 border border-red-200" dir="rtl">
+                  לא הצלחנו לשלוח את הטופס כרגע. אפשר לנסות שוב, או ליצור קשר ישירות ב{' '}
+                  <a href="https://wa.me/972504001187" className="underline font-semibold">וואטסאפ</a>
+                  {' '}או ב{' '}
+                  <a href="tel:+972504001187" className="underline font-semibold">טלפון</a>.
+                </div>
+              )}
+
               {/* Actions */}
               <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:justify-between sm:items-center">
                 <button
@@ -572,10 +610,11 @@ export default function BookingForm() {
                 </button>
                 <button
                   type="submit"
-                  className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-[14px] bg-gradient-to-b from-navy-800 to-navy-900 text-white hover:from-navy-700 hover:to-navy-800 transition-all font-semibold text-lg shadow-lg shadow-navy-900/25 order-1 sm:order-2 active:scale-[0.97]"
+                  disabled={submitting}
+                  className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-[14px] bg-gradient-to-b from-navy-800 to-navy-900 text-white hover:from-navy-700 hover:to-navy-800 transition-all font-semibold text-lg shadow-lg shadow-navy-900/25 order-1 sm:order-2 active:scale-[0.97] disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   <ArrowLeft size={20} />
-                  קביעת הייעוץ שלי
+                  {submitting ? 'שולח...' : 'קביעת הייעוץ שלי'}
                 </button>
               </div>
             </form>
