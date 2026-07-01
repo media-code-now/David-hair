@@ -31,6 +31,12 @@ export default function ServiceReviewSchema({
       name: 'David Hair Solutions',
       url: 'https://hairtoppersisrael.com',
       telephone: '+972504001187',
+      sameAs: [
+        'https://share.google/R340fKvDvgtSkAReJ',
+        'https://wa.me/972504001187',
+        'https://www.facebook.com/davidhairsolution/',
+        'https://www.instagram.com/david_hair_solutions/',
+      ],
     },
     areaServed: ['נס ציונה', 'ראשון לציון', 'רחובות', 'תל אביב', 'אשדוד'],
     aggregateRating: {

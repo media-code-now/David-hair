@@ -43,6 +43,7 @@ const LOCAL_BUSINESS_SCHEMA = {
     },
   ],
   sameAs: [
+    "https://share.google/R340fKvDvgtSkAReJ",
     "https://wa.me/972504001187",
     "https://www.facebook.com/davidhairsolution/",
     "https://www.instagram.com/david_hair_solutions/",
@@ -109,6 +110,7 @@ const ORGANIZATION_SCHEMA = {
     addressCountry: "IL",
   },
   sameAs: [
+    "https://share.google/R340fKvDvgtSkAReJ",
     "https://wa.me/972504001187",
     "https://www.facebook.com/davidhairsolution/",
     "https://www.instagram.com/david_hair_solutions/",
@@ -156,7 +158,7 @@ export const metadata: Metadata = {
       { url: "/favicon.png", sizes: "any" },
       { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
     ],
-    apple: "/logo-black.png",
+    apple: "/apple-touch-icon.png",
   },
   appleWebApp: {
     capable: true,

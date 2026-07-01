@@ -26,6 +26,12 @@ export default function Reviews() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'David Hair Solutions',
+    sameAs: [
+      'https://share.google/R340fKvDvgtSkAReJ',
+      'https://wa.me/972504001187',
+      'https://www.facebook.com/davidhairsolution/',
+      'https://www.instagram.com/david_hair_solutions/',
+    ],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
@@ -120,7 +126,15 @@ export default function Reviews() {
                   ))}
                 </div>
                 <div className="text-4xl font-bold text-gray-900 tracking-tight">4.9</div>
-                <p className="text-gray-400 text-[13px] font-medium">דירוג ממוצע</p>
+                <p className="text-gray-400 text-[13px] font-medium mb-3">דירוג ממוצע</p>
+                <a
+                  href="https://share.google/R340fKvDvgtSkAReJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-navy-700 hover:text-navy-900 underline underline-offset-2 transition-colors duration-200"
+                >
+                  ראו את כל הביקורות בגוגל
+                </a>
               </div>
             </div>
           </div>
