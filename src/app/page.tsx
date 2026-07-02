@@ -9,6 +9,7 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import Reviews from '@/components/Reviews';
 import FAQ from '@/components/FAQ';
 import CTABlock from '@/components/CTABlock';
+import TikTokReels from '@/components/TikTokReels';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
@@ -58,6 +59,7 @@ export default function Home() {
         <WhyChooseUs />
         <FAQ />
         <CTABlock />
+        <TikTokReels />
       </main>
       <Footer />
     </>
