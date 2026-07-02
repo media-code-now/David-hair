@@ -92,6 +92,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 0.82,
     })),
+    // Legal / accessibility
+    {
+      url: `${baseUrl}/accessibility`,
+      lastModified: homeModified,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
   ];
 }
 

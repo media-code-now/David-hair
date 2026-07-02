@@ -40,8 +40,8 @@ export default function Hero() {
                   key={item.label}
                   className="glass-card rounded-full px-4 py-2.5 inline-flex items-center gap-2 stagger-item"
                 >
-                  <span className="text-[13px] font-semibold text-gray-700 tracking-tight">{item.label}</span>
                   <item.icon size={15} className="text-navy-800 flex-shrink-0" strokeWidth={2.2} />
+                  <span className="text-[13px] font-semibold text-gray-700 tracking-tight">{item.label}</span>
                 </div>
               ))}
             </div>

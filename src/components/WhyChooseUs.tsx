@@ -31,14 +31,14 @@ export default function WhyChooseUs() {
               className="stagger-item glass-card flex items-start gap-4 p-5 rounded-[18px] hover:shadow-md hover:scale-[1.01] transition-all duration-300 active:scale-[0.99]"
               dir="rtl"
             >
-              <p className="text-gray-800 font-semibold leading-relaxed text-[15px] tracking-tight flex-1">
-                {bullet}
-              </p>
               <div className="flex-shrink-0 mt-0.5">
                 <div className="flex items-center justify-center h-7 w-7 rounded-[10px] bg-gradient-to-br from-navy-100 to-navy-50 text-navy-800 shadow-sm">
                   <Check size={15} strokeWidth={3} />
                 </div>
               </div>
+              <p className="text-gray-800 font-semibold leading-relaxed text-[15px] tracking-tight flex-1">
+                {bullet}
+              </p>
             </div>
           ))}
         </div>

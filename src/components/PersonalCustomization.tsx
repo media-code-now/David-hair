@@ -60,12 +60,12 @@ export default function PersonalCustomization() {
                       key={index}
                       className="flex items-start gap-4 glass-card rounded-2xl p-5 hover:shadow-md transition-all duration-300"
                     >
+                      <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-navy-100 to-navy-50 flex items-center justify-center flex-shrink-0">
+                        <Icon size={20} className="text-navy-800" strokeWidth={2.2} />
+                      </div>
                       <div className="text-right flex-1" dir="rtl">
                         <h3 className="font-bold text-gray-900 mb-1 text-[15px]">{benefit.title}</h3>
                         <p className="text-gray-500 text-[14px] leading-relaxed">{benefit.description}</p>
-                      </div>
-                      <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-navy-100 to-navy-50 flex items-center justify-center flex-shrink-0">
-                        <Icon size={20} className="text-navy-800" strokeWidth={2.2} />
                       </div>
                     </div>
                   );
@@ -98,12 +98,12 @@ export default function PersonalCustomization() {
             <div className="space-y-6">
               {process.map((item, index) => (
                 <div key={index} className="flex items-start gap-5">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-navy-800 to-navy-900 text-white flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-lg shadow-navy-900/20">
+                    {item.step}
+                  </div>
                   <div className="text-right flex-1 pt-1" dir="rtl">
                     <h4 className="font-bold text-gray-900 mb-1.5 text-[16px]">{item.title}</h4>
                     <p className="text-gray-500 text-[14px] leading-relaxed">{item.desc}</p>
-                  </div>
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-navy-800 to-navy-900 text-white flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-lg shadow-navy-900/20">
-                    {item.step}
                   </div>
                 </div>
               ))}

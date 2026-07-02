@@ -81,8 +81,8 @@ export default function AdLandingHero() {
                 'שירות לאחר קנייה שנמשך שנים',
               ].map((benefit) => (
                 <div key={benefit} className="flex items-start gap-3 text-navy-50">
-                  <span className="text-[16px] font-medium leading-tight">{benefit}</span>
                   <CheckCircle2 size={20} className="flex-shrink-0 text-gold-300 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-[16px] font-medium leading-tight">{benefit}</span>
                 </div>
               ))}
             </div>

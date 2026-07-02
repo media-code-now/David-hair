@@ -92,6 +92,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center text-[12px] text-gray-500">
           <p dir="rtl">&copy; {currentYear} David Hair Solutions. כל הזכויות שמורות.</p>
           <div className="flex gap-6 mt-4 sm:mt-0">
+            <Link href="/accessibility" className="hover:text-white transition-colors duration-200">הצהרת נגישות</Link>
             <Link href="#" className="hover:text-white transition-colors duration-200">מדיניות פרטיות</Link>
             <Link href="#" className="hover:text-white transition-colors duration-200">תנאי שימוש</Link>
           </div>
