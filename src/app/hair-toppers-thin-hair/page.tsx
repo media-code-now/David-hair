@@ -75,12 +75,6 @@ export default function ThinHairToppersPage() {
       <ServiceReviewSchema
         serviceName="טופר לשיער דליל"
         serviceUrl="https://hairtoppersisrael.com/hair-toppers-thin-hair"
-        aggregateRatingValue={4.9}
-        reviewCount={136}
-        reviews={[
-          { author: 'מישל פ.', reviewBody: 'הכיסוי לשביל נראה טבעי לחלוטין וקל מאוד לשימוש יומיומי.', rating: 5 },
-          { author: 'גלית ת.', reviewBody: 'פתרון מדויק לשיער דליל בלי תחושת כובד ובלי לחץ על הקרקפת.', rating: 5 },
-        ]}
       />
       <BreadcrumbHero 
         title="טופרים לשיער דליל"

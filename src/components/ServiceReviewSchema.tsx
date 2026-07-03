@@ -1,69 +1,50 @@
 import Script from 'next/script';
+import { GOOGLE_MAPS_URL } from '@/lib/business';
 
-interface ReviewItem {
-  author: string;
-  reviewBody: string;
-  rating: number;
-}
-
-interface ServiceReviewSchemaProps {
+interface ServiceSchemaProps {
   serviceName: string;
   serviceUrl: string;
-  aggregateRatingValue: number;
-  reviewCount: number;
-  reviews: ReviewItem[];
 }
 
-export default function ServiceReviewSchema({
-  serviceName,
-  serviceUrl,
-  aggregateRatingValue,
-  reviewCount,
-  reviews,
-}: ServiceReviewSchemaProps) {
+// Emits a valid schema.org/Service for the service page.
+// Note: review / aggregateRating are intentionally NOT placed here — Google does
+// not support review rich results on the `Service` type, and doing so triggers
+// "Invalid object type for field" errors in Search Console. Review markup lives
+// on the LocalBusiness/HairSalon entity instead.
+export default function ServiceReviewSchema({ serviceName, serviceUrl }: ServiceSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: serviceName,
+    serviceType: serviceName,
     url: serviceUrl,
     provider: {
       '@type': 'HairSalon',
+      '@id': GOOGLE_MAPS_URL,
       name: 'David Hair Solutions',
       url: 'https://hairtoppersisrael.com',
       telephone: '+972504001187',
-      sameAs: [
-        'https://share.google/R340fKvDvgtSkAReJ',
-        'https://wa.me/972504001187',
-        'https://www.facebook.com/davidhairsolution/',
-        'https://www.instagram.com/david_hair_solutions/',
-      ],
-    },
-    areaServed: ['נס ציונה', 'ראשון לציון', 'רחובות', 'תל אביב', 'אשדוד'],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: aggregateRatingValue,
-      reviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    review: reviews.map((review) => ({
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: review.author,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'שביט 8',
+        addressLocality: 'נס ציונה',
+        addressRegion: 'מרכז',
+        postalCode: '7408028',
+        addressCountry: 'IL',
       },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: review.rating,
-        bestRating: 5,
-      },
-      reviewBody: review.reviewBody,
-    })),
+    },
+    areaServed: [
+      { '@type': 'City', name: 'נס ציונה' },
+      { '@type': 'City', name: 'ראשון לציון' },
+      { '@type': 'City', name: 'רחובות' },
+      { '@type': 'City', name: 'תל אביב' },
+      { '@type': 'City', name: 'אשדוד' },
+    ],
   };
 
   return (
     <Script
-      id={`service-review-schema-${serviceUrl.split('/').pop() ?? 'service'}`}
+      id={`service-schema-${serviceUrl.split('/').pop() ?? 'service'}`}
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />

@@ -75,12 +75,6 @@ export default function CustomWigsPage() {
       <ServiceReviewSchema
         serviceName="פאות בהתאמה אישית"
         serviceUrl="https://hairtoppersisrael.com/custom-wigs"
-        aggregateRatingValue={4.9}
-        reviewCount={121}
-        reviews={[
-          { author: 'ג׳ניפר ל.', reviewBody: 'הפאה נראית ומרגישה טבעית ברמה שלא הכרתי. התאמה מקצועית מאוד.', rating: 5 },
-          { author: 'מיכל ש.', reviewBody: 'התאימו צבע, צפיפות ומבנה בדיוק לפי מה שביקשתי. תוצאה מדויקת.', rating: 5 },
-        ]}
       />
       <BreadcrumbHero 
         title="פאות בהתאמה אישית"

@@ -75,12 +75,6 @@ export default function WigRepairsPage() {
       <ServiceReviewSchema
         serviceName="תיקון ושדרוג פאות וטופרים"
         serviceUrl="https://hairtoppersisrael.com/wig-repairs-upgrades"
-        aggregateRatingValue={4.8}
-        reviewCount={79}
-        reviews={[
-          { author: 'קרן ל.', reviewBody: 'שיקמו את הפאה שלי בצורה מדהימה וחסכו לי רכישה חדשה.', rating: 5 },
-          { author: 'אורית מ.', reviewBody: 'תיקון מהיר, גימור מקצועי ושירות נהדר.', rating: 5 },
-        ]}
       />
       <BreadcrumbHero 
         title="תיקון ושדרוג"

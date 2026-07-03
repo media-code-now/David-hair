@@ -123,20 +123,6 @@ export default function HairUnitsPage() {
       <ServiceReviewSchema
         serviceName="יחידות שיער"
         serviceUrl="https://hairtoppersisrael.com/hair-units"
-        aggregateRatingValue={4.9}
-        reviewCount={89}
-        reviews={[
-          {
-            author: 'אורית ש.',
-            reviewBody: 'קיבלתי הסבר מלא על כל סוגי היחידות ובחרנו יחד את הפתרון המדויק בשבילי. התוצאה טבעית לגמרי.',
-            rating: 5,
-          },
-          {
-            author: 'שירה נ.',
-            reviewBody: 'הייעוץ היה מקצועי וכן, בלי לחץ למכור פתרון מסוים. הרגשתי שבחרו בשבילי את מה שבאמת מתאים.',
-            rating: 5,
-          },
-        ]}
       />
       <BreadcrumbHero
         title="יחידות שיער"

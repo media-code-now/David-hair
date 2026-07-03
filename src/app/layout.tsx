@@ -69,13 +69,9 @@ const LOCAL_BUSINESS_SCHEMA = {
     "פתרון לשיער דליל",
   ],
   hasMap: GOOGLE_MAPS_URL,
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "905",
-    bestRating: "5",
-    worstRating: "1",
-  },
+  // aggregateRating intentionally omitted until genuine, verifiable customer
+  // reviews accrue — self-declared ratings without real reviews violate Google's
+  // review-snippet policy and risk a manual action. Re-add with true counts later.
 };
 
 const WEBSITE_SCHEMA = {

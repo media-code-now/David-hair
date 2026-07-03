@@ -88,20 +88,6 @@ export default function PadachatPage() {
       <ServiceReviewSchema
         serviceName="פדחת לשיער דליל"
         serviceUrl="https://hairtoppersisrael.com/padachat"
-        aggregateRatingValue={4.9}
-        reviewCount={67}
-        reviews={[
-          {
-            author: 'מיה ש.',
-            reviewBody: 'הפדחת השתלבה לי בקו הקדמי בצורה טבעית מאוד והחזירה לי ביטחון.',
-            rating: 5,
-          },
-          {
-            author: 'אנה ל.',
-            reviewBody: 'התאמה מקצועית, צבע מדויק ונוחות מעולה לאורך כל היום.',
-            rating: 5,
-          },
-        ]}
       />
       <BreadcrumbHero
         title="פדחת לשיער"

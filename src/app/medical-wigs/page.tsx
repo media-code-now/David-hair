@@ -75,12 +75,6 @@ export default function MedicalWigsPage() {
       <ServiceReviewSchema
         serviceName="פאה רפואית"
         serviceUrl="https://hairtoppersisrael.com/medical-wigs"
-        aggregateRatingValue={4.9}
-        reviewCount={94}
-        reviews={[
-          { author: 'נעמה ק.', reviewBody: 'ליוו אותי ברגישות מלאה בתהליך והפאה יצאה נוחה וטבעית.', rating: 5 },
-          { author: 'רותי א.', reviewBody: 'שירות אנושי ומקצועי עם התאמה מעולה לקרקפת רגישה.', rating: 5 },
-        ]}
       />
       <BreadcrumbHero 
         title="פאות רפואיות"

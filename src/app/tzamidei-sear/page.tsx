@@ -88,20 +88,6 @@ export default function TzamideiSearPage() {
       <ServiceReviewSchema
         serviceName="צמידי שיער"
         serviceUrl="https://hairtoppersisrael.com/tzamidei-sear"
-        aggregateRatingValue={4.8}
-        reviewCount={58}
-        reviews={[
-          {
-            author: 'דנה י.',
-            reviewBody: 'קיבלתי נפח ואורך בצורה מאוד טבעית ובזמן קצר. התאמה מקצועית ושירות מעולה.',
-            rating: 5,
-          },
-          {
-            author: 'רוני א.',
-            reviewBody: 'אהבתי במיוחד את התאמת הצבע והנוחות ביום-יום. התוצאה נראית חלק מהשיער שלי.',
-            rating: 5,
-          },
-        ]}
       />
       <BreadcrumbHero
         title="צמידי שיער"
