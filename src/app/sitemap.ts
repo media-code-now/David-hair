@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { citySlugs } from './areas/cities';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ?? 'https://hairtoppersisrael.com';
@@ -7,9 +8,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const homeModified    = new Date('2026-06-03');
   const serviceModified = new Date('2026-06-01');
   const bookModified    = new Date('2026-06-01');
-  const areasModified   = new Date('2026-06-10');
+  const areasModified   = new Date('2026-07-02');
 
-  const areaSlugs = ['nes-ziona', 'rishon-lezion', 'rehovot', 'ashdod', 'tel-aviv'];
+  const areaSlugs = citySlugs;
 
   return [
     {

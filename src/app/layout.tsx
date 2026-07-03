@@ -4,12 +4,14 @@ import "./globals.css";
 import BottomNav from "@/components/BottomNav";
 import ADAAccessibilityWidget from "@/components/ADAAccessibilityWidget";
 import Script from "next/script";
+import { GOOGLE_MAPS_URL } from "@/lib/business";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-FK6YWP18VY";
 
 const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "HairSalon",
+  "@id": GOOGLE_MAPS_URL,
   name: "David Hair Solutions",
   description:
     "טופרים, פאות בהתאמה אישית ופאות רפואיות עם התאמה דיסקרטית בחדר פרטי. שילוב וגזירה מקצועיים בסלון נשים פרטי בנס ציונה.",
@@ -43,6 +45,7 @@ const LOCAL_BUSINESS_SCHEMA = {
     },
   ],
   sameAs: [
+    GOOGLE_MAPS_URL,
     "https://share.google/R340fKvDvgtSkAReJ",
     "https://wa.me/972504001187",
     "https://www.facebook.com/davidhairsolution/",
@@ -65,7 +68,7 @@ const LOCAL_BUSINESS_SCHEMA = {
     "תיקון ושדרוג פאה",
     "פתרון לשיער דליל",
   ],
-  hasMap: "https://maps.google.com/?q=שביט+8+נס+ציונה",
+  hasMap: GOOGLE_MAPS_URL,
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
@@ -110,6 +113,7 @@ const ORGANIZATION_SCHEMA = {
     addressCountry: "IL",
   },
   sameAs: [
+    GOOGLE_MAPS_URL,
     "https://share.google/R340fKvDvgtSkAReJ",
     "https://wa.me/972504001187",
     "https://www.facebook.com/davidhairsolution/",

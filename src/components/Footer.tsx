@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Facebook, Instagram, MessageCircle, Star } from 'lucide-react';
+import { GOOGLE_MAPS_URL } from '@/lib/business';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -72,7 +73,7 @@ export default function Footer() {
               <li><a href="https://wa.me/972504001187" className="hover:text-white transition-colors duration-200">וואטסאפ: 050-4001187</a></li>
               <li>
                 <a
-                  href="https://share.google/R340fKvDvgtSkAReJ"
+                  href={GOOGLE_MAPS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-white transition-colors duration-200"

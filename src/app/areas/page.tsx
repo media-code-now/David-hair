@@ -1,23 +1,17 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { MapPin } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BreadcrumbHero from '@/components/BreadcrumbHero';
-
-const areas = [
-  { slug: 'nes-ziona', name: 'נס ציונה' },
-  { slug: 'rishon-lezion', name: 'ראשון לציון' },
-  { slug: 'rehovot', name: 'רחובות' },
-  { slug: 'ashdod', name: 'אשדוד' },
-  { slug: 'tel-aviv', name: 'תל אביב' },
-];
+import { cities } from './cities';
 
 export const metadata: Metadata = {
-  title: 'אזורי שירות – טופרים ופאות במרכז | David Hair',
+  title: 'אזורי שירות – טופרים ופאות במרכז ובדרום | David Hair',
   description:
-    'אזורי השירות של David Hair Solutions: נס ציונה, ראשון לציון, רחובות, אשדוד ותל אביב. טופרים, פאות רפואיות ופאות בהתאמה אישית.',
+    'אזורי השירות של David Hair Solutions: נס ציונה, ראשון לציון, רחובות, יבנה, גדרה, רמלה, לוד, חולון, אשדוד ותל אביב. טופרים, פאות רפואיות ופאות בהתאמה אישית.',
   keywords:
-    'טופרים ופאות נס ציונה, טופר שיער ראשון לציון, פאה רפואית רחובות, פתרון שיער אשדוד, טופר שיער תל אביב, סלון שיער מרכז',
+    'טופרים ופאות נס ציונה, טופר שיער ראשון לציון, פאה רפואית רחובות, טופר שיער יבנה, פאה גדרה, טופר שיער רמלה, פאה לוד, טופר שיער חולון, פתרון שיער אשדוד, טופר שיער תל אביב, סלון שיער מרכז',
   alternates: {
     canonical: 'https://hairtoppersisrael.com/areas',
     languages: { 'he-IL': 'https://hairtoppersisrael.com/areas' },
@@ -63,13 +57,21 @@ export default function AreasIndexPage() {
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {areas.map((area) => (
+            {cities.map((city) => (
               <Link
-                key={area.slug}
-                href={`/areas/${area.slug}`}
-                className="glass-card rounded-[18px] p-5 text-gray-900 font-semibold hover:shadow-md hover:scale-[1.02] transition-all duration-200 active:scale-[0.98]"
+                key={city.slug}
+                href={`/areas/${city.slug}`}
+                className="glass-card rounded-[18px] p-5 hover:shadow-md hover:scale-[1.02] transition-all duration-200 active:scale-[0.98] group"
               >
-                {area.name}
+                <div className="flex items-center gap-2 mb-1.5">
+                  <MapPin size={17} className="text-navy-700" strokeWidth={2.2} aria-hidden="true" />
+                  <span className="text-gray-900 font-bold text-[17px] tracking-tight">
+                    {city.name}
+                  </span>
+                </div>
+                <p className="text-gray-500 text-[13px]">
+                  {city.driveMinutes === 0 ? 'הסלון נמצא כאן' : `כ-${city.driveMinutes} דקות נסיעה מהסלון`}
+                </p>
               </Link>
             ))}
           </div>
