@@ -33,7 +33,16 @@ export default function PPCLandingHero() {
         }),
       });
 
-      if (!response.ok) throw new Error('Request failed');
+      if (!response.ok) {
+        let reason = String(response.status);
+        try {
+          const data = await response.json();
+          if (data?.error) reason += ` ${data.error}`;
+        } catch {
+          /* response had no JSON body */
+        }
+        throw new Error(`Request failed: ${reason}`);
+      }
       setSubmitted(true);
     } catch (error) {
       console.error('PPC lead submission failed:', error);
