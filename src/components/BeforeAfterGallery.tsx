@@ -13,10 +13,26 @@ const gallery = [
 export default function BeforeAfterGallery() {
   const [sliderPosition, setSliderPosition] = useState<{ [key: number]: number }>({});
 
-  const handleMouseMove = (e: React.MouseEvent, id: number) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const position = ((e.clientX - rect.left) / rect.width) * 100;
-    setSliderPosition({ ...sliderPosition, [id]: position });
+  const updatePosition = (clientX: number, rect: DOMRect, id: number) => {
+    const raw = ((clientX - rect.left) / rect.width) * 100;
+    const clamped = Math.min(100, Math.max(0, raw));
+    setSliderPosition((prev) => ({ ...prev, [id]: clamped }));
+  };
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>, id: number) => {
+    updatePosition(e.clientX, e.currentTarget.getBoundingClientRect(), id);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>, id: number) => {
+    const touch = e.touches[0];
+    if (!touch) return;
+    updatePosition(touch.clientX, e.currentTarget.getBoundingClientRect(), id);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>, id: number) => {
+    const touch = e.touches[0];
+    if (!touch) return;
+    updatePosition(touch.clientX, e.currentTarget.getBoundingClientRect(), id);
   };
 
   const getPosition = (id: number) => sliderPosition[id] ?? 50;
@@ -43,7 +59,10 @@ export default function BeforeAfterGallery() {
             <div
               key={item.id}
               className="stagger-item group cursor-pointer"
+              style={{ touchAction: 'pan-y' }}
               onMouseMove={(e) => handleMouseMove(e, item.id)}
+              onTouchStart={(e) => handleTouchStart(e, item.id)}
+              onTouchMove={(e) => handleTouchMove(e, item.id)}
             >
               <div className="relative w-full aspect-square rounded-[22px] overflow-hidden bg-gray-100 shadow-lg shadow-navy-900/5 hover:shadow-xl transition-all duration-300">
                 {/* After (Full Image) */}
@@ -59,7 +78,7 @@ export default function BeforeAfterGallery() {
                 {/* Before (Sliding Image) */}
                 <div
                   className="absolute inset-0 overflow-hidden"
-                  style={{ width: `${getPosition(item.id)}%`, transition: 'width 0.1s linear' }}
+                  style={{ width: `${getPosition(item.id)}%`, right: 'auto', transition: 'width 0.1s linear' }}
                 >
                   <Image
                     src={item.before}
