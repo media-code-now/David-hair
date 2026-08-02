@@ -24,7 +24,7 @@ export default function Hero() {
   const prevSlide = () => setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="min-h-screen flex flex-col justify-center bg-gradient-to-br from-navy-50/40 via-white to-gold-50/20 pt-8 pb-8 relative overflow-hidden">
+    <section className="flex flex-col justify-center bg-gradient-to-br from-navy-50/40 via-white to-gold-50/20 py-10 sm:py-14 lg:py-20 relative overflow-hidden">
       {/* Ambient background blobs — iOS 26 style */}
       <div className="absolute top-20 -right-32 w-80 h-80 bg-navy-200/20 rounded-full blur-3xl" />
       <div className="absolute bottom-20 -left-20 w-64 h-64 bg-gold-200/15 rounded-full blur-3xl" />
@@ -74,7 +74,7 @@ export default function Hero() {
           </div>
 
           {/* Right Content - Before/After visual */}
-          <div className="relative h-96 sm:h-full max-h-96 sm:max-h-none">
+          <div className="relative h-96 sm:h-[26rem] lg:h-[32rem]">
             <div className="relative w-full h-full rounded-[28px] overflow-hidden bg-gray-100 shadow-2xl shadow-navy-900/10">
               {/* Image */}
               <Image
