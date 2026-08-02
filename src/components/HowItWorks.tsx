@@ -1,6 +1,5 @@
-'use client';
-
 import Link from 'next/link';
+import Script from 'next/script';
 
 const steps = [
   { number: 1, title: 'מקשיבים ומבינים', description: 'מה חשוב לכם? מה הציפיות? אנחנו מתחילים ממקום של הקשבה אמיתית.' },
@@ -8,9 +7,56 @@ const steps = [
   { number: 3, title: 'מתאימות בדיוק', description: 'גזירה, שילוב ועיצוב עד שזה נראה ומרגיש בדיוק כמו השיער שלך.' },
 ];
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'כיצד בוחרים ומתאימים טופר שיער מותאם אישית',
+  description: 'תהליך שלב-שלב לבחירת טופר שיער או פאה בהתאמה אישית בסלון נשים פרטי בנס ציונה.',
+  totalTime: 'PT90M',
+  estimatedCost: {
+    '@type': 'MonetaryAmount',
+    currency: 'ILS',
+    value: '0',
+    description: 'ייעוץ ראשוני חינם ללא התחייבות',
+  },
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'ייעוץ אישי חינם',
+      text: 'פגישת ייעוץ אישי בחדר פרטי. בודקות יחד את מצב השיער, מבנה הפנים ואורח החיים. מתחילים מהקשבה אמיתית לצרכים שלך.',
+      url: 'https://hairtoppersisrael.com/book',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'בחירת הטופר או הפאה המתאימה',
+      text: 'בוחנות יחד צבע, מרקם, אורך ובסיס (לייס או סילק) עד שמוצאים את הפתרון המושלם בדיוק לסוג השיער ולאורח החיים שלך.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'התאמה ועיצוב מקצועי בסלון',
+      text: 'גזירה, שילוב ועיצוב מקצועי בסלון הפרטי עד שהתוצאה נראית ומרגישת בדיוק כמו השיער שלך. כולל הדרכה מלאה לתחזוקה ביתית.',
+    },
+  ],
+  inLanguage: 'he-IL',
+  provider: {
+    '@type': 'HairSalon',
+    name: 'David Hair Solutions',
+    url: 'https://hairtoppersisrael.com',
+  },
+};
+
 export default function HowItWorks() {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white/40 to-navy-50/30 relative overflow-hidden">
+    <>
+      <Script
+        id="how-it-works-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
+      <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white/40 to-navy-50/30 relative overflow-hidden">
       {/* Ambient blob */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-navy-100/10 rounded-full blur-3xl" />
 
@@ -48,7 +94,8 @@ export default function HowItWorks() {
             קביעת ייעוץ
           </Link>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }

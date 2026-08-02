@@ -92,6 +92,7 @@ export default function TzamideiSearPage() {
       <BreadcrumbHero
         title="צמידי שיער"
         subtitle="הארכת שיער מהירה במראה טבעי"
+        pathname="/tzamidei-sear"
       />
       <main>
         <ServiceHero

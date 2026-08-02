@@ -58,6 +58,7 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4 text-[14px] tracking-tight" dir="rtl">ניווט</h4>
             <ul className="space-y-2.5 text-[13px]" dir="rtl">
               <li><Link href="/" className="hover:text-white transition-colors duration-200">דף הבית</Link></li>
+              <li><Link href="/shaalot" className="hover:text-white transition-colors duration-200">שאלות ותשובות</Link></li>
               <li><Link href="/quiz" className="hover:text-white transition-colors duration-200">חידון שיער</Link></li>
               <li><Link href="/#reviews" className="hover:text-white transition-colors duration-200">נשים מספרות</Link></li>
               <li><Link href="/#faq" className="hover:text-white transition-colors duration-200">שאלות נפוצות</Link></li>

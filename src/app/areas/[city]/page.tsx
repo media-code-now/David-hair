@@ -132,6 +132,7 @@ export default async function AreaCityPage({ params }: PageProps) {
       <BreadcrumbHero
         title={`טופרים ופאות ב${data.name}`}
         subtitle="פתרונות שיער לנשים במראה טבעי ובהתאמה אישית"
+        pathname={`/areas/${city}`}
       />
 
       <main className="py-16 sm:py-20 lg:py-24" dir="rtl">

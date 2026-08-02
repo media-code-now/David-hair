@@ -79,6 +79,7 @@ export default function MedicalWigsPage() {
       <BreadcrumbHero 
         title="פאות רפואיות"
         subtitle="בנוחות ודיסקרטיות מלאה"
+        pathname="/medical-wigs"
       />
       <main>
 

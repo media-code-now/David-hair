@@ -79,6 +79,7 @@ export default function CustomWigsPage() {
       <BreadcrumbHero 
         title="פאות בהתאמה אישית"
         subtitle="עיצוב והתאמה מלאה עבורך"
+        pathname="/custom-wigs"
       />
       <main>
 

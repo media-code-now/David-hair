@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const serviceModified = new Date('2026-06-01');
   const bookModified    = new Date('2026-06-01');
   const areasModified   = new Date('2026-07-02');
+  const aeoModified     = new Date('2026-08-01');
 
   const areaSlugs = citySlugs;
 
@@ -80,6 +81,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: bookModified,
       changeFrequency: 'monthly',
       priority: 0.95,
+    },
+    // AEO knowledge hub — answer engine target
+    {
+      url: `${baseUrl}/shaalot`,
+      lastModified: aeoModified,
+      changeFrequency: 'monthly',
+      priority: 0.88,
     },
     {
       url: `${baseUrl}/areas`,

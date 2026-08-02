@@ -92,6 +92,7 @@ export default function PadachatPage() {
       <BreadcrumbHero
         title="פדחת לשיער"
         subtitle="כיסוי טבעי לקדמת הראש ולשביל"
+        pathname="/padachat"
       />
       <main>
         <ServiceHero

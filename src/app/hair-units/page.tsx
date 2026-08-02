@@ -127,6 +127,7 @@ export default function HairUnitsPage() {
       <BreadcrumbHero
         title="יחידות שיער"
         subtitle="פתרון מקצועי ומותאם אישית לכל סוג ורמת דלילות"
+        pathname="/hair-units"
       />
       <main>
         <ServiceHero

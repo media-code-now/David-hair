@@ -79,6 +79,7 @@ export default function SalonBlendingPage() {
       <BreadcrumbHero 
         title="סלון שילוב וגזירה"
         subtitle="צבע, שכבות והתאמה מקצועית"
+        pathname="/salon-blending"
       />
       <main>
 

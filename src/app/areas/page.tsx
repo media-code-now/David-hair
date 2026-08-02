@@ -46,7 +46,7 @@ export default function AreasIndexPage() {
   return (
     <>
       <Header />
-      <BreadcrumbHero title="אזורי שירות" subtitle="פתרונות שיער במרכז הארץ" />
+      <BreadcrumbHero title="אזורי שירות" subtitle="פתרונות שיער במרכז הארץ" pathname="/areas" />
       <main className="py-16 sm:py-20 lg:py-24" dir="rtl">
         <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 tracking-tight">

@@ -79,6 +79,7 @@ export default function ThinHairToppersPage() {
       <BreadcrumbHero 
         title="טופרים לשיער דליל"
         subtitle="כיסוי שביל וקודקוד בטבעיות מלאה"
+        pathname="/hair-toppers-thin-hair"
       />
       <main>
 

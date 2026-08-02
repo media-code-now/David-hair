@@ -69,6 +69,24 @@ const LOCAL_BUSINESS_SCHEMA = {
     "פתרון לשיער דליל",
   ],
   hasMap: GOOGLE_MAPS_URL,
+  knowsAbout: [
+    "טופרים לשיער דליל",
+    "פאות בהתאמה אישית",
+    "פאות רפואיות",
+    "שיער אנושי רמי",
+    "שיער דליל אצל נשים",
+    "אלופציה – פתרונות שיער",
+    "Hair Toppers",
+    "Custom Wigs",
+    "Medical Wigs",
+    "Alopecia Hair Solutions",
+    "Post-Chemotherapy Hair Solutions",
+    "Salon Hair Blending",
+  ],
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["h1", "#faq"],
+  },
   // aggregateRating intentionally omitted until genuine, verifiable customer
   // reviews accrue — self-declared ratings without real reviews violate Google's
   // review-snippet policy and risk a manual action. Re-add with true counts later.
@@ -114,6 +132,14 @@ const ORGANIZATION_SCHEMA = {
     "https://wa.me/972504001187",
     "https://www.facebook.com/davidhairsolution/",
     "https://www.instagram.com/david_hair_solutions/",
+  ],
+  knowsAbout: [
+    "טופרים לשיער דליל",
+    "פאות בהתאמה אישית",
+    "פאות רפואיות",
+    "Hair Toppers",
+    "Custom Wigs",
+    "Medical Wigs",
   ],
 };
 

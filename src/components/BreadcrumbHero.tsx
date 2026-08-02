@@ -1,18 +1,15 @@
-'use client';
-
 import Image from 'next/image';
 import Script from 'next/script';
-import { usePathname } from 'next/navigation';
 import type { StaticImageData } from 'next/image';
 
 interface BreadcrumbHeroProps {
   title: string;
   subtitle?: string;
   backgroundImage?: string | StaticImageData;
+  pathname?: string;
 }
 
-export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/breadcrumb-hairshades.jpg' }: BreadcrumbHeroProps) {
-  const pathname = usePathname();
+export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/breadcrumb-hairshades.jpg', pathname = '' }: BreadcrumbHeroProps) {
   const baseUrl = 'https://hairtoppersisrael.com';
 
   const breadcrumbSchema = {
@@ -37,7 +34,7 @@ export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/br
   return (
     <div className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden">
       <Script
-        id={`breadcrumb-schema-${pathname}`}
+        id={`breadcrumb-schema-${title.replace(/\s+/g, '-')}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />

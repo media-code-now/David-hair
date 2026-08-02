@@ -81,6 +81,7 @@ export default function HairToppersPage() {
       <BreadcrumbHero 
         title="טופרי שיער"
         subtitle="כיסוי ונפח טבעיים בהתאמה אישית"
+        pathname="/hair-toppers"
       />
       <main>
 

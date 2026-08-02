@@ -79,6 +79,7 @@ export default function WigRepairsPage() {
       <BreadcrumbHero 
         title="תיקון ושדרוג"
         subtitle="חידוש מקצועי לפאות וטופרים"
+        pathname="/wig-repairs-upgrades"
       />
       <main>
 

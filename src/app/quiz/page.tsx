@@ -43,6 +43,7 @@ export default function QuizPage() {
       <BreadcrumbHero 
         title="חידון שיער"
         subtitle="מצא את הפתרון המושלם עבורך"
+        pathname="/quiz"
       />
       <HairQuiz />
       <Footer />
