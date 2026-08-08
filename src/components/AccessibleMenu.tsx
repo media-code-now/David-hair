@@ -116,7 +116,7 @@ const AccessibleMenu = React.forwardRef<HTMLElement, AccessibleMenuProps>(
               aria-label={item.ariaLabel || item.label}
               role="menuitem"
               className={`
-                px-3.5 py-2 rounded-xl text-sm font-medium
+                px-2.5 py-2 rounded-xl text-[13px] font-medium whitespace-nowrap
                 transition-all duration-200
                 flex items-center gap-2
                 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-navy-500

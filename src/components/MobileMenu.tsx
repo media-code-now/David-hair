@@ -8,7 +8,9 @@ const menuSections = [
   {
     title: 'שירותים',
     items: [
+      { href: '/hair-units', label: 'יחידות שיער', icon: Sparkles, color: 'from-navy-100/80 to-gold-50/80' },
       { href: '/hair-toppers', label: 'טופרים לשיער דליל', icon: Sparkles, color: 'from-pink-100/80 to-rose-50/80' },
+      { href: '/hair-toppers-thin-hair', label: 'טופר לשיער דליל', icon: Sparkles, color: 'from-purple-100/80 to-violet-50/80' },
       { href: '/salon-blending', label: 'סלון ושילוב', icon: Scissors, color: 'from-purple-100/80 to-violet-50/80' },
       { href: '/wig-repairs-upgrades', label: 'תיקון ושדרוג', icon: Wrench, color: 'from-orange-100/80 to-amber-50/80' },
     ],

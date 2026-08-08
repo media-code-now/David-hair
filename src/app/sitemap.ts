@@ -29,15 +29,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/hair-toppers-thin-hair`,
-      lastModified: serviceModified,
-      changeFrequency: 'monthly',
-      priority: 0.9,
+      lastModified: aeoModified,
+      changeFrequency: 'weekly',
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/hair-units`,
-      lastModified: serviceModified,
-      changeFrequency: 'monthly',
-      priority: 0.9,
+      lastModified: aeoModified,
+      changeFrequency: 'weekly',
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/padachat`,

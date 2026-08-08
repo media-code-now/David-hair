@@ -6,13 +6,13 @@ import { MessageCircle } from 'lucide-react';
 import AccessibleMenu from './AccessibleMenu';
 
 const navItems = [
+  { href: '/hair-units', label: 'יחידות שיער', ariaLabel: 'יחידות שיער לשיער דליל' },
   { href: '/hair-toppers', label: 'טופרים', ariaLabel: 'טופרים לשיער' },
+  { href: '/hair-toppers-thin-hair', label: 'טופר לשיער דליל', ariaLabel: 'טופר לשיער דליל' },
   { href: '/padachat', label: 'פדחת לשיער', ariaLabel: 'פדחת לשיער דליל' },
   { href: '/tzamidei-sear', label: 'צמידי שיער', ariaLabel: 'צמידי שיער להארכה ונפח' },
   { href: '/salon-blending', label: 'סלון ושילוב', ariaLabel: 'סלון ושילוב שיער' },
   { href: '/wig-repairs-upgrades', label: 'תיקון ושדרוג', ariaLabel: 'תיקון ושדרוג פאות' },
-  { href: '/#faq', label: 'שאלות נפוצות', ariaLabel: 'שאלות נפוצות' },
-  { href: '/#contact', label: 'צור קשר', ariaLabel: 'צור קשר עם התמיכה' },
 ];
 
 export default function Header() {
