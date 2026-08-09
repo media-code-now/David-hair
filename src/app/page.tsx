@@ -28,20 +28,11 @@ export const metadata: Metadata = {
     locale: 'he_IL',
     siteName: 'David Hair Solutions',
     url: 'https://hairtoppersisrael.com',
-    images: [
-      {
-        url: 'https://hairtoppersisrael.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'David Hair Solutions – טופרים ופאות בהתאמה אישית בנס ציונה',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'טופרים ופאות במראה טבעי – התאמה אישית בסלון | David Hair',
     description: 'טופרים ופאות בהתאמה אישית עם שילוב וגזירה מקצועיים בסלון נשים פרטי. קביעת ייעוץ ללא התחייבות.',
-    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

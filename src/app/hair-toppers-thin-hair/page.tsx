@@ -24,20 +24,11 @@ export const metadata: Metadata = {
     locale: 'he_IL',
     siteName: 'David Hair Solutions',
     url: 'https://hairtoppersisrael.com/hair-toppers-thin-hair',
-    images: [
-      {
-        url: 'https://hairtoppersisrael.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'טופר לשיער דליל נס ציונה – כיסוי שביל וקודקוד',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'טופר לשיער דליל נס ציונה – כיסוי שביל וקודקוד',
     description: 'טופרים מותאמים לשיער דליל בנס ציונה ולשביל מתרחב, עם כיסוי קל וכמעט בלתי נראה.',
-    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 
@@ -65,6 +56,14 @@ const faqs = [
   {
     question: 'איך מטפלים בטופר בבית?',
     answer: 'אנחנו מספקות ערכת טיפול מלאה והדרכה. באופן כללי, שוטפים את הטופר 1-2 פעמים בשבוע עם מוצרים ללא סולפטים, מייבשים באוויר ושומרים על מעמד ייעודי. אנחנו גם מציעות שירותי שטיפה ועיצוב מקצועיים בסלון לתחזוקה מעמיקה.'
+  },
+  {
+    question: 'מה ההבדל בין טופר לשיער דליל, פדחת וצמיד שיער?',
+    answer: 'טופר לשיער דליל מיועד לכיסוי דלילות באזור השביל, הקודקוד והכתר — בדיוק במרכז הראש. פדחת מתמקדת בחזית ובקו השיער, ומתאימה למי שקו השיער נסוג או דליל בחלק הקדמי. צמיד שיער נועד בעיקר להוספת נפח ואורך, ומתאים פחות לכיסוי דלילות מקומית. בייעוץ אנחנו בוחנות את סוג הדלילות וממליצות על הפתרון המדויק — לעיתים שילוב של כמה פתרונות.'
+  },
+  {
+    question: 'מתי לבחור טופר ומתי פדחת?',
+    answer: 'הכלל הפשוט: אם הדלילות שלך במרכז הראש — בשביל, בקודקוד או בכתר — טופר הוא הבחירה הנכונה. אם הדלילות בחזית או שקו השיער נסוג, פדחת תיתן כיסוי טבעי יותר דווקא באזור הזה. אם יש דלילות גם במרכז וגם בחזית, אפשר לשלב. נשמח לעזור לך להחליט בייעוץ החינמי.'
   },
 ];
 
@@ -118,56 +117,115 @@ export default function ThinHairToppersPage() {
         reversed
       />
 
-      {/* טבלת השוואה */}
+      {/* טבלת השוואה: טופר מול פדחת מול צמיד */}
       <section className="py-16 sm:py-20 bg-gray-50" dir="rtl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">
-            השוואה בין טופר לפתרונות אחרים
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-4">
+            טופר לשיער דליל מול פדחת מול צמיד
           </h2>
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200">
-            <table className="w-full text-right">
+          <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            שלושה פתרונות שונים לשיער דליל — לכל אחד יתרונות משלו. השוו ביניהם וגלו מה מתאים לכם.
+          </p>
+          <div className="max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200 overflow-x-auto">
+            <table className="w-full text-right min-w-[640px]">
               <thead>
                 <tr className="bg-navy-900 text-white">
                   <th className="px-6 py-4 font-semibold">תכונה</th>
-                  <th className="px-6 py-4 font-semibold text-center">טופר</th>
-                  <th className="px-6 py-4 font-semibold text-center">פאה מלאה</th>
-                  <th className="px-6 py-4 font-semibold text-center">תוספות שיער</th>
+                  <th className="px-6 py-4 font-semibold text-center">טופר לשיער דליל</th>
+                  <th className="px-6 py-4 font-semibold text-center">פדחת</th>
+                  <th className="px-6 py-4 font-semibold text-center">צמיד שיער</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr>
-                  <td className="px-6 py-4 text-gray-900 font-medium">כיסוי שביל</td>
+                  <td className="px-6 py-4 text-gray-900 font-medium">אזור כיסוי עיקרי</td>
+                  <td className="px-6 py-4 text-center text-gray-700">שביל, קודקוד וכתר</td>
+                  <td className="px-6 py-4 text-center text-gray-700">חזית וקו השיער</td>
+                  <td className="px-6 py-4 text-center text-gray-700">נפח והוספת אורך</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="px-6 py-4 text-gray-900 font-medium">מתאים לשיער דליל</td>
+                  <td className="px-6 py-4 text-center text-green-600 font-bold">מצוין</td>
+                  <td className="px-6 py-4 text-center text-green-600 font-bold">מצוין</td>
+                  <td className="px-6 py-4 text-center text-yellow-500">בינוני</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-gray-900 font-medium">כיסוי שביל מתרחב</td>
                   <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
-                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
+                  <td className="px-6 py-4 text-center text-yellow-500">חלקי</td>
                   <td className="px-6 py-4 text-center text-red-500 font-bold">✗</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="px-6 py-4 text-gray-900 font-medium">קל משקל ונושם</td>
+                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
+                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
+                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-gray-900 font-medium">הרכבה עצמית קלה</td>
+                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
+                  <td className="px-6 py-4 text-center text-yellow-500">בעזרה</td>
+                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="px-6 py-4 text-gray-900 font-medium">שומר על השיער הטבעי</td>
                   <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
-                  <td className="px-6 py-4 text-center text-red-500 font-bold">✗</td>
+                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
                   <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 text-gray-900 font-medium">קל משקל</td>
-                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
-                  <td className="px-6 py-4 text-center text-yellow-500">משתנה</td>
-                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="px-6 py-4 text-gray-900 font-medium">הרכבה יומית קלה</td>
-                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
-                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
-                  <td className="px-6 py-4 text-center text-red-500 font-bold">✗</td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 text-gray-900 font-medium">ללא נזק לשיער</td>
-                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
-                  <td className="px-6 py-4 text-center text-green-600 font-bold">✓</td>
-                  <td className="px-6 py-4 text-center text-red-500 font-bold">✗</td>
+                  <td className="px-6 py-4 text-gray-900 font-medium">מתאים במיוחד ל…</td>
+                  <td className="px-6 py-4 text-center text-gray-700">דלילות בשביל ובקודקוד</td>
+                  <td className="px-6 py-4 text-center text-gray-700">קו שיער נסוג בחזית</td>
+                  <td className="px-6 py-4 text-center text-gray-700">מי שרוצה נפח ואורך</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <div className="mt-8 text-center flex flex-wrap justify-center gap-4">
+            <a href="/padachat" className="inline-flex items-center gap-2 text-navy-900 font-semibold hover:text-gold-600 transition-colors">
+              קראו עוד על פדחת לשיער ←
+            </a>
+            <a href="/tzamidei-sear" className="inline-flex items-center gap-2 text-navy-900 font-semibold hover:text-gold-600 transition-colors">
+              קראו עוד על צמידי שיער ←
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* מי מתאים/ה לטופר לשיער דליל */}
+      <section className="py-16 sm:py-20 bg-white" dir="rtl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-gold-600 font-semibold mb-3">התאמה אישית</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+              מי מתאים/ה לטופר לשיער דליל?
+            </h2>
+            <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+              טופר לשיער דליל הוא הפתרון האידיאלי במגוון מצבים. אם אחד מהם מתאר אתכם — כדאי לבוא לייעוץ.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {[
+              { icon: '🎯', title: 'שביל מתרחב', text: 'מבחינים שהשביל נראה רחב יותר או שהקרקפת מציצה — טופר מכסה בדיוק את האזור הזה.' },
+              { icon: '👑', title: 'דלילות בקודקוד ובכתר', text: 'איבוד נפח באזור העליון של הראש שגורם לשיער להיראות שטוח — טופר מחזיר נפח מיידי.' },
+              { icon: '🌸', title: 'שינויים הורמונליים', text: 'דלילות אחרי לידה, בגיל המעבר או עקב שינויים הורמונליים — פתרון עדין ולא פולשני.' },
+              { icon: '💊', title: 'נשירה עונתית או רפואית', text: 'שיער שנעשה דליל זמנית — טופר מספק כיסוי מלא בזמן שהשיער הטבעי מתאושש.' },
+              { icon: '💪', title: 'רוצה נפח בלי מחויבות', text: 'עדיין יש לכן רוב השיער ורק רוצות תוספת נפח וכיסוי — בלי דבק, בלי ניתוח ובלי נזק.' },
+              { icon: '⏱️', title: 'מחפשת פתרון מהיר', text: 'רוצות תוצאה טבעית תוך פחות משעה, שאפשר להרכיב ולהסיר לבד בכל בוקר.' },
+            ].map((item) => (
+              <div key={item.title} className="flex items-start gap-4 p-6 bg-gray-50 rounded-2xl border border-gray-200 hover:border-gold-300 hover:shadow-md transition-all">
+                <div className="text-3xl shrink-0">{item.icon}</div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">{item.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-gray-500 mt-10 max-w-2xl mx-auto">
+            לא בטוחות אם טופר הוא הפתרון הנכון? בייעוץ החינמי נבחן יחד את סוג הדלילות ונמליץ על הפתרון המדויק עבורכן.
+          </p>
         </div>
       </section>
 

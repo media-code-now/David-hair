@@ -30,21 +30,12 @@ export const metadata: Metadata = {
     locale: 'he_IL',
     siteName: 'David Hair Solutions',
     url: 'https://hairtoppersisrael.com/hair-units',
-    images: [
-      {
-        url: 'https://hairtoppersisrael.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'יחידות שיער נס ציונה – פתרון טבעי ומדויק לשיער דליל',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'יחידות שיער נס ציונה – פתרון טבעי ומדויק לשיער דליל',
     description:
       'טופר, פדחת, צמיד או פאה מלאה – כל סוגי יחידות השיער במקום אחד, עם אבחון אישי שמתאים את הפתרון המדויק לרמת הדלילות שלכם.',
-    images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };
 

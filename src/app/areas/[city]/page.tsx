@@ -45,13 +45,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: 'website',
       siteName: 'David Hair Solutions',
       url: canonical,
-      images: [{ url: `${SITE}/og-image.jpg`, width: 1200, height: 630, alt: data.metaTitle }],
     },
     twitter: {
       card: 'summary_large_image',
       title: data.metaTitle,
       description: data.metaDescription,
-      images: [`${SITE}/og-image.jpg`],
     },
   };
 }

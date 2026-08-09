@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     locale: 'he_IL',
     siteName: 'David Hair Solutions',
     url: 'https://hairtoppersisrael.com/shaalot',
-    images: [{ url: 'https://hairtoppersisrael.com/og-image.jpg', width: 1200, height: 630 }],
   },
 };
 
