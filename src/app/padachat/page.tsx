@@ -7,6 +7,7 @@ import ServiceHero from '@/components/ServiceHero';
 import ServiceDetailSection from '@/components/ServiceDetailSection';
 import ServiceCTA from '@/components/ServiceCTA';
 import ServiceFAQ from '@/components/ServiceFAQ';
+import HairUnitsCallout from '@/components/HairUnitsCallout';
 import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 import padachatBanner from '@/images/banners/2.jpg';
@@ -135,6 +136,8 @@ export default function PadachatPage() {
           imagePlaceholder="✨"
           reversed
         />
+
+        <HairUnitsCallout unitName="פדחת לשיער" />
 
         <ServiceFAQ faqs={faqs} subtitle="כל מה שחשוב לדעת על פתרון פדחת לשיער" />
 

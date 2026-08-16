@@ -6,6 +6,7 @@ import ServiceHero from '@/components/ServiceHero';
 import ServiceDetailSection from '@/components/ServiceDetailSection';
 import ServiceCTA from '@/components/ServiceCTA';
 import ServiceFAQ from '@/components/ServiceFAQ';
+import HairUnitsCallout from '@/components/HairUnitsCallout';
 import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
@@ -139,6 +140,8 @@ export default function CustomWigsPage() {
         imagePlaceholder="✨"
         reversed
       />
+
+      <HairUnitsCallout unitName="פאה בהתאמה אישית" />
 
       <ServiceFAQ faqs={faqs} subtitle="כל מה שצריך לדעת על פאות מותאמות אישית" />
 

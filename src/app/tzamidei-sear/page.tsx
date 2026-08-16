@@ -7,6 +7,7 @@ import ServiceHero from '@/components/ServiceHero';
 import ServiceDetailSection from '@/components/ServiceDetailSection';
 import ServiceCTA from '@/components/ServiceCTA';
 import ServiceFAQ from '@/components/ServiceFAQ';
+import HairUnitsCallout from '@/components/HairUnitsCallout';
 import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 import tzamideiBanner from '@/images/banners/1.jpg';
@@ -135,6 +136,8 @@ export default function TzamideiSearPage() {
           imagePlaceholder="🔍"
           reversed
         />
+
+        <HairUnitsCallout unitName="צמיד שיער" />
 
         <ServiceFAQ faqs={faqs} subtitle="שאלות נפוצות על צמידי שיער ותהליך ההתאמה" />
 

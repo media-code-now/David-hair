@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Crown, Target, Sparkles, ShoppingBag, ArrowLeft } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -74,6 +75,59 @@ const hairUnitTypes = [
   },
 ];
 
+const SITE = 'https://hairtoppersisrael.com';
+
+// ItemList schema — tells search engines the page is a category listing of hair-unit types.
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'סוגי יחידות שיער',
+  description: 'סוגי יחידות השיער הלא-כירורגיות שלנו: טופר, פדחת, צמיד ופאה בהתאמה אישית.',
+  itemListElement: hairUnitTypes.map((type, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: type.title,
+    description: type.description,
+    url: `${SITE}${type.href}`,
+  })),
+};
+
+// HowTo schema — the "how a hair unit is built" process, AEO-eligible.
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'איך בונים יחידת שיער מותאמת אישית',
+  description:
+    'תהליך ההתאמה של יחידת שיער בחדר ייעוץ פרטי – מהאבחון הראשוני ועד לעיצוב הסופי.',
+  totalTime: 'PT2H',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'אבחון וייעוץ ראשוני',
+      text: 'בודקים את היקף הדלילות, מבנה הקרקפת והמטרות שלכם, וממליצים על סוג היחידה המתאים ביותר.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'התאמת גוון וצפיפות',
+      text: 'משווים גוונים ורמות צפיפות ליצירת מעבר טבעי ובלתי מורגש בין היחידה לשיער הקיים.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'התקנה מדויקת ובטוחה',
+      text: 'מיקום והצמדה מקצועיים שמבטיחים נוחות מלאה וביטחון לאורך כל היום.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'גזירה ועיצוב סופי',
+      text: 'עיצוב אישי שמשלב את היחידה עם השיער הטבעי למראה אחיד וטבעי לחלוטין.',
+    },
+  ],
+};
+
 const faqs = [
   {
     question: 'מה זו בעצם יחידת שיער?',
@@ -114,6 +168,16 @@ export default function HairUnitsPage() {
       <ServiceReviewSchema
         serviceName="יחידות שיער"
         serviceUrl="https://hairtoppersisrael.com/hair-units"
+      />
+      <Script
+        id="hair-units-itemlist-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <Script
+        id="hair-units-howto-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <BreadcrumbHero
         title="יחידות שיער"
