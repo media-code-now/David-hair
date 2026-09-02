@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const bookModified    = new Date('2026-06-01');
   const areasModified   = new Date('2026-07-02');
   const aeoModified     = new Date('2026-08-01');
+  const hairUnitsModified = new Date('2026-09-02');
 
   const areaSlugs = citySlugs;
 
@@ -35,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/hair-units`,
-      lastModified: aeoModified,
+      lastModified: hairUnitsModified,
       changeFrequency: 'weekly',
       priority: 0.95,
     },
