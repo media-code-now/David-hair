@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
+import { ChevronDown, ArrowLeft } from 'lucide-react';
 import Script from 'next/script';
 
 export interface FAQItem {
@@ -38,7 +39,7 @@ export default function ServiceFAQ({
   const schemaId = `service-faq-schema-${faqs[0]?.question ?? title}`.replace(/[^a-zA-Z0-9\u0590-\u05FF]/g, '-').slice(0, 80);
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-white via-gold-50/20 to-navy-50/15">
+    <section id="service-faq" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-white via-gold-50/20 to-navy-50/15">
       <Script
         id={schemaId}
         type="application/ld+json"
@@ -83,6 +84,24 @@ export default function ServiceFAQ({
               )}
             </div>
           ))}
+        </div>
+
+        {/* Related questions → knowledge hub (internal link to /shaalot) */}
+        <div className="mt-10 rounded-2xl border border-navy-100 bg-white/70 p-6 sm:p-7 text-center" dir="rtl">
+          <p className="text-lg font-bold text-gray-900 mb-1.5">
+            לא מצאתם את התשובה שחיפשתם?
+          </p>
+          <p className="text-gray-600 mb-5">
+            במאגר השאלות והתשובות המלא שלנו תמצאו הסברים מפורטים על טופרים, פאות, יחידות שיער,
+            תחזוקה, מחירים ופתרונות רפואיים.
+          </p>
+          <Link
+            href="/shaalot"
+            className="inline-flex items-center gap-2 bg-navy-900 text-white font-semibold px-6 py-3 rounded-full hover:bg-navy-800 transition-colors"
+          >
+            למדריך השאלות והתשובות המלא
+            <ArrowLeft size={18} />
+          </Link>
         </div>
       </div>
     </section>

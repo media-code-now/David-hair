@@ -11,14 +11,15 @@ import { getCity, citySlugs } from '../cities';
 const SITE = 'https://hairtoppersisrael.com';
 
 const services = [
-  { href: '/hair-toppers', label: 'טופר שיער' },
-  { href: '/hair-toppers-thin-hair', label: 'טופרים לשיער דליל' },
-  { href: '/padachat', label: 'פדחת לשיער דליל' },
-  { href: '/tzamidei-sear', label: 'צמידי שיער' },
-  { href: '/custom-wigs', label: 'פאות בהתאמה אישית' },
-  { href: '/medical-wigs', label: 'פאה רפואית' },
-  { href: '/salon-blending', label: 'שילוב וגזירה בסלון' },
-  { href: '/wig-repairs-upgrades', label: 'תיקון ושדרוג' },
+  { href: '/hair-units', label: 'יחידות שיער', blurb: (c: string) => `כל סוגי יחידות השיער וכיפות השיער במקום אחד — פתרון מדויק לנשים מ${c}.` },
+  { href: '/hair-toppers', label: 'טופר שיער', blurb: (c: string) => `טופר שיער ב${c} לכיסוי קודקוד ושביל מתרחב, עם התאמת גוון מדויקת.` },
+  { href: '/hair-toppers-thin-hair', label: 'טופרים לשיער דליל', blurb: (c: string) => `פתרון לשיער דליל ל${c}: כיסוי קל ובלתי נראה שמחזיר נפח טבעי.` },
+  { href: '/padachat', label: 'פדחת לשיער דליל', blurb: (c: string) => `פדחת לשיער ל${c} לכיסוי הקו הקדמי והשביל בטבעיות מלאה.` },
+  { href: '/tzamidei-sear', label: 'צמידי שיער', blurb: (c: string) => `צמידי שיער ל${c} לתוספת נפח ואורך מיידית כבר מהפגישה הראשונה.` },
+  { href: '/custom-wigs', label: 'פאות בהתאמה אישית', blurb: (c: string) => `פאה בהתאמה אישית ל${c}, בנויה ביד משיער אנושי 100%.` },
+  { href: '/medical-wigs', label: 'פאה רפואית', blurb: (c: string) => `פאה רפואית לנשים מ${c} בליווי רגיש לנשירה רפואית ולאחר טיפולים.` },
+  { href: '/salon-blending', label: 'שילוב וגזירה בסלון', blurb: (c: string) => `שילוב וגזירה מקצועיים ללקוחות מ${c} למראה אחיד וטבעי.` },
+  { href: '/wig-repairs-upgrades', label: 'תיקון ושדרוג', blurb: (c: string) => `תיקון ושדרוג פאות וטופרים קיימים ללקוחות מ${c}.` },
 ];
 
 type PageProps = { params: Promise<{ city: string }> };
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: data.metaTitle,
     description: data.metaDescription,
-    keywords: `טופר שיער ${data.name}, פאה ${data.name}, פאה רפואית ${data.name}, טופרים ${data.name}, פאה בהתאמה אישית ${data.name}, פתרון לשיער דליל ${data.name}`,
+    keywords: `טופר שיער ${data.name}, יחידת שיער ${data.name}, כיפת שיער ${data.name}, פאה ${data.name}, פאה רפואית ${data.name}, טופרים ${data.name}, פאה בהתאמה אישית ${data.name}, פדחת ${data.name}, פתרון לשיער דליל ${data.name}`,
     alternates: { canonical, languages: { 'he-IL': canonical } },
     openGraph: {
       title: data.metaTitle,
@@ -131,6 +132,7 @@ export default async function AreaCityPage({ params }: PageProps) {
         title={`טופרים ופאות ב${data.name}`}
         subtitle="פתרונות שיער לנשים במראה טבעי ובהתאמה אישית"
         pathname={`/areas/${city}`}
+        emitSchema={false}
       />
 
       <main className="py-16 sm:py-20 lg:py-24" dir="rtl">
@@ -189,27 +191,32 @@ export default async function AreaCityPage({ params }: PageProps) {
             ))}
           </div>
 
-          {/* Services */}
+          {/* Services — city × service local copy */}
           <div className="glass-card rounded-[22px] p-6 sm:p-8 mb-10">
             <h2 className="text-2xl font-bold text-gray-900 mb-2 tracking-tight">
               השירותים שלנו ללקוחות מ{data.name}
             </h2>
-            <p className="text-gray-500 text-[15px] mb-5">
-              כל השירותים ניתנים בהתאמה אישית מלאה בסלון הפרטי בנס ציונה.
+            <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
+              נשים מ{data.name} מגיעות אלינו למגוון פתרונות שיער לא-כירורגיים — מטופר וכיפת שיער
+              לכיסוי דלילות ממוקדת ועד פאה מלאה בהתאמה אישית. כל שירות ניתן בהתאמה אישית מלאה
+              בסלון הפרטי בנס ציונה, כולל התאמת גוון, גזירה ועיצוב סופי.
             </p>
             <div className="grid sm:grid-cols-2 gap-2.5">
               {services.map((s) => (
                 <Link
                   key={s.href}
                   href={s.href}
-                  className="flex items-center justify-between gap-2 rounded-xl border border-gray-200 hover:border-navy-300 hover:bg-navy-50/50 px-4 py-3 text-navy-900 font-semibold transition-all duration-200 group"
+                  className="flex flex-col gap-1 rounded-xl border border-gray-200 hover:border-navy-300 hover:bg-navy-50/50 px-4 py-3.5 transition-all duration-200 group"
                 >
-                  {s.label}
-                  <ArrowLeft
-                    size={16}
-                    className="text-navy-400 group-hover:text-navy-700 transition-colors"
-                    aria-hidden="true"
-                  />
+                  <span className="flex items-center justify-between gap-2 text-navy-900 font-semibold">
+                    {s.label} ב{data.name}
+                    <ArrowLeft
+                      size={16}
+                      className="text-navy-400 group-hover:text-navy-700 transition-colors flex-shrink-0"
+                      aria-hidden="true"
+                    />
+                  </span>
+                  <span className="text-gray-500 text-[13px] leading-relaxed">{s.blurb(data.name)}</span>
                 </Link>
               ))}
             </div>

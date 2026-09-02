@@ -7,9 +7,11 @@ interface BreadcrumbHeroProps {
   subtitle?: string;
   backgroundImage?: string | StaticImageData;
   pathname?: string;
+  /** Set false when the page emits its own (richer) BreadcrumbList to avoid duplicates. */
+  emitSchema?: boolean;
 }
 
-export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/breadcrumb-hairshades.jpg', pathname = '' }: BreadcrumbHeroProps) {
+export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/breadcrumb-hairshades.jpg', pathname = '', emitSchema = true }: BreadcrumbHeroProps) {
   const baseUrl = 'https://hairtoppersisrael.com';
 
   const breadcrumbSchema = {
@@ -33,15 +35,17 @@ export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/br
 
   return (
     <div className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden">
-      <Script
-        id={`breadcrumb-schema-${title.replace(/\s+/g, '-')}`}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      {emitSchema && (
+        <Script
+          id={`breadcrumb-schema-${title.replace(/\s+/g, '-')}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      )}
       {/* Background Image */}
       <Image
         src={backgroundImage}
-        alt={title}
+        alt={`${title} – טופרים ופאות בהתאמה אישית | David Hair Solutions`}
         fill
         className="object-cover object-center"
         priority

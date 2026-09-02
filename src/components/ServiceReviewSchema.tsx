@@ -42,11 +42,24 @@ export default function ServiceReviewSchema({ serviceName, serviceUrl }: Service
     ],
   };
 
+  // WebPage + speakable — marks the H1 and FAQ as voice/answer-engine friendly.
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: serviceName,
+    url: serviceUrl,
+    inLanguage: 'he-IL',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '#service-faq'],
+    },
+  };
+
   return (
     <Script
       id={`service-schema-${serviceUrl.split('/').pop() ?? 'service'}`}
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify([schema, webPageSchema]) }}
     />
   );
 }
