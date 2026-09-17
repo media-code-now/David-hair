@@ -163,7 +163,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <h3 id="quick-actions" className="sr-only">פעולות מהירות</h3>
             <button
               onClick={() => {
-                window.open('https://wa.me/972504001187', '_blank');
+                window.open('https://wa.me/972525550415', '_blank');
                 onClose();
               }}
               aria-label="יצירת קשר בוואטסאפ"

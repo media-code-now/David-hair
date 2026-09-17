@@ -382,7 +382,7 @@ export default function ShaalotPage() {
                 ייעוץ חינם ללא התחייבות
               </Link>
               <a
-                href="https://wa.me/972504001187"
+                href="https://wa.me/972525550415"
                 className="px-8 py-4 rounded-2xl bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 font-semibold text-[17px] active:scale-[0.97]"
               >
                 שאלה בוואטסאפ

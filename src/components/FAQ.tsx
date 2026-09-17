@@ -96,14 +96,14 @@ export default function FAQ() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://wa.me/972504001187"
+              href="https://wa.me/972525550415"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-[#25D366] hover:bg-[#20BA5A] text-white transition-all duration-200 font-bold text-[15px] active:scale-[0.97]"
             >
               <MessageCircle size={17} strokeWidth={2.2} />
               שלחו הודעה בוואטסאפ
             </a>
             <a
-              href="tel:+972504001187"
+              href="tel:+972525550415"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-2xl border border-navy-900/20 text-navy-900 hover:bg-navy-50 transition-all duration-200 font-semibold text-[15px] active:scale-[0.97]"
             >
               <Phone size={17} strokeWidth={2.2} />

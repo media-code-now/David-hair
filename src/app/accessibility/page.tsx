@@ -101,20 +101,20 @@ export default function AccessibilityStatementPage() {
               </p>
               <div className="space-y-3">
                 <a
-                  href="tel:+972504001187"
+                  href="tel:+972525550415"
                   className="flex items-center gap-3 text-[15px] font-semibold hover:text-gold-300 transition-colors"
                 >
                   <Phone size={18} aria-hidden="true" className="text-gold-300" />
-                  050-4001187
+                  052-555-0415
                 </a>
                 <a
-                  href="https://wa.me/972504001187"
+                  href="https://wa.me/972525550415"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-[15px] font-semibold hover:text-gold-300 transition-colors"
                 >
                   <MessageCircle size={18} aria-hidden="true" className="text-gold-300" />
-                  וואטסאפ: 050-4001187
+                  וואטסאפ: 052-555-0415
                 </a>
                 <a
                   href="mailto:info@hairtoppersisrael.com"

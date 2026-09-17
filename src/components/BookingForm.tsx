@@ -243,7 +243,7 @@ export default function BookingForm() {
               חזרה לדף הבית
             </a>
             <a
-              href="https://wa.me/972504001187"
+              href="https://wa.me/972525550415"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium shadow-lg shadow-[#25D366]/25 active:scale-[0.97]"
             >
               <MessageCircle size={18} />
@@ -601,9 +601,9 @@ export default function BookingForm() {
               {submitError && (
                 <div className="mt-6 rounded-[14px] p-4 text-sm text-red-600 bg-red-50 border border-red-200" dir="rtl">
                   לא הצלחנו לשלוח את הטופס כרגע. אפשר לנסות שוב, או ליצור קשר ישירות ב{' '}
-                  <a href="https://wa.me/972504001187" className="underline font-semibold">וואטסאפ</a>
+                  <a href="https://wa.me/972525550415" className="underline font-semibold">וואטסאפ</a>
                   {' '}או ב{' '}
-                  <a href="tel:+972504001187" className="underline font-semibold">טלפון</a>.
+                  <a href="tel:+972525550415" className="underline font-semibold">טלפון</a>.
                 </div>
               )}
 
@@ -652,18 +652,18 @@ export default function BookingForm() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://wa.me/972504001187"
+              href="https://wa.me/972525550415"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-medium shadow-lg shadow-[#25D366]/25 active:scale-[0.97]"
             >
               <MessageCircle size={18} />
               שלחו הודעה בוואטסאפ
             </a>
             <a
-              href="tel:+972504001187"
+              href="tel:+972525550415"
               className="glass flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] text-gray-700 hover:bg-white/80 transition-all font-medium active:scale-[0.97]"
             >
               <Phone size={18} />
-              050-4001187
+              052-555-0415
             </a>
           </div>
         </div>

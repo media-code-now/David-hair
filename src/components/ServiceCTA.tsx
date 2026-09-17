@@ -30,14 +30,14 @@ export default function ServiceCTA({
             {ctaText}
           </Link>
           <a
-            href="https://wa.me/972504001187"
+            href="https://wa.me/972525550415"
             className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#25D366] text-white hover:bg-[#20BA5A] transition font-semibold text-lg"
           >
             <MessageCircle size={20} />
             שלחו הודעה בוואטסאפ
           </a>
           <a
-            href="tel:+972504001187"
+            href="tel:+972525550415"
             className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg border-2 border-gray-300 text-gray-900 hover:border-gray-400 transition font-semibold text-lg"
           >
             <Phone size={20} />

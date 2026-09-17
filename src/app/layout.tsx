@@ -16,7 +16,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   description:
     "טופרים, פאות בהתאמה אישית ופאות רפואיות עם התאמה דיסקרטית בחדר פרטי. שילוב וגזירה מקצועיים בסלון נשים פרטי בנס ציונה.",
   url: "https://hairtoppersisrael.com",
-  telephone: "+972504001187",
+  telephone: "+972525550415",
   email: "office@hairtoppersisrael.com",
   image: "https://hairtoppersisrael.com/logo-black.png",
   logo: "https://hairtoppersisrael.com/logo-black.png",
@@ -47,7 +47,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   sameAs: [
     GOOGLE_MAPS_URL,
     "https://share.google/R340fKvDvgtSkAReJ",
-    "https://wa.me/972504001187",
+    "https://wa.me/972525550415",
     "https://www.facebook.com/davidhairsolution/",
     "https://www.instagram.com/david_hair_solutions/",
   ],
@@ -117,7 +117,7 @@ const ORGANIZATION_SCHEMA = {
   url: "https://hairtoppersisrael.com",
   logo: "https://hairtoppersisrael.com/logo-black.png",
   image: "https://hairtoppersisrael.com/og-image.jpg",
-  telephone: "+972504001187",
+  telephone: "+972525550415",
   email: "office@hairtoppersisrael.com",
   address: {
     "@type": "PostalAddress",
@@ -130,7 +130,7 @@ const ORGANIZATION_SCHEMA = {
   sameAs: [
     GOOGLE_MAPS_URL,
     "https://share.google/R340fKvDvgtSkAReJ",
-    "https://wa.me/972504001187",
+    "https://wa.me/972525550415",
     "https://www.facebook.com/davidhairsolution/",
     "https://www.instagram.com/david_hair_solutions/",
   ],

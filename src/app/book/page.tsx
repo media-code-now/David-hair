@@ -42,7 +42,7 @@ const bookingSchema = {
     '@type': 'HairSalon',
     name: 'David Hair Solutions',
     url: 'https://hairtoppersisrael.com',
-    telephone: '+972504001187',
+    telephone: '+972525550415',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'שביט 8',
@@ -61,7 +61,7 @@ const bookingSchema = {
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+972504001187',
+      telephone: '+972525550415',
       contactType: 'customer service',
       areaServed: 'IL',
       availableLanguage: 'Hebrew',

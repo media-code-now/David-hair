@@ -658,7 +658,7 @@ export default function ADAAccessibilityWidget() {
               <p className="text-[11px] text-gray-500 text-center mt-3 leading-relaxed">
                 ההגדרות נשמרות בדפדפן שלך.{' '}
                 <a
-                  href="https://wa.me/972504001187"
+                  href="https://wa.me/972525550415"
                   className="text-navy-700 underline underline-offset-2 font-semibold"
                 >
                   נתקלתם בבעיית נגישות? דברו איתנו

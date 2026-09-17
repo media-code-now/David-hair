@@ -141,7 +141,7 @@ export default function PPCLandingHero() {
 
             {/* Secondary CTA */}
             <a
-              href="https://wa.me/972504001187"
+              href="https://wa.me/972525550415"
               className="block w-full px-8 py-4 rounded-2xl border-2 border-gold-400 text-gold-400 hover:bg-gold-400/10 transition-all duration-300 font-bold text-[17px] text-center"
             >
               או שלחו הודעה עכשיו בוואטסאפ
@@ -213,7 +213,7 @@ export default function PPCLandingHero() {
                     {submitError && (
                       <p className="text-[13px] text-red-300 text-center leading-relaxed" dir="rtl">
                         משהו השתבש בשליחה. נסו שוב או שלחו הודעה ב{' '}
-                        <a href="https://wa.me/972504001187" className="underline font-semibold">וואטסאפ</a>.
+                        <a href="https://wa.me/972525550415" className="underline font-semibold">וואטסאפ</a>.
                       </p>
                     )}
                     <p className="text-[12px] text-navy-200 text-center leading-relaxed mt-4" dir="rtl">
@@ -238,7 +238,7 @@ export default function PPCLandingHero() {
                     בקרוב תקבלי הודעה בוואטסאפ עם כל הפרטים שחשוב לדעת לפני הפגישה
                   </p>
                   <a
-                    href="https://wa.me/972504001187"
+                    href="https://wa.me/972525550415"
                     className="inline-block px-6 py-3 rounded-xl bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all duration-300 font-bold text-[15px]"
                   >
                     דברי איתנו בוואטסאפ
@@ -260,7 +260,7 @@ export default function PPCLandingHero() {
                   מעדיפים ליצור קשר ישירות?
                 </p>
                 <a
-                  href="https://wa.me/972504001187"
+                  href="https://wa.me/972525550415"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#20BA5A] transition-all font-bold text-[14px]"
                 >
                   💬 דברי איתנו בוואטסאפ

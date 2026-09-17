@@ -23,7 +23,7 @@ export default function ServiceReviewSchema({ serviceName, serviceUrl }: Service
       '@id': GOOGLE_MAPS_URL,
       name: 'David Hair Solutions',
       url: 'https://hairtoppersisrael.com',
-      telephone: '+972504001187',
+      telephone: '+972525550415',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'שביט 8',

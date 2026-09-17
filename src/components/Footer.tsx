@@ -31,7 +31,7 @@ export default function Footer() {
               {[
                 { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/davidhairsolution/' },
                 { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/david_hair_solutions/' },
-                { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/972504001187' },
+                { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/972525550415' },
                 { icon: Star, label: 'Google Reviews', href: 'https://share.google/R340fKvDvgtSkAReJ' },
               ].map(({ icon: Icon, label, href }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-[10px] bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all duration-200 active:scale-90" aria-label={label}>
@@ -72,8 +72,8 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4 text-[14px] tracking-tight" dir="rtl">יצירת קשר</h4>
             <ul className="space-y-2.5 text-[13px]" dir="rtl">
-              <li><a href="tel:+972504001187" className="hover:text-white transition-colors duration-200">050-4001187</a></li>
-              <li><a href="https://wa.me/972504001187" className="hover:text-white transition-colors duration-200">וואטסאפ: 050-4001187</a></li>
+              <li><a href="tel:+972525550415" className="hover:text-white transition-colors duration-200">052-555-0415</a></li>
+              <li><a href="https://wa.me/972525550415" className="hover:text-white transition-colors duration-200">וואטסאפ: 052-555-0415</a></li>
               <li>
                 <a
                   href={GOOGLE_MAPS_URL}

@@ -197,7 +197,7 @@ export default function AdLandingHero() {
                   {submitError && (
                     <p className="text-[13px] text-red-300 text-center leading-relaxed" dir="rtl">
                       משהו השתבש. נסו שוב או שלחו הודעה ב{' '}
-                      <a href="https://wa.me/972504001187" className="underline font-semibold">וואטסאפ</a>.
+                      <a href="https://wa.me/972525550415" className="underline font-semibold">וואטסאפ</a>.
                     </p>
                   )}
 
@@ -222,7 +222,7 @@ export default function AdLandingHero() {
             {/* Contact info below form */}
             <div className="mt-8 space-y-3">
               <a
-                href="tel:+972504001187"
+                href="tel:+972525550415"
                 className="flex items-center gap-3 text-navy-100 hover:text-gold-300 transition group"
                 dir="rtl"
               >

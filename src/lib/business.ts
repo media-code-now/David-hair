@@ -3,9 +3,9 @@
 // consistency is an important local-SEO signal).
 
 export const BUSINESS_NAME = 'David Hair Solutions';
-export const BUSINESS_PHONE = '+972504001187';
-export const BUSINESS_PHONE_DISPLAY = '050-4001187';
-export const BUSINESS_WHATSAPP = 'https://wa.me/972504001187';
+export const BUSINESS_PHONE = '+972525550415';
+export const BUSINESS_PHONE_DISPLAY = '052-555-0415';
+export const BUSINESS_WHATSAPP = 'https://wa.me/972525550415';
 
 export const BUSINESS_ADDRESS = {
   streetAddress: 'שביט 8',

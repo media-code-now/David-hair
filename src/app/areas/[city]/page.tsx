@@ -83,7 +83,7 @@ export default async function AreaCityPage({ params }: PageProps) {
     provider: {
       '@type': 'HairSalon',
       name: 'David Hair Solutions',
-      telephone: '+972504001187',
+      telephone: '+972525550415',
       image: `${SITE}/logo-black.png`,
       address: {
         '@type': 'PostalAddress',
@@ -277,10 +277,10 @@ export default async function AreaCityPage({ params }: PageProps) {
                 קביעת ייעוץ ללא עלות
               </Link>
               <a
-                href="https://wa.me/972504001187"
+                href="https://wa.me/972525550415"
                 className="px-8 py-4 rounded-2xl bg-[#25D366] text-white font-semibold text-[17px] hover:bg-[#20BA5A] transition-all active:scale-[0.97]"
               >
-                וואטסאפ: 050-4001187
+                וואטסאפ: 052-555-0415
               </a>
             </div>
           </div>
