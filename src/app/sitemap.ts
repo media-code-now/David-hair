@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { citySlugs } from './areas/cities';
+import { posts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ?? 'https://hairtoppersisrael.com';
@@ -101,6 +102,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: areasModified,
       changeFrequency: 'weekly' as const,
       priority: 0.82,
+    })),
+    // Blog
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date('2026-10-07'),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    ...posts.map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: new Date(post.dateModified),
+      changeFrequency: 'monthly' as const,
+      priority: 0.75,
     })),
     // Legal / accessibility
     {
