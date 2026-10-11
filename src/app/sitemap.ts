@@ -11,7 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const bookModified    = new Date('2026-06-01');
   const areasModified   = new Date('2026-07-02');
   const aeoModified     = new Date('2026-08-01');
-  const hairUnitsModified = new Date('2026-09-02');
+  const thinHairModified = new Date('2026-10-11');
+  const hairUnitsModified = new Date('2026-10-11');
 
   const areaSlugs = citySlugs;
 
@@ -31,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/hair-toppers-thin-hair`,
-      lastModified: aeoModified,
+      lastModified: thinHairModified,
       changeFrequency: 'weekly',
       priority: 0.95,
     },
@@ -106,7 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Blog
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date('2026-10-07'),
+      lastModified: new Date('2026-10-11'),
       changeFrequency: 'weekly',
       priority: 0.8,
     },

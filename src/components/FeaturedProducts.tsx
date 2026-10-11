@@ -4,7 +4,7 @@ import { Star, Heart } from 'lucide-react';
 import { useState } from 'react';
 
 const newArrivals = [
-  { id: 1, name: 'טופר משי קרקפת טבעית', category: 'חדש במלאי', price: '₪890', rating: 5.0, reviews: 8, isNew: true },
+  { id: 1, name: 'טופר משי קרקפת טבעית', category: 'חדש במלאי', price: '₪900', rating: 5.0, reviews: 8, isNew: true },
   { id: 2, name: 'פאה גלית דגם חדש', category: 'חדש במלאי', price: '₪1,190', rating: 4.9, reviews: 5, isNew: true },
 ];
 

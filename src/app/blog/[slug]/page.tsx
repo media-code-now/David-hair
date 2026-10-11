@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getPost, postSlugs } from '@/lib/blog';
+import { AUTHOR, getPost, postSlugs } from '@/lib/blog';
 import { BUSINESS_NAME } from '@/lib/business';
 
 const BASE = 'https://hairtoppersisrael.com';
@@ -27,6 +27,7 @@ export async function generateMetadata({
     description: post.description,
     keywords: post.keywords,
     alternates: { canonical: url, languages: { 'he-IL': url } },
+    authors: [{ name: AUTHOR.name }],
     openGraph: {
       title: post.title,
       description: post.description,
@@ -61,7 +62,14 @@ export default async function BlogPostPage({
     dateModified: post.dateModified,
     mainEntityOfPage: url,
     image: `${BASE}/og-image.jpg`,
-    author: { '@type': 'Organization', name: BUSINESS_NAME, url: BASE },
+    author: {
+      '@type': 'Person',
+      name: AUTHOR.name,
+      alternateName: AUTHOR.nameHe,
+      jobTitle: AUTHOR.jobTitle,
+      url: BASE,
+      worksFor: { '@type': 'Organization', name: BUSINESS_NAME, url: BASE },
+    },
     publisher: {
       '@type': 'Organization',
       name: BUSINESS_NAME,
@@ -106,6 +114,9 @@ export default async function BlogPostPage({
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 tracking-tight leading-[1.2]">
               {post.title}
             </h1>
+            <p className="text-[15px] text-gray-700 mb-1">
+              מאת <span className="font-semibold">{AUTHOR.nameHe}</span> · {AUTHOR.jobTitleHe}
+            </p>
             <p className="text-sm text-gray-400 mb-8">
               עודכן ב-{new Date(post.dateModified).toLocaleDateString('he-IL')} · {post.readingMinutes} דקות קריאה
             </p>

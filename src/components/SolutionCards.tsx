@@ -12,7 +12,7 @@ const solutions = [
     gradient: 'from-pink-100/60 to-rose-50/40',
     iconBg: 'from-pink-200/80 to-pink-100/60',
     accent: 'text-pink-700',
-    href: '/hair-toppers',
+    href: '/hair-toppers-thin-hair',
   },
   {
     icon: ShoppingBag,
