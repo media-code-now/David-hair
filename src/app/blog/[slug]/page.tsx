@@ -9,6 +9,19 @@ import { BUSINESS_NAME } from '@/lib/business';
 
 const BASE = 'https://hairtoppersisrael.com';
 
+// Renders [text](/path) markers inside blog paragraphs as internal links.
+function renderRichText(text: string) {
+  return text.split(/(\[[^\]]+\]\(\/[^)]*\))/g).map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\((\/[^)]*)\)$/);
+    if (!m) return part;
+    return (
+      <Link key={i} href={m[2]} className="text-navy-900 font-semibold underline hover:text-gold-600">
+        {m[1]}
+      </Link>
+    );
+  });
+}
+
 export function generateStaticParams() {
   return postSlugs.map((slug) => ({ slug }));
 }
@@ -126,7 +139,7 @@ export default async function BlogPostPage({
               <section key={s.h2} className="mb-8">
                 <h2 className="text-2xl font-bold text-navy-900 mb-3 tracking-tight">{s.h2}</h2>
                 {s.paragraphs.map((p, i) => (
-                  <p key={i} className="text-gray-600 leading-relaxed mb-3">{p}</p>
+                  <p key={i} className="text-gray-600 leading-relaxed mb-3">{renderRichText(p)}</p>
                 ))}
                 {s.list && (
                   <ul className="list-disc pr-6 space-y-1.5 text-gray-600 leading-relaxed">

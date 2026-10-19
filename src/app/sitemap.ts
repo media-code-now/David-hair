@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const areasModified   = new Date('2026-07-02');
   const aeoModified     = new Date('2026-08-01');
   const thinHairModified = new Date('2026-10-11');
-  const hairUnitsModified = new Date('2026-10-11');
+  const hairUnitsModified = new Date('2026-10-19');
 
   const areaSlugs = citySlugs;
 
