@@ -14,7 +14,7 @@ import tzamideiBanner from '@/images/banners/1.jpg';
 import beforeAfterFive from '@/images/before-after/5.jpg';
 
 export const metadata: Metadata = {
-  title: 'צמידי שיער נס ציונה – תוספת נפח ואורך מהירה | David Hair',
+  title: 'צמידי שיער נס ציונה – תוספת נפח ואורך מהירה',
   description:
     'צמידי שיער לנפח ואורך במראה טבעי: התאמה מקצועית של גוון, אורך וצפיפות, עם אבחון אישי לבדיקת התאמה לשיער שלך.',
   keywords:
@@ -82,6 +82,7 @@ export default function TzamideiSearPage() {
         serviceUrl="https://hairtoppersisrael.com/tzamidei-sear"
       />
       <BreadcrumbHero
+        renderAsH1={false}
         title="צמידי שיער"
         subtitle="הארכת שיער מהירה במראה טבעי"
         pathname="/tzamidei-sear"

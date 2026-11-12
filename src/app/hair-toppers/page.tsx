@@ -13,7 +13,7 @@ import bannerTwo from '@/images/banners/2.jpg';
 import beforeAfterOne from '@/images/before-after/before-after-1.jpg';
 
 export const metadata: Metadata = {
-  title: 'טופר שיער נס ציונה – כיסוי שביל וקודקוד | David Hair',
+  title: 'טופר שיער נס ציונה – כיסוי שביל וקודקוד',
   description: 'טופרי שיער בנס ציונה לכיסוי הקודקוד והשביל במראה טבעי. קלים, דיסקרטיים ובהתאמה אישית בחדר פרטי. משרתות גם ראשון לציון ורחובות. קביעת ייעוץ ללא התחייבות.',
   keywords: 'טופר שיער נס ציונה, טופר שיער ראשון לציון, טופר לשיער דליל, כיסוי שביל נס ציונה, טופר שיער טבעי, נפח לשיער, hair toppers israel',
   alternates: {
@@ -70,7 +70,8 @@ export default function HairToppersPage() {
         serviceName="טופר שיער"
         serviceUrl="https://hairtoppersisrael.com/hair-toppers"
       />
-      <BreadcrumbHero 
+      <BreadcrumbHero
+        renderAsH1={false} 
         title="טופרי שיער"
         subtitle="כיסוי ונפח טבעיים בהתאמה אישית"
         pathname="/hair-toppers"

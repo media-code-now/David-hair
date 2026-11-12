@@ -129,6 +129,7 @@ export default async function AreaCityPage({ params }: PageProps) {
         }}
       />
       <BreadcrumbHero
+        renderAsH1={false}
         title={`טופרים ופאות ב${data.name}`}
         subtitle="פתרונות שיער לנשים במראה טבעי ובהתאמה אישית"
         pathname={`/areas/${city}`}

@@ -11,7 +11,7 @@ import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
-  title: 'פאות בהתאמה אישית נס ציונה – עיצוב והתאמה מלאה | David Hair',
+  title: 'פאות בהתאמה אישית נס ציונה – עיצוב והתאמה מלאה',
   description: 'פאות בהתאמה אישית בנס ציונה לפי צבע, אורך, מרקם וסגנון. שיער טבעי 100%, בנייה ידנית והתאמה למבנה הפנים בחדר פרטי. משרתות גם ראשון לציון ורחובות.',
   keywords: 'פאות בהתאמה אישית נס ציונה, פאה מותאמת ראשון לציון, פאת שיער טבעי מרכז, התאמת פאה נס ציונה, פאה לפי מידה, custom wigs israel',
   alternates: {
@@ -68,7 +68,8 @@ export default function CustomWigsPage() {
         serviceName="פאות בהתאמה אישית"
         serviceUrl="https://hairtoppersisrael.com/custom-wigs"
       />
-      <BreadcrumbHero 
+      <BreadcrumbHero
+        renderAsH1={false} 
         title="פאות בהתאמה אישית"
         subtitle="עיצוב והתאמה מלאה עבורך"
         pathname="/custom-wigs"

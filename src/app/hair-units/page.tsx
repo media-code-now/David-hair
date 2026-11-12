@@ -14,7 +14,7 @@ import bannerOne from '@/images/banners/1.jpg';
 import bannerTwo from '@/images/banners/2.jpg';
 
 export const metadata: Metadata = {
-  title: 'יחידות שיער וכיפות שיער לנשים נס ציונה – לדלילות | David Hair',
+  title: 'יחידות שיער וכיפות שיער לנשים נס ציונה – לדלילות',
   description:
     'יחידת שיער לנשים וכיפות שיער בהתאמה אישית בנס ציונה: כיפת שיער לדלילות עם כיסוי טבעי ומדויק לשביל מתרחב, קודקוד וקרקפת נראית. שיער אנושי 100%, מחיר לפי התאמה, ייעוץ פרטי ללא התחייבות. משרתים גם ראשון לציון ורחובות.',
   keywords:
@@ -210,6 +210,7 @@ export default function HairUnitsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <BreadcrumbHero
+        renderAsH1={false}
         title="יחידות שיער"
         subtitle="פתרון מקצועי ומותאם אישית לכל סוג ורמת דלילות"
         pathname="/hair-units"

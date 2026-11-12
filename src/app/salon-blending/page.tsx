@@ -10,7 +10,7 @@ import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
-  title: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה | David Hair',
+  title: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה',
   description: 'שירותי סלון מקצועיים לטופרים ולפאות בנס ציונה. גזירה, צביעה, שילוב ועיצוב למראה טבעי וחלק. משרתות גם ראשון לציון ורחובות. קביעת תור.',
   keywords: 'סלון שילוב פאה נס ציונה, גזירת טופר ראשון לציון, צביעת פאה נס ציונה, שילוב שיער מרכז, סלון פאות, עיצוב טופר',
   alternates: {
@@ -67,7 +67,8 @@ export default function SalonBlendingPage() {
         serviceName="שילוב וגזירה בסלון"
         serviceUrl="https://hairtoppersisrael.com/salon-blending"
       />
-      <BreadcrumbHero 
+      <BreadcrumbHero
+        renderAsH1={false} 
         title="סלון שילוב וגזירה"
         subtitle="צבע, שכבות והתאמה מקצועית"
         pathname="/salon-blending"

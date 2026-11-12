@@ -10,7 +10,7 @@ import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
-  title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | David Hair',
+  title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה',
   description: 'פאות רפואיות בנס ציונה לכימותרפיה, אלופציה ונשירת שיער רפואית. התאמה נוחה ודיסקרטית בחדר פרטי, עם ליווי לביטוח. משרתות גם ראשון לציון, רחובות ואשדוד.',
   keywords: 'פאה רפואית נס ציונה, פאה לכימותרפיה ראשון לציון, פאה לאלופציה מרכז, נשירת שיער רפואית, פאה רפואית מרכז, medical wig israel',
   alternates: {
@@ -67,7 +67,8 @@ export default function MedicalWigsPage() {
         serviceName="פאה רפואית"
         serviceUrl="https://hairtoppersisrael.com/medical-wigs"
       />
-      <BreadcrumbHero 
+      <BreadcrumbHero
+        renderAsH1={false} 
         title="פאות רפואיות"
         subtitle="בנוחות ודיסקרטיות מלאה"
         pathname="/medical-wigs"

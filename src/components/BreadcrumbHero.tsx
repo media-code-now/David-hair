@@ -9,9 +9,12 @@ interface BreadcrumbHeroProps {
   pathname?: string;
   /** Set false when the page emits its own (richer) BreadcrumbList to avoid duplicates. */
   emitSchema?: boolean;
+  /** Set false when the page renders its own <h1> (e.g. ServiceHero) so there is only one per page. */
+  renderAsH1?: boolean;
 }
 
-export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/breadcrumb-hairshades.jpg', pathname = '', emitSchema = true }: BreadcrumbHeroProps) {
+export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/breadcrumb-hairshades.jpg', pathname = '', emitSchema = true, renderAsH1 = true }: BreadcrumbHeroProps) {
+  const Heading = renderAsH1 ? 'h1' : 'p';
   const baseUrl = 'https://hairtoppersisrael.com';
 
   const breadcrumbSchema = {
@@ -67,9 +70,9 @@ export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/br
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4" dir="rtl">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 text-center drop-shadow-lg">
+        <Heading className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 text-center drop-shadow-lg">
           {title}
-        </h1>
+        </Heading>
         {subtitle && (
           <p className="text-lg md:text-xl text-center opacity-90 drop-shadow-md max-w-2xl">
             {subtitle}

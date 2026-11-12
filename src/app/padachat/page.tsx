@@ -14,7 +14,7 @@ import padachatBanner from '@/images/banners/2.jpg';
 import beforeAfterFive from '@/images/before-after/5.jpg';
 
 export const metadata: Metadata = {
-  title: 'פדחת לשיער דליל נס ציונה – כיסוי טבעי לקדמת הראש | David Hair',
+  title: 'פדחת לשיער דליל נס ציונה – כיסוי טבעי לקדמת הראש',
   description:
     'פתרונות פדחת לשיער דליל ולקדמת הראש בנס ציונה. דגמי טופ סקין, לייס ומיקרוליין בהתאמה אישית, מראה טבעי ודיסקרטיות מלאה.',
   keywords:
@@ -82,6 +82,7 @@ export default function PadachatPage() {
         serviceUrl="https://hairtoppersisrael.com/padachat"
       />
       <BreadcrumbHero
+        renderAsH1={false}
         title="פדחת לשיער"
         subtitle="כיסוי טבעי לקדמת הראש ולשביל"
         pathname="/padachat"

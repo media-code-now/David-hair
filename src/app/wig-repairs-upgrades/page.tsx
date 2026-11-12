@@ -10,7 +10,7 @@ import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
-  title: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי | David Hair',
+  title: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי',
   description: 'שירותי תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים בנס ציונה. פתיחת סבכים, החלפת רשת, צביעה מחדש והתאמת מידה. משרתות גם ראשון לציון ורחובות.',
   keywords: 'תיקון פאה נס ציונה, חידוש פאה ראשון לציון, שדרוג פאה מרכז, תיקון טופר, תחזוקת פאה, wig repair israel',
   alternates: {
@@ -67,7 +67,8 @@ export default function WigRepairsPage() {
         serviceName="תיקון ושדרוג פאות וטופרים"
         serviceUrl="https://hairtoppersisrael.com/wig-repairs-upgrades"
       />
-      <BreadcrumbHero 
+      <BreadcrumbHero
+        renderAsH1={false} 
         title="תיקון ושדרוג"
         subtitle="חידוש מקצועי לפאות וטופרים"
         pathname="/wig-repairs-upgrades"
