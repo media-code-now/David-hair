@@ -24,13 +24,13 @@ export default function HairUnitsCallout({ unitName }: HairUnitsCalloutProps) {
               {unitName} הוא סוג אחד מבין יחידות השיער
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              יחידת שיער היא שם כולל לכל פתרונות השיער הלא-כירורגיים שלנו – טופר, פדחת,
+              יחידות שיער לנשים הן שם כולל לכל פתרונות השיער הלא-כירורגיים שלנו – טופר, כיפת שיער, פדחת,
               צמיד ופאה מלאה. לא בטוחות איזה פתרון מתאים בדיוק לרמת הדלילות שלכן?{' '}
               <Link
                 href="/hair-units"
                 className="text-navy-900 font-semibold underline decoration-gold-400 underline-offset-4 hover:text-gold-600 transition-colors"
               >
-                השוו בין כל סוגי יחידות השיער
+                השוו בין כל סוגי יחידות השיער לנשים
               </Link>{' '}
               ומצאו את ההתאמה המדויקת.
             </p>

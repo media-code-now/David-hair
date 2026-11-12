@@ -117,8 +117,12 @@ export default function ThinHairToppersPage() {
             <p>
               הטופר נבנה על כיפה קלה (משי, תחרה או מונופילמנט) שמדמה קרקפת טבעית. אם מדובר בדלילות רחבה יותר
               או בכיסוי מלא של הראש, כדאי להכיר גם את{' '}
+              <a href="/kipot-sear" className="text-navy-900 font-semibold underline hover:text-gold-600">
+                כיפות שיער לנשים
+              </a>
+              {' '}ואת כל{' '}
               <a href="/hair-units" className="text-navy-900 font-semibold underline hover:text-gold-600">
-                כיפת שיער לדלילות ויחידות השיער
+                יחידות השיער לנשים
               </a>
               {' '}שלנו.
             </p>

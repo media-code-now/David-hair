@@ -6,8 +6,9 @@ import { MessageCircle } from 'lucide-react';
 import AccessibleMenu from './AccessibleMenu';
 
 const navItems = [
-  { href: '/hair-units', label: 'יחידות שיער', ariaLabel: 'יחידות שיער וכיפות שיער לנשים' },
-  { href: '/hair-toppers', label: 'טופרים', ariaLabel: 'טופרים לשיער' },
+  { href: '/hair-units', label: 'יחידות שיער', ariaLabel: 'יחידות שיער לנשים' },
+  { href: '/hair-toppers', label: 'טופרים', ariaLabel: 'טופר לשיער נשים' },
+  { href: '/kipot-sear', label: 'כיפות שיער', ariaLabel: 'כיפות שיער לנשים' },
   { href: '/hair-toppers-thin-hair', label: 'טופר לשיער דליל', ariaLabel: 'טופר לשיער דליל' },
   { href: '/padachat', label: 'פדחת לשיער', ariaLabel: 'פדחת לשיער דליל' },
   { href: '/tzamidei-sear', label: 'צמידי שיער', ariaLabel: 'צמידי שיער להארכה ונפח' },

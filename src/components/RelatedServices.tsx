@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { ArrowLeft, Sparkles, ShoppingBag, Heart, Scissors, Wrench, Crown, Layers } from 'lucide-react';
 
 const allServices = [
-  { href: '/hair-units', title: 'יחידות שיער', description: 'כל סוגי יחידות השיער במקום אחד', icon: Layers, color: 'from-navy-50 to-gold-50' },
-  { href: '/hair-toppers', title: 'טופרי שיער', description: 'כיסוי טבעי לשיער דליל', icon: Crown, color: 'from-pink-50 to-rose-50' },
+  { href: '/hair-units', title: 'יחידות שיער לנשים', description: 'כל סוגי יחידות השיער במקום אחד', icon: Layers, color: 'from-navy-50 to-gold-50' },
+  { href: '/hair-toppers', title: 'טופר לשיער נשים', description: 'כיסוי טבעי לשביל ולקודקוד', icon: Crown, color: 'from-pink-50 to-rose-50' },
+  { href: '/kipot-sear', title: 'כיפות שיער לנשים', description: 'משי, תחרה ומונופילמנט', icon: Layers, color: 'from-teal-50 to-cyan-50' },
   { href: '/padachat', title: 'פדחת לשיער', description: 'כיסוי ממוקד לקדמת הראש', icon: Crown, color: 'from-amber-50 to-yellow-50' },
   { href: '/tzamidei-sear', title: 'צמידי שיער', description: 'תוספת נפח ואורך מהירה', icon: Sparkles, color: 'from-indigo-50 to-blue-50' },
   { href: '/hair-toppers-thin-hair', title: 'טופרים לשיער דליל', description: 'פתרונות לשביל ונפח', icon: Sparkles, color: 'from-purple-50 to-violet-50' },

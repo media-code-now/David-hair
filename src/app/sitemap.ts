@@ -12,7 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const areasModified   = new Date('2026-07-02');
   const aeoModified     = new Date('2026-08-01');
   const thinHairModified = new Date('2026-10-11');
-  const hairUnitsModified = new Date('2026-10-19');
+  const hairUnitsModified = new Date('2026-11-12');
+  const toppersModified = new Date('2026-11-12');
 
   const areaSlugs = citySlugs;
 
@@ -26,9 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // High-intent service pages
     {
       url: `${baseUrl}/hair-toppers`,
-      lastModified: serviceModified,
-      changeFrequency: 'monthly',
-      priority: 0.9,
+      lastModified: toppersModified,
+      changeFrequency: 'weekly',
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/hair-toppers-thin-hair`,
@@ -38,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/hair-units`,
+      lastModified: hairUnitsModified,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/kipot-sear`,
       lastModified: hairUnitsModified,
       changeFrequency: 'weekly',
       priority: 0.95,

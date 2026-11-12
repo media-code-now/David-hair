@@ -11,8 +11,9 @@ import { getCity, citySlugs } from '../cities';
 const SITE = 'https://hairtoppersisrael.com';
 
 const services = [
-  { href: '/hair-units', label: 'יחידות שיער', blurb: (c: string) => `כל סוגי יחידות השיער וכיפות השיער במקום אחד — פתרון מדויק לנשים מ${c}.` },
-  { href: '/hair-toppers', label: 'טופר שיער', blurb: (c: string) => `טופר שיער ב${c} לכיסוי קודקוד ושביל מתרחב, עם התאמת גוון מדויקת.` },
+  { href: '/hair-units', label: 'יחידות שיער לנשים', blurb: (c: string) => `כל סוגי יחידות השיער לנשים במקום אחד — פתרון מדויק לנשים מ${c}.` },
+  { href: '/kipot-sear', label: 'כיפות שיער לנשים', blurb: (c: string) => `כיפת משי, תחרה או מונופילמנט בהתאמה אישית לנשים מ${c}.` },
+  { href: '/hair-toppers', label: 'טופר לשיער נשים', blurb: (c: string) => `טופר שיער ב${c} לכיסוי קודקוד ושביל מתרחב, עם התאמת גוון מדויקת.` },
   { href: '/hair-toppers-thin-hair', label: 'טופרים לשיער דליל', blurb: (c: string) => `פתרון לשיער דליל ל${c}: כיסוי קל ובלתי נראה שמחזיר נפח טבעי.` },
   { href: '/padachat', label: 'פדחת לשיער דליל', blurb: (c: string) => `פדחת לשיער ל${c} לכיסוי הקו הקדמי והשביל בטבעיות מלאה.` },
   { href: '/tzamidei-sear', label: 'צמידי שיער', blurb: (c: string) => `צמידי שיער ל${c} לתוספת נפח ואורך מיידית כבר מהפגישה הראשונה.` },
