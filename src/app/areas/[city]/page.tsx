@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: data.metaDescription,
       locale: 'he_IL',
       type: 'website',
-      siteName: 'David Hair Solutions',
+      siteName: 'דוד פתרונות לשיער',
       url: canonical,
     },
     twitter: {
@@ -83,7 +83,7 @@ export default async function AreaCityPage({ params }: PageProps) {
     areaServed: { '@type': 'City', name: data.name },
     provider: {
       '@type': 'HairSalon',
-      name: 'David Hair Solutions',
+      name: 'דוד פתרונות לשיער',
       telephone: '+972525550415',
       image: `${SITE}/logo-black.png`,
       address: {

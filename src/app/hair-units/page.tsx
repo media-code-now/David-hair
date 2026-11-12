@@ -14,7 +14,7 @@ import bannerOne from '@/images/banners/1.jpg';
 import bannerTwo from '@/images/banners/2.jpg';
 
 export const metadata: Metadata = {
-  title: { absolute: 'יחידות שיער לנשים – יחידת שיער בהתאמה אישית לדלילות | David Hair' },
+  title: { absolute: 'יחידות שיער לנשים – יחידת שיער בהתאמה אישית לדלילות | דוד פתרונות לשיער' },
   description:
     'יחידות שיער לנשים משיער אנושי 100% בנס ציונה: טופר, פדחת, צמיד או פאה – יחידת שיער בהתאמה אישית לשביל מתרחב, קודקוד ודלילות נרחבת. חדר פרטי לנשים בלבד, ייעוץ חינם ללא התחייבות.',
   keywords:
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       'טופר, פדחת, צמיד או פאה מלאה – כל סוגי יחידות השיער לנשים במקום אחד, עם אבחון אישי שמתאים את הפתרון המדויק לרמת הדלילות.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/hair-units',
   },
   twitter: {

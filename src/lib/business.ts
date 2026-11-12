@@ -2,7 +2,7 @@
 // Keeping these here keeps schema, footer, and contact links consistent (NAP
 // consistency is an important local-SEO signal).
 
-export const BUSINESS_NAME = 'David Hair Solutions';
+export const BUSINESS_NAME = 'דוד פתרונות לשיער';
 export const BUSINESS_PHONE = '+972525550415';
 export const BUSINESS_PHONE_DISPLAY = '052-555-0415';
 export const BUSINESS_WHATSAPP = 'https://wa.me/972525550415';

@@ -21,7 +21,7 @@ interface LeadRequestBody {
 }
 
 const TO_EMAIL = process.env.LEAD_TO_EMAIL || 'office@hairtoppersisrael.com';
-const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'David Hair Solutions <onboarding@resend.dev>';
+const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'דוד פתרונות לשיער <onboarding@resend.dev>';
 
 // Keep attachment payloads well under typical serverless request-body limits (~4.5MB on Vercel).
 const MAX_ATTACHMENT_BYTES = 3.5 * 1024 * 1024;

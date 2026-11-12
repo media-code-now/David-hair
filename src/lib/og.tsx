@@ -72,7 +72,7 @@ export async function renderOgImage({ title, subtitle, eyebrow }: OgOptions) {
 
         {/* Logo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={logo} width={300} height={150} alt="David Hair Solutions" style={{ marginBottom: 28 }} />
+        <img src={logo} width={300} height={150} alt="דוד פתרונות לשיער" style={{ marginBottom: 28 }} />
 
         {/* Gold divider */}
         <div style={{ width: 90, height: 4, background: GOLD, borderRadius: 2, marginBottom: 34, display: 'flex' }} />

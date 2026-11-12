@@ -1,7 +1,7 @@
 import { renderOgImage, OG_SIZE, OG_CONTENT_TYPE } from '@/lib/og';
 
 export const runtime = 'nodejs';
-export const alt = 'שאלות ותשובות – טופרים, פאות ושיער דליל | David Hair Solutions';
+export const alt = 'שאלות ותשובות – טופרים, פאות ושיער דליל | דוד פתרונות לשיער';
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

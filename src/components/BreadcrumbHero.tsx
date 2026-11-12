@@ -45,7 +45,7 @@ export default function BreadcrumbHero({ title, subtitle, backgroundImage = '/br
       {/* Background Image */}
       <Image
         src={backgroundImage}
-        alt={`${title} – טופרים ופאות בהתאמה אישית | David Hair Solutions`}
+        alt={`${title} – טופרים ופאות בהתאמה אישית | דוד פתרונות לשיער`}
         fill
         className="object-cover object-center"
         priority

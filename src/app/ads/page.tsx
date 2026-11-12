@@ -11,18 +11,18 @@ import AdCTA from '@/components/AdCTA';
 import AdFAQ from '@/components/AdFAQ';
 
 export const metadata: Metadata = {
-  title: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם | David Hair',
-  description: 'נשים רבות מתמודדות עם דלילות שיער. David Hair מציעה טופרים ופאות במראה טבעי ובהתאמה אישית. ייעוץ חינם ללא התחייבות.',
+  title: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם | דוד פתרונות לשיער',
+  description: 'נשים רבות מתמודדות עם דלילות שיער. דוד פתרונות לשיער מציעה טופרים ופאות במראה טבעי ובהתאמה אישית. ייעוץ חינם ללא התחייבות.',
   robots: {
     index: false,
     follow: true,
   },
   openGraph: {
-    title: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם | David Hair',
-    description: 'נשים רבות מתמודדות עם דלילות שיער. David Hair מציעה טופרים ופאות במראה טבעי ובהתאמה אישית. ייעוץ חינם ללא התחייבות.',
+    title: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם | דוד פתרונות לשיער',
+    description: 'נשים רבות מתמודדות עם דלילות שיער. דוד פתרונות לשיער מציעה טופרים ופאות במראה טבעי ובהתאמה אישית. ייעוץ חינם ללא התחייבות.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     images: [
       {
         url: 'https://hairtoppersisrael.com/og-image.jpg',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם | David Hair',
-    description: 'נשים רבות מתמודדות עם דלילות שיער. David Hair מציעה טופרים ופאות במראה טבעי ובהתאמה אישית. ייעוץ חינם ללא התחייבות.',
+    title: 'פאות וטופרים בהתאמה אישית – ייעוץ חינם | דוד פתרונות לשיער',
+    description: 'נשים רבות מתמודדות עם דלילות שיער. דוד פתרונות לשיער מציעה טופרים ופאות במראה טבעי ובהתאמה אישית. ייעוץ חינם ללא התחייבות.',
     images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },
 };

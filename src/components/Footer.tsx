@@ -18,7 +18,7 @@ export default function Footer() {
             <Link href="/" className="inline-block hover:opacity-80 transition">
               <Image
                 src="/logo-white.png"
-                alt="David Hair Solutions"
+                alt="דוד פתרונות לשיער"
                 width={160}
                 height={54}
                 className="h-20 w-auto"
@@ -96,7 +96,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row justify-between items-center text-[12px] text-gray-500">
-          <p dir="rtl">&copy; {currentYear} David Hair Solutions. כל הזכויות שמורות.</p>
+          <p dir="rtl">&copy; {currentYear} דוד פתרונות לשיער. כל הזכויות שמורות.</p>
           <div className="flex gap-6 mt-4 sm:mt-0">
             <Link href="/accessibility" className="hover:text-white transition-colors duration-200">הצהרת נגישות</Link>
             <Link href="#" className="hover:text-white transition-colors duration-200">מדיניות פרטיות</Link>

@@ -25,11 +25,11 @@ export default function Header() {
           <Link 
             href="/" 
             className="flex items-center hover:opacity-80 transition-all duration-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-navy-500 rounded-lg"
-            aria-label="David Hair Solutions - דף הבית"
+            aria-label="דוד פתרונות לשיער - דף הבית"
           >
             <Image
               src="/logo-black.png"
-              alt="David Hair Solutions - פתרונות שיער לנשים"
+              alt="דוד פתרונות לשיער - טופרים ופאות לנשים"
               width={140}
               height={48}
               className="h-20 w-auto"

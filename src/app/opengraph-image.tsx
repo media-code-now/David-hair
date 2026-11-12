@@ -1,7 +1,7 @@
 import { renderOgImage, OG_SIZE, OG_CONTENT_TYPE } from '@/lib/og';
 
 export const runtime = 'nodejs';
-export const alt = 'David Hair Solutions – טופרים ופאות בהתאמה אישית | נס ציונה';
+export const alt = 'דוד פתרונות לשיער – טופרים ופאות בהתאמה אישית | נס ציונה';
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

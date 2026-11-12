@@ -4,7 +4,7 @@ import { getCity, citySlugs } from '../cities';
 export const runtime = 'nodejs';
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
-export const alt = 'טופרים ופאות בהתאמה אישית | David Hair Solutions';
+export const alt = 'טופרים ופאות בהתאמה אישית | דוד פתרונות לשיער';
 
 export function generateStaticParams() {
   return citySlugs.map((city) => ({ city }));

@@ -10,7 +10,7 @@ import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
-  title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | David Hair',
+  title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | דוד פתרונות לשיער',
   description: 'פאות רפואיות בנס ציונה לכימותרפיה, אלופציה ונשירת שיער רפואית. התאמה נוחה ודיסקרטית בחדר פרטי, עם ליווי לביטוח. משרתות גם ראשון לציון, רחובות ואשדוד.',
   keywords: 'פאה רפואית נס ציונה, פאה לכימותרפיה ראשון לציון, פאה לאלופציה מרכז, נשירת שיער רפואית, פאה רפואית מרכז, medical wig israel',
   alternates: {
@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     languages: { 'he-IL': 'https://hairtoppersisrael.com/medical-wigs' },
   },
   openGraph: {
-    title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | David Hair',
+    title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | דוד פתרונות לשיער',
     description: 'פאות רפואיות בנס ציונה לכימותרפיה ואלופציה, עם התאמה נוחה ודיסקרטית בחדר פרטי.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/medical-wigs',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | David Hair',
+    title: 'פאה רפואית נס ציונה – כימותרפיה ואלופציה | דוד פתרונות לשיער',
     description: 'פאות רפואיות בנס ציונה לכימותרפיה ואלופציה, עם התאמה נוחה ודיסקרטית בחדר פרטי.',
   },
 };

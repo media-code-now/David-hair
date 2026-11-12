@@ -15,7 +15,7 @@ import beforeAfterOne from '@/images/before-after/before-after-1.jpg';
 const URL = 'https://hairtoppersisrael.com/kipot-sear';
 
 export const metadata: Metadata = {
-  title: { absolute: 'כיפות שיער לנשים – כיפת שיער לדלילות בהתאמה אישית | David Hair' },
+  title: { absolute: 'כיפות שיער לנשים – כיפת שיער לדלילות בהתאמה אישית | דוד פתרונות לשיער' },
   description:
     'כיפות שיער לנשים משיער אנושי 100%: כיפת משי, תחרה או מונופילמנט בהתאמה אישית לשביל מתרחב, קודקוד ודלילות נרחבת. חדר פרטי לנשים בלבד בנס ציונה, ייעוץ חינם ללא התחייבות.',
   keywords:
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       'כיפת משי, תחרה או מונופילמנט משיער אנושי 100%, בהתאמה אישית לרמת הדלילות. חדר פרטי לנשים בלבד.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: URL,
   },
   twitter: {

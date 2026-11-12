@@ -40,7 +40,7 @@ const bookingSchema = {
   },
   provider: {
     '@type': 'HairSalon',
-    name: 'David Hair Solutions',
+    name: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com',
     telephone: '+972525550415',
     address: {
@@ -78,7 +78,7 @@ const bookingSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | David Hair',
+  title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | דוד פתרונות לשיער',
   description: 'קבעו ייעוץ שיער חינם בנס ציונה. פגישה פרטית ודיסקרטית להתאמת טופר או פאה. משרתים גם ראשון לציון, רחובות ואזור המרכז. ללא התחייבות.',
   keywords: 'קביעת ייעוץ שיער נס ציונה, תור לטופר ראשון לציון, תור לפאה מרכז, ייעוץ חינם שיער, התאמת פאה נס ציונה',
   alternates: {
@@ -86,16 +86,16 @@ export const metadata: Metadata = {
     languages: { 'he-IL': 'https://hairtoppersisrael.com/book' },
   },
   openGraph: {
-    title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | David Hair',
+    title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | דוד פתרונות לשיער',
     description: 'קביעת ייעוץ חינם להתאמת טופר או פאה בנס ציונה. ללא התחייבות ובדיסקרטיות מלאה.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/book',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | David Hair',
+    title: 'קביעת ייעוץ שיער נס ציונה – חינם וללא התחייבות | דוד פתרונות לשיער',
     description: 'קביעת ייעוץ חינם להתאמת טופר או פאה בנס ציונה. ללא התחייבות ובדיסקרטיות מלאה.',
   },
 };

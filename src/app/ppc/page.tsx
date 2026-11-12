@@ -3,18 +3,18 @@ import PPCLandingHero from '@/components/PPCLandingHero';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'ייעוץ חינם לטופרים ופאות – David Hair',
+  title: 'ייעוץ חינם לטופרים ופאות – דוד פתרונות לשיער',
   description: 'קבעו ייעוץ חינם וקבלו חזרה בתוך 24 שעות. פתרון לשיער דליל עם טופרים ופאות בהתאמה אישית, בחדר פרטי ולנשים בלבד.',
   robots: {
     index: false,
     follow: true,
   },
   openGraph: {
-    title: 'ייעוץ חינם לטופרים ופאות – David Hair',
+    title: 'ייעוץ חינם לטופרים ופאות – דוד פתרונות לשיער',
     description: 'קבעו ייעוץ חינם וקבלו חזרה בתוך 24 שעות. פתרון לשיער דליל עם טופרים ופאות בהתאמה אישית.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     images: [
       {
         url: 'https://hairtoppersisrael.com/og-image.jpg',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ייעוץ חינם לטופרים ופאות – David Hair',
+    title: 'ייעוץ חינם לטופרים ופאות – דוד פתרונות לשיער',
     description: 'קבעו ייעוץ חינם וקבלו חזרה בתוך 24 שעות. פתרון לשיער דליל עם טופרים ופאות בהתאמה אישית.',
     images: ['https://hairtoppersisrael.com/og-image.jpg'],
   },

@@ -14,7 +14,7 @@ import padachatBanner from '@/images/banners/2.jpg';
 import beforeAfterFive from '@/images/before-after/5.jpg';
 
 export const metadata: Metadata = {
-  title: 'פדחת לשיער דליל נס ציונה – כיסוי טבעי לקדמת הראש | David Hair',
+  title: 'פדחת לשיער דליל נס ציונה – כיסוי טבעי לקדמת הראש | דוד פתרונות לשיער',
   description:
     'פתרונות פדחת לשיער דליל ולקדמת הראש בנס ציונה. דגמי טופ סקין, לייס ומיקרוליין בהתאמה אישית, מראה טבעי ודיסקרטיות מלאה.',
   keywords:
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       'כיסוי טבעי לקדמת הראש עם פדחת בהתאמה אישית: טופ סקין, לייס ומיקרוליין לנוחות ומראה בלתי נראה.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/padachat',
   },
   twitter: {

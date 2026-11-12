@@ -1,7 +1,7 @@
 import { renderOgImage, OG_SIZE, OG_CONTENT_TYPE } from '@/lib/og';
 
 export const runtime = 'nodejs';
-export const alt = 'קביעת ייעוץ שיער – חינם וללא התחייבות | David Hair Solutions';
+export const alt = 'קביעת ייעוץ שיער – חינם וללא התחייבות | דוד פתרונות לשיער';
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

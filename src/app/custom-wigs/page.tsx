@@ -11,7 +11,7 @@ import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
-  title: 'פאות בהתאמה אישית נס ציונה – עיצוב והתאמה מלאה | David Hair',
+  title: 'פאות בהתאמה אישית נס ציונה – עיצוב והתאמה מלאה | דוד פתרונות לשיער',
   description: 'פאות בהתאמה אישית בנס ציונה לפי צבע, אורך, מרקם וסגנון. שיער טבעי 100%, בנייה ידנית והתאמה למבנה הפנים בחדר פרטי. משרתות גם ראשון לציון ורחובות.',
   keywords: 'פאות בהתאמה אישית נס ציונה, פאה מותאמת ראשון לציון, פאת שיער טבעי מרכז, התאמת פאה נס ציונה, פאה לפי מידה, custom wigs israel',
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'פאות מעוצבות בהתאמה אישית בנס ציונה לפי המפרט המדויק שלך, עם שיער אנושי 100% ובנייה ידנית.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/custom-wigs',
   },
   twitter: {

@@ -1,7 +1,7 @@
 import { renderOgImage, OG_SIZE, OG_CONTENT_TYPE } from '@/lib/og';
 
 export const runtime = 'nodejs';
-export const alt = 'טופר לשיער דליל – כיסוי שביל וקודקוד | David Hair Solutions';
+export const alt = 'טופר לשיער דליל – כיסוי שביל וקודקוד | דוד פתרונות לשיער';
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

@@ -10,7 +10,7 @@ import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
-  title: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה | David Hair',
+  title: 'סלון שילוב פאות נס ציונה – גזירה, צביעה והתאמה | דוד פתרונות לשיער',
   description: 'שירותי סלון מקצועיים לטופרים ולפאות בנס ציונה. גזירה, צביעה, שילוב ועיצוב למראה טבעי וחלק. משרתות גם ראשון לציון ורחובות. קביעת תור.',
   keywords: 'סלון שילוב פאה נס ציונה, גזירת טופר ראשון לציון, צביעת פאה נס ציונה, שילוב שיער מרכז, סלון פאות, עיצוב טופר',
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'שירותי סלון מקצועיים לטופרים ולפאות בנס ציונה, עם גזירה, צביעה ושילוב למראה טבעי.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/salon-blending',
   },
   twitter: {

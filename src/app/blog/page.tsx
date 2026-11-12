@@ -5,19 +5,19 @@ import Footer from '@/components/Footer';
 import { posts } from '@/lib/blog';
 
 export const metadata: Metadata = {
-  title: 'בלוג – מדריכים על טופרים, פאות ושיער דליל | David Hair Solutions',
+  title: 'בלוג – מדריכים על טופרים, פאות ושיער דליל | דוד פתרונות לשיער',
   description:
-    'מדריכים מעשיים על טופרים, פאות ופתרונות לשיער דליל: איך בוחרים, כמה זה עולה, איך מטפלים. מהסלון של David Hair Solutions בנס ציונה.',
+    'מדריכים מעשיים על טופרים, פאות ופתרונות לשיער דליל: איך בוחרים, כמה זה עולה, איך מטפלים. מהסלון של דוד פתרונות לשיער בנס ציונה.',
   alternates: {
     canonical: 'https://hairtoppersisrael.com/blog',
     languages: { 'he-IL': 'https://hairtoppersisrael.com/blog' },
   },
   openGraph: {
-    title: 'בלוג – טופרים, פאות ושיער דליל | David Hair Solutions',
+    title: 'בלוג – טופרים, פאות ושיער דליל | דוד פתרונות לשיער',
     description: 'מדריכים מעשיים על טופרים, פאות ופתרונות לשיער דליל.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/blog',
   },
 };

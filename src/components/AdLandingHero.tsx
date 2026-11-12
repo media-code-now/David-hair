@@ -78,7 +78,7 @@ export default function AdLandingHero() {
             <p className="text-lg sm:text-xl text-navy-100 mb-8 leading-relaxed" dir="rtl">
               את לא לבד. אלפי נשים מתמודדות עם דלילות שיער ומחפשות פתרון שבאמת עובד.
               <br />
-              <strong className="text-gold-200">David Hair מחזירה לך את הביטחון העצמי.</strong>
+              <strong className="text-gold-200">דוד פתרונות לשיער מחזירה לך את הביטחון העצמי.</strong>
             </p>
 
             {/* Key benefits bullets */}

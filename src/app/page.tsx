@@ -13,7 +13,7 @@ import TikTokReels from '@/components/TikTokReels';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'טופרים ופאות במראה טבעי – התאמה אישית בסלון | David Hair',
+  title: 'טופרים ופאות במראה טבעי – התאמה אישית בסלון | דוד פתרונות לשיער',
   description: 'טופרים ופאות בהתאמה אישית עם שילוב וגזירה מקצועיים בסלון נשים פרטי. התאמה דיסקרטית, אחריות ושירות לאחר הרכישה. קביעת ייעוץ ללא התחייבות.',
   keywords:
     'טופר שיער נס ציונה, יחידות שיער, פאות בהתאמה אישית נס ציונה, פאה רפואית מרכז, שיער דליל נשים, פדחת לשיער, צמידי שיער, סלון שיער נס ציונה, טופר שיער ראשון לציון, טופר שיער רחובות, פאת שיער טבעי',
@@ -22,16 +22,16 @@ export const metadata: Metadata = {
     languages: { 'he-IL': 'https://hairtoppersisrael.com' },
   },
   openGraph: {
-    title: 'טופרים ופאות במראה טבעי – התאמה אישית בסלון | David Hair',
+    title: 'טופרים ופאות במראה טבעי – התאמה אישית בסלון | דוד פתרונות לשיער',
     description: 'טופרים ופאות בהתאמה אישית עם שילוב וגזירה מקצועיים בסלון נשים פרטי. קביעת ייעוץ ללא התחייבות.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'טופרים ופאות במראה טבעי – התאמה אישית בסלון | David Hair',
+    title: 'טופרים ופאות במראה טבעי – התאמה אישית בסלון | דוד פתרונות לשיער',
     description: 'טופרים ופאות בהתאמה אישית עם שילוב וגזירה מקצועיים בסלון נשים פרטי. קביעת ייעוץ ללא התחייבות.',
   },
 };

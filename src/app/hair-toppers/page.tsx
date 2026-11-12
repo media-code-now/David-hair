@@ -13,7 +13,7 @@ import bannerTwo from '@/images/banners/2.jpg';
 import beforeAfterOne from '@/images/before-after/before-after-1.jpg';
 
 export const metadata: Metadata = {
-  title: { absolute: 'טופר לשיער נשים – טופר שיער טבעי בהתאמה אישית | David Hair' },
+  title: { absolute: 'טופר לשיער נשים – טופר שיער טבעי בהתאמה אישית | דוד פתרונות לשיער' },
   description: 'טופר לשיער נשים משיער אנושי 100%: כיסוי טבעי לשביל מתרחב, קודקוד ושיער דליל, בהתאמה אישית בחדר פרטי לנשים בלבד בנס ציונה. טופרים לנשים החל מ-₪900, ייעוץ חינם.',
   keywords: 'טופר לשיער נשים, טופר שיער לנשים, טופרים לנשים, טופר לנשים, טופר שיער, טופר שיער טבעי, טופר שיער נס ציונה, טופר שיער ראשון לציון, טופר לשיער דליל, כיסוי שביל, hair topper for women',
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: 'טופר שיער לנשים משיער אנושי 100% לכיסוי השביל והקודקוד, בהתאמה אישית בחדר פרטי. החל מ-₪900.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/hair-toppers',
   },
   twitter: {

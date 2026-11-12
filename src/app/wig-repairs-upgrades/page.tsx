@@ -10,7 +10,7 @@ import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
-  title: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי | David Hair',
+  title: 'תיקון ושדרוג פאות נס ציונה – חידוש מקצועי | דוד פתרונות לשיער',
   description: 'שירותי תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים בנס ציונה. פתיחת סבכים, החלפת רשת, צביעה מחדש והתאמת מידה. משרתות גם ראשון לציון ורחובות.',
   keywords: 'תיקון פאה נס ציונה, חידוש פאה ראשון לציון, שדרוג פאה מרכז, תיקון טופר, תחזוקת פאה, wig repair israel',
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'תיקון, חידוש ושדרוג מקצועיים לפאות ולטופרים בנס ציונה, עם שחזור כמעט כמו חדש.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/wig-repairs-upgrades',
   },
   twitter: {

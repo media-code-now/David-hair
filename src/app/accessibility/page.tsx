@@ -5,9 +5,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'הצהרת נגישות | David Hair Solutions',
+  title: 'הצהרת נגישות | דוד פתרונות לשיער',
   description:
-    'הצהרת הנגישות של אתר David Hair Solutions – מחויבות לנגישות דיגיטלית לפי תקן ישראלי 5568 ותקן WCAG 2.0 ברמה AA, כלי נגישות באתר ודרכי פנייה לרכז הנגישות.',
+    'הצהרת הנגישות של אתר דוד פתרונות לשיער – מחויבות לנגישות דיגיטלית לפי תקן ישראלי 5568 ותקן WCAG 2.0 ברמה AA, כלי נגישות באתר ודרכי פנייה לרכז הנגישות.',
   alternates: {
     canonical: 'https://hairtoppersisrael.com/accessibility',
     languages: { 'he-IL': 'https://hairtoppersisrael.com/accessibility' },
@@ -45,7 +45,7 @@ export default function AccessibilityStatementPage() {
               הצהרת נגישות
             </h1>
             <p className="text-[17px] text-gray-500 leading-relaxed">
-              אנו ב-David Hair Solutions רואים חשיבות רבה במתן שירות שוויוני לכלל הלקוחות, ופועלים
+              אנו ב-דוד פתרונות לשיער רואים חשיבות רבה במתן שירות שוויוני לכלל הלקוחות, ופועלים
               להנגשת האתר כך שיהיה זמין ונוח לשימוש עבור אנשים עם מוגבלות.
             </p>
           </div>

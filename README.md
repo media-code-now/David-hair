@@ -27,7 +27,7 @@ The booking form (`/book`) and the ads/PPC landing page forms submit to `src/app
 1. Create a free account at [resend.com](https://resend.com) and generate an API key.
 2. Copy `.env.example` to `.env.local` and fill in `RESEND_API_KEY`.
 3. By default, leads are sent to `office@hairtoppersisrael.com` (`LEAD_TO_EMAIL`) from `onboarding@resend.dev` (`RESEND_FROM_EMAIL`) — no domain setup required to get started.
-4. For better deliverability/branding, [verify `hairtoppersisrael.com`](https://resend.com/docs/add-a-domain) in Resend and update `RESEND_FROM_EMAIL` to something like `"David Hair Solutions <leads@hairtoppersisrael.com>"`.
+4. For better deliverability/branding, [verify `hairtoppersisrael.com`](https://resend.com/docs/add-a-domain) in Resend and update `RESEND_FROM_EMAIL` to something like `"דוד פתרונות לשיער <leads@hairtoppersisrael.com>"`.
 
 If `RESEND_API_KEY` is missing, form submissions will fail gracefully (the visitor sees a WhatsApp/phone fallback) and the lead payload is logged to the server console.
 

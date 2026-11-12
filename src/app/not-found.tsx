@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { Home, ArrowRight, MessageCircle, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'הדף לא נמצא (404) | David Hair Solutions',
+  title: 'הדף לא נמצא (404) | דוד פתרונות לשיער',
   description: 'הדף שחיפשת לא קיים. חזרו לדף הבית או צרו קשר לקביעת ייעוץ.',
   robots: { index: false, follow: false },
 };

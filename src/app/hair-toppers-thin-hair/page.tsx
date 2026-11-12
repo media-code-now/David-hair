@@ -10,7 +10,7 @@ import RelatedServices from '@/components/RelatedServices';
 import ServiceReviewSchema from '@/components/ServiceReviewSchema';
 
 export const metadata: Metadata = {
-  title: 'טופר לשיער דליל נס ציונה – כיסוי שביל וקודקוד מ-₪900 | David Hair',
+  title: 'טופר לשיער דליל נס ציונה – כיסוי שביל וקודקוד מ-₪900 | דוד פתרונות לשיער',
   description: 'טופר לשיער דליל בנס ציונה: כיסוי טבעי לשביל מתרחב, קודקוד וכתר משיער אנושי 100%. טופרים מ-₪900, התאמה אישית וייעוץ חינם ללא התחייבות. משרתות גם ראשון לציון ורחובות.',
   keywords: 'טופר לשיער דליל, טופר לשיער דליל נשים, טופר לשיער דליל מחיר, טופר לדלילות, כיפת שיער לדלילות, טופר לשיער דליל נס ציונה, כיסוי שביל ראשון לציון, שיער דליל נשים, נשירת שיער מרכז, טופר נפח, כיסוי קרקפת',
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'טופרים מותאמים לשיער דליל בנס ציונה ולשביל מתרחב, עם כיסוי קל וכמעט בלתי נראה.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/hair-toppers-thin-hair',
   },
   twitter: {

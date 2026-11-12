@@ -14,7 +14,7 @@ import tzamideiBanner from '@/images/banners/1.jpg';
 import beforeAfterFive from '@/images/before-after/5.jpg';
 
 export const metadata: Metadata = {
-  title: 'צמידי שיער נס ציונה – תוספת נפח ואורך מהירה | David Hair',
+  title: 'צמידי שיער נס ציונה – תוספת נפח ואורך מהירה | דוד פתרונות לשיער',
   description:
     'צמידי שיער לנפח ואורך במראה טבעי: התאמה מקצועית של גוון, אורך וצפיפות, עם אבחון אישי לבדיקת התאמה לשיער שלך.',
   keywords:
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       'פתרון מהיר לנפח ואורך עם צמידי שיער, כולל התאמת גוון מקצועית ואבחון אישי לשיטת חיבור נכונה.',
     type: 'website',
     locale: 'he_IL',
-    siteName: 'David Hair Solutions',
+    siteName: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com/tzamidei-sear',
   },
   twitter: {

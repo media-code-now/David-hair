@@ -12,7 +12,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "HairSalon",
   "@id": GOOGLE_MAPS_URL,
-  name: "David Hair Solutions",
+  name: "דוד פתרונות לשיער",
   description:
     "טופרים, פאות בהתאמה אישית ופאות רפואיות עם התאמה דיסקרטית בחדר פרטי. שילוב וגזירה מקצועיים בסלון נשים פרטי בנס ציונה.",
   url: "https://hairtoppersisrael.com",
@@ -96,7 +96,7 @@ const LOCAL_BUSINESS_SCHEMA = {
 const WEBSITE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "David Hair Solutions",
+  name: "דוד פתרונות לשיער",
   url: "https://hairtoppersisrael.com",
   inLanguage: "he-IL",
   potentialAction: {
@@ -112,8 +112,8 @@ const WEBSITE_SCHEMA = {
 const ORGANIZATION_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "David Hair Solutions",
-  alternateName: "דיוויד הייר סולושנס",
+  name: "דוד פתרונות לשיער",
+  alternateName: ["David Hair Solutions", "דיוויד הייר סולושנס"],
   url: "https://hairtoppersisrael.com",
   logo: "https://hairtoppersisrael.com/logo-black.png",
   image: "https://hairtoppersisrael.com/og-image.jpg",
@@ -168,17 +168,17 @@ export const metadata: Metadata = {
     google: "WjVHKo40P4C4W7VMcqMKR8ldQWFyi-xIe24mpxwJqQ4",
   },
   title: {
-    default: "David Hair Solutions – טופרים ופאות | נס ציונה",
-    template: "%s | David Hair Solutions – נס ציונה",
+    default: "דוד פתרונות לשיער – טופרים ופאות | נס ציונה",
+    template: "%s | דוד פתרונות לשיער – נס ציונה",
   },
   description:
     "טופרים, פאות בהתאמה אישית ופאות רפואיות בנס ציונה. שירות דיסקרטי בחדר פרטי לנשים בלבד. משרתות גם ראשון לציון, רחובות ואזור המרכז. ייעוץ חינם ללא התחייבות.",
   manifest: "/manifest.json",
   keywords:
     "טופר שיער נס ציונה, פאות בהתאמה אישית נס ציונה, פאה רפואית מרכז, שיער דליל נשים, סלון שיער נס ציונה, טופר שיער ראשון לציון, פאה רפואית ראשון לציון, תיקון פאה נס ציונה, שילוב פאה סלון, פתרון שיער דליל",
-  authors: [{ name: "David Hair Solutions" }],
-  creator: "David Hair Solutions",
-  publisher: "David Hair Solutions",
+  authors: [{ name: "דוד פתרונות לשיער" }],
+  creator: "דוד פתרונות לשיער",
+  publisher: "דוד פתרונות לשיער",
   category: "hair salon",
   icons: {
     icon: [
@@ -190,28 +190,28 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "David Hair",
+    title: "דוד פתרונות לשיער",
   },
   openGraph: {
-    title: "David Hair Solutions – טופרים ופאות | נס ציונה",
+    title: "דוד פתרונות לשיער – טופרים ופאות | נס ציונה",
     description:
       "טופרים, פאות בהתאמה אישית ופאות רפואיות בנס ציונה. שירות דיסקרטי לנשים בלבד. משרתות גם ראשון לציון, רחובות ואזור המרכז.",
     type: "website",
     locale: "he_IL",
-    siteName: "David Hair Solutions",
+    siteName: "דוד פתרונות לשיער",
     url: "https://hairtoppersisrael.com",
     images: [
       {
         url: "https://hairtoppersisrael.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "David Hair Solutions – טופרים ופאות נס ציונה",
+        alt: "דוד פתרונות לשיער – טופרים ופאות נס ציונה",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Hair Solutions – טופרים ופאות | נס ציונה",
+    title: "דוד פתרונות לשיער – טופרים ופאות | נס ציונה",
     description:
       "טופרים, פאות בהתאמה אישית ופאות רפואיות בנס ציונה. שירות דיסקרטי לנשים בלבד.",
     images: ["https://hairtoppersisrael.com/og-image.jpg"],

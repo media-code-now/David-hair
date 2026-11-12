@@ -43,7 +43,7 @@ const howToSchema = {
   inLanguage: 'he-IL',
   provider: {
     '@type': 'HairSalon',
-    name: 'David Hair Solutions',
+    name: 'דוד פתרונות לשיער',
     url: 'https://hairtoppersisrael.com',
   },
 };
